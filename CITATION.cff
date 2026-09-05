@@ -8,6 +8,10 @@ repository-code: "https://github.com/Hyphae-Research-Foundation/hytorch"
 license: Apache-2.0
 version: "1.1"
 date-released: "2026-09-05"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22059493
+    description: "Paper v1.1 preprint on Zenodo"
 preferred-citation:
   type: report
   title: "The Missing Medium: A Transactional Residual Stream for Transformer Training"
@@ -15,5 +19,6 @@ preferred-citation:
     - name: "Hyphae Research Foundation"
   year: 2026
   month: 9
+  doi: 10.5281/zenodo.22059493
   notes: "Version 1.1. Code Apache-2.0; paper CC BY-SA 4.0."
   url: "https://github.com/Hyphae-Research-Foundation/hytorch/blob/main/paper/main.pdf"
