@@ -1,0 +1,9 @@
+{
+  "commit": "5ec0785c430cc27fa18b82d1ae0e865856fa6763",
+  "manifest": "phase1-k8-nf32768-p2.json",
+  "steps_override": 300,
+  "gpu": "NVIDIA-H100-80GB-HBM3",
+  "droplet": {"size": "gpu-h100x1-80gb", "region": "ams3", "procurement": "ondemand"},
+  "gate": "BIT_IDENTICAL",
+  "finished_at": "2026-08-29T21:53:44Z"
+}

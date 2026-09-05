@@ -1,0 +1,9 @@
+{
+  "commit": "26d294a3e2a194d69334c0c299b0a9de3947fca9",
+  "manifest": "phase1b-global.json",
+  "steps_override": 0,
+  "gpu": "NVIDIA-H200",
+  "droplet": {"size": "gpu-h200x1-141gb", "region": "atl1", "procurement": "ondemand"},
+  "gate": "BIT_IDENTICAL",
+  "finished_at": "2026-08-30T09:51:12Z"
+}

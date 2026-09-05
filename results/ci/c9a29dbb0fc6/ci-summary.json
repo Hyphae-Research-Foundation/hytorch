@@ -1,0 +1,6 @@
+{
+  "commit": "c9a29dbb0fc6ae58c100fb9d9c8d6032b302138d",
+  "droplet": {"size": "c-8", "region": "ams3", "procurement": "ondemand"},
+  "finished_at": "2026-08-29T21:57:06Z",
+  "result": "10 suites ok"
+}

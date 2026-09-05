@@ -1,0 +1,144 @@
+   Compiling cfg-if v1.0.4
+   Compiling typenum v1.20.1
+   Compiling cpufeatures v0.2.17
+   Compiling serde_core v1.0.229
+   Compiling constant_time_eq v0.4.2
+   Compiling cpufeatures v0.3.1
+   Compiling tinyvec_macros v0.1.1
+   Compiling arrayvec v0.7.8
+   Compiling tinyvec v1.12.0
+   Compiling thiserror v2.0.20
+   Compiling libc v0.2.189
+   Compiling crc32c v0.6.8
+   Compiling linux-raw-sys v0.12.1
+   Compiling bitflags v2.13.1
+   Compiling blake3 v1.8.7
+   Compiling hyphae-core v2.2.0
+   Compiling libm v0.2.16
+   Compiling rustix v1.1.4
+   Compiling zmij v1.0.23
+   Compiling unicode-normalization v0.1.25
+   Compiling hyphae-query v2.2.0
+   Compiling generic-array v0.14.7
+   Compiling unicode-casefold v0.2.0
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling getrandom v0.4.3
+   Compiling redb v4.2.0
+   Compiling apply-ref v0.1.0 (/opt/hytorch/crates/apply-ref)
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling binding-wire v0.1.0 (/opt/hytorch/crates/binding-wire)
+   Compiling hyphae-retrieval v2.2.0
+   Compiling verifier v0.1.0 (/opt/hytorch/crates/verifier)
+   Compiling fs4 v1.1.0
+   Compiling serde_json v1.0.151
+   Compiling serde v1.0.229
+   Compiling uuid v1.26.0
+   Compiling hyphae-storage v2.2.0
+   Compiling hyphae-engine v2.2.0
+   Compiling seam v0.1.0 (/opt/hytorch/crates/seam)
+    Finished `release` profile [optimized] target(s) in 22.87s
+     Running unittests src/lib.rs (target/release/deps/apply_ref-ae527cddd26535ca)
+
+running 19 tests
+test apply::tests::magnitude_of_delta_equals_abs_mag ... ok
+test apply::tests::ieee_sum_would_have_flipped_negative_zero ... ok
+test apply::tests::norm_reduction_order_is_sequential_by_construction ... ok
+test apply::tests::order_violation_is_an_error_not_a_sort ... ok
+test apply::tests::replay_with_and_without_elided_zeros_matches ... ok
+test apply::tests::untouched_slots_are_bit_identical ... ok
+test apply::tests::zero_mag_is_bit_identical_noop_even_with_negative_zero ... ok
+test bits::tests::denormals_pass_through ... ok
+test bits::tests::overflow_rounds_to_inf ... ok
+test bits::tests::rne_ties_round_to_even_on_bit16 ... ok
+test bits::tests::signed_zero_preserved ... ok
+test bits::tests::promotion_is_exact_for_all_bf16 ... ok
+test pack::tests::collision_emits_overflow_with_winner_by_abs_mag ... ok
+test pack::tests::commits_extracted_in_canonical_order_satisfy_apply_order ... ok
+test pack::tests::mag_overflow_aborts ... ok
+test pack::tests::nan_delta_hat_becomes_journalized_abort ... ok
+test pack::tests::deterministic_bytes ... ok
+test pack::tests::partition_is_exactly_k ... ok
+test pack::tests::step0_dynamics_declared_d5a ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/binding_wire-e8322aeeeb6570ff)
+
+running 9 tests
+test chain::tests::chain_localizes_tamper_to_layer ... ok
+test chain::tests::empty_layer_is_not_amorphous ... ok
+test wire::tests::abort_without_reason_rejected ... ok
+test wire::tests::commit_with_reason_rejected ... ok
+test wire::tests::home_invariant_enforced ... ok
+test wire::tests::roundtrip_1e6 ... ok
+test chain::tests::single_bit_flip_changes_head ... ok
+test wire::tests::size_is_exactly_16 ... ok
+test wire::tests::t15_size_is_80 ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/seam-152d4a94ec6eb348)
+
+running 6 tests
+test frames::tests::roundtrip ... ok
+test frames::tests::truncation_rejected ... ok
+test store::tests::run_start_refuses_placeholders ... ok
+test store::tests::frames_from_wrong_step_rejected ... ok
+test store::tests::step_transaction_is_atomic_and_receipt_matches_chain ... ok
+test store::tests::facts_survive_reopen ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/release/deps/hytorch_seam-80a39726f8ba3173)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/verifier-5dcbb8bf0fb3f27e)
+
+running 5 tests
+test t1::tests::honest_run_is_consistent ... ok
+test t1::tests::adulterated_codebook_is_caught_by_residual_hash ... ok
+test t1::tests::one_bit_flip_in_wal_is_caught ... ok
+test t1::tests::spill_roundtrip_preserves_verdict ... ok
+test t2::tests::walk_localizes_first_bad_link ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/release/deps/hytorch_verify-b8d7c12cd479cb45)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests apply_ref
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests binding_wire
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests seam
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests verifier
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+SPILL ERROR: Truncated("magic") — the file itself is inconsistent
+exit=1

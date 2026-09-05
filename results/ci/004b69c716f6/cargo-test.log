@@ -1,0 +1,82 @@
+   Compiling typenum v1.20.1
+   Compiling cpufeatures v0.2.17
+   Compiling cfg-if v1.0.4
+   Compiling apply-ref v0.1.0 (/opt/hytorch/crates/apply-ref)
+   Compiling generic-array v0.14.7
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling binding-wire v0.1.0 (/opt/hytorch/crates/binding-wire)
+   Compiling verifier v0.1.0 (/opt/hytorch/crates/verifier)
+    Finished `release` profile [optimized] target(s) in 3.32s
+     Running unittests src/lib.rs (target/release/deps/apply_ref-ae527cddd26535ca)
+
+running 12 tests
+test apply::tests::ieee_sum_would_have_flipped_negative_zero ... ok
+test apply::tests::magnitude_of_delta_equals_abs_mag ... ok
+test apply::tests::order_violation_is_an_error_not_a_sort ... ok
+test apply::tests::norm_reduction_order_is_sequential_by_construction ... ok
+test apply::tests::replay_with_and_without_elided_zeros_matches ... ok
+test apply::tests::untouched_slots_are_bit_identical ... ok
+test apply::tests::zero_mag_is_bit_identical_noop_even_with_negative_zero ... ok
+test bits::tests::denormals_pass_through ... ok
+test bits::tests::overflow_rounds_to_inf ... ok
+test bits::tests::rne_ties_round_to_even_on_bit16 ... ok
+test bits::tests::signed_zero_preserved ... ok
+test bits::tests::promotion_is_exact_for_all_bf16 ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/binding_wire-e8322aeeeb6570ff)
+
+running 9 tests
+test chain::tests::chain_localizes_tamper_to_layer ... ok
+test chain::tests::empty_layer_is_not_amorphous ... ok
+test wire::tests::abort_without_reason_rejected ... ok
+test wire::tests::commit_with_reason_rejected ... ok
+test wire::tests::home_invariant_enforced ... ok
+test chain::tests::single_bit_flip_changes_head ... ok
+test wire::tests::roundtrip_1e6 ... ok
+test wire::tests::size_is_exactly_16 ... ok
+test wire::tests::t15_size_is_80 ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/verifier-5dcbb8bf0fb3f27e)
+
+running 5 tests
+test t1::tests::adulterated_codebook_is_caught_by_residual_dependent_head ... ok
+test t1::tests::honest_run_is_consistent ... ok
+test t1::tests::one_bit_flip_in_wal_is_caught ... ok
+test t1::tests::spill_roundtrip_preserves_verdict ... ok
+test t2::tests::walk_localizes_first_bad_link ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/release/deps/hytorch_verify-b8d7c12cd479cb45)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests apply_ref
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests binding_wire
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests verifier
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+SPILL ERROR: Truncated("magic") — the file itself is inconsistent
+exit=1

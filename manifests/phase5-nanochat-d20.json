@@ -1,0 +1,70 @@
+{
+  "kind": "PHASE5_PREREG",
+  "date": "2026-08-31",
+  "question": "Does the typed write channel's capacity cost (+2.63 nats at 17% horizon, d20) amortize, converge, or grow at the FULL compute-optimal horizon? Registered stance: the deliverables are the receipts system at scale, the journal corpus, and the phase-4 mechanism experiment \u2014 C1/C2 never depended on winning PPL.",
+  "model": {
+    "depth": 20,
+    "d_model": 1280,
+    "d_slot": 20,
+    "n_layers": 20,
+    "vocab_size": 32768
+  },
+  "policy": {
+    "policy_id": 6,
+    "k": 8,
+    "s_slots": 64,
+    "n_features": 32768,
+    "mag_max": 64.0,
+    "selection": "global_topk",
+    "write_units_per_layer": 2,
+    "proposal_clip": 32.0
+  },
+  "amendment_2026_09_01": "CHANNEL COLLAPSE found by the ledger at launch-7 steps 100-500 (commit 0.066%->0, codebook frozen, model learned around a dead channel via nanochat bypass paths \u2014 results/nanochat/PHASE5-CHANNEL-COLLAPSE.md). Fix: per-slot proposal norm clip at mag_max/2 before pack (direction preserved, detached-norm scale). Prereg prediction for relaunch: commit_rate>=30% sustained, codebook grad>0 all run, gap vs vanilla improves vs the dead-channel +2.63; if gap does not improve with a LIVE channel, the capacity cost is real and reported as such.",
+  "horizon": {
+    "num_iterations": "auto (target_param_data_ratio=12)",
+    "expected_steps": "11000-13000",
+    "total_batch_size": 524288
+  },
+  "stages": [
+    "base_train catalog",
+    "base_train vanilla",
+    "base_eval both",
+    "chat_sft both (catalog journaled, run nano-d20-sft)",
+    "chat_eval both"
+  ],
+  "knobs": {
+    "HYTORCH_WIRE_EVERY": 100,
+    "HYTORCH_EVAL_EVERY": 250,
+    "HYTORCH_SAVE_EVERY": 1000,
+    "HYTORCH_DBS": 16,
+    "HYTORCH_SHARDS": 170,
+    "volume": "hytorch-p5 2000GiB (ledger+checkpoints+dataset survive preemption)",
+    "TORCHDYNAMO_DISABLE": "1 on ROCm (Inductor silent-NaN, results/nanochat/ROCM-INDUCTOR-NAN)"
+  },
+  "budget": {
+    "catalog_s_per_step_measured": 7.42,
+    "vanilla_s_per_step_measured": 0.62,
+    "expected_hours": "26-29 total (catalog 23-27 + vanilla ~2.2 + sft/evals ~2)",
+    "expected_cost_usd": "1000-1200 at 36/h spot",
+    "authorized_worst_case_hours": 45,
+    "ledger_expected_GB": "~900 at wire_every=100 (measured 72MB/step avg in 3.4)"
+  },
+  "resume_protocol": "spec 5.4: child run cites parent_run + parent_head + resume_step in RUN_START; validated by KILLTEST-PASS 2026-08-31",
+  "preregistered_thresholds": {
+    "gap_report": "val_bpb curves both arms every 250 steps; final CORE/ARC-style suite via base_eval/chat_eval; gap reported as-is, no cherry-picking",
+    "receipts": "100% of steps must have RECEIPT + STEP chain; any barrier timeout kills the run (no ledger-less steps)",
+    "amortization_signal": "d(gap)/d(log tokens) sign over the last 25% of training decides 'amortizing' vs 'growing' in the paper"
+  },
+  "custody": "volume holds everything; after DONE pull models+tokenizer+ledger evidence via attach to small droplet in-region BEFORE volume deletion; .pt local-only, sha256 to git",
+  "phase4_follows": "manifests/phase4a-signature.json (AUROC>=0.65) + PHASE4-MECHANISM P1-P4 on the SFT model",
+  "thresholds": {
+    "$comment": "PREREGISTERED and EXECUTABLE (nanochat/seam_shim.py _guard_update). Sustained breach over channel_guard_window_steps kills all ranks. Restored after review 2026-09-02: the phase-1 promise was never implemented and phase-5 had dropped it.",
+    "codebook_min_usage_entropy_bits": 8.0,
+    "channel_min_commit_rate": 0.02,
+    "channel_guard_window_steps": 50,
+    "channel_guard_warmup_steps": 100
+  },
+  "catalog": {
+    "proposal_clip": 32.0
+  }
+}

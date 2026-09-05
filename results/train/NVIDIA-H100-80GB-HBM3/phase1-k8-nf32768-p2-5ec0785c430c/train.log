@@ -1,0 +1,46 @@
+=== [1/5] differential gate (this silicon) ===
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/5] python stack ===
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 NVIDIA H100 80GB HBM3
+=== [3/5] dataset (wikitext-103 -> bins) ===
+      "sha256": "397ae25de9c593190ddc226fe15577337038a549046a90eaa785a1fc6fc7e979"
+    }
+  }
+}
+=== [4/5] build facts ===
+{
+  "build.apply_ref_hash": "b0d5146c969b47d43f2a2cf3d885e6ef4bfc94b823c423cb6409d9524a9382ff",
+  "build.harness_commit": "5ec0785c430cc27fa18b82d1ae0e865856fa6763",
+  "build.torch_wheel": "torch-2.13.0+cu130",
+  "build.backend_wheel": "cuda-13.0",
+  "infra.driver": "nvidia-580.173.02"
+}
+=== [5/5] both arms ===
+--- catalog arm ---
+{
+  "run_id": "run-4a14e9eb-catalog-1788040219",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.012207984924316,
+  "loss_last": 6.653957366943359,
+  "val_ppl": 747.3116331414934,
+  "t1_audits": 4,
+  "t1_green": 4,
+  "wall_s": 136.6,
+  "runlog": "/run/hytorch/run-4a14e9eb-catalog-1788040219.runlog.json"
+}
+--- baseline arm ---
+{
+  "run_id": "run-4a14e9eb-baseline-1788040399",
+  "arm": "baseline",
+  "steps": 300,
+  "loss_first": 11.012234687805176,
+  "loss_last": 6.620203018188477,
+  "val_ppl": 726.2170099093404,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 16.4,
+  "runlog": "/run/hytorch/run-4a14e9eb-baseline-1788040399.runlog.json"
+}

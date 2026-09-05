@@ -1,0 +1,11 @@
+{
+  "commit": "9819b6d795ca54d22ef7805e3f99073b09832254",
+  "gpu": "AMD-Instinct-MI355X (gfx950)",
+  "droplet": {"size": "gpu-mi355x1-288gb-spot", "region": "mem1", "procurement": "spot"},
+  "iters": 200000,
+  "verdict": "BIT_IDENTICAL",
+  "rocm": "7.14.0~pre3",
+  "flags": "-ffp-contract=off -fhip-fp32-correctly-rounded-divide-sqrt",
+  "note": "same libapply_ref.so verified bit-identical on H100 sm_90 and MI355X gfx950",
+  "finished_at": "2026-08-29T20:52:14Z"
+}

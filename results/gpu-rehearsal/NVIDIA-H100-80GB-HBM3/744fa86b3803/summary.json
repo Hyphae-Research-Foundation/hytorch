@@ -1,0 +1,13 @@
+{
+  "commit": "744fa86b38032f33c110f81ee98405e93b8a0762",
+  "gpu": "NVIDIA-H100-80GB-HBM3",
+  "droplet": {
+    "size": "gpu-h100x1-80gb",
+    "region": "ams3",
+    "procurement": "ondemand"
+  },
+  "gate": "BIT_IDENTICAL",
+  "t1": 9,
+  "t1_note": "9/9 audits consistent (see rehearsal.log); this file was regenerated 2026-08-30 after a grep artifact corrupted the t1 field",
+  "finished_at": "2026-08-29T20:38:41Z"
+}

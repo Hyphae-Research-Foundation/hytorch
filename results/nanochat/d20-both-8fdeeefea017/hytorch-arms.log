@@ -1,0 +1,25 @@
+=== STAGE: base_train catalog ===
+catalog rc=1
+=== STAGE: base_train vanilla ===
+stamped done, skip
+=== STAGE: base_eval catalog ===
+base_eval catalog rc=1
+=== STAGE: base_eval vanilla ===
+stamped done, skip
+=== STAGE: chat_sft catalog ===
+sft catalog rc=1
+=== STAGE: chat_sft vanilla ===
+stamped done, skip
+=== STAGE: chat_eval catalog ===
+chat_eval catalog rc=1
+=== STAGE: chat_eval vanilla ===
+stamped done, skip
+all stages attempted
+stage=base_catalog rc=1
+stage=base_vanilla rc=0
+stage=base_eval_catalog rc=1
+stage=base_eval_vanilla rc=0
+stage=sft_catalog rc=1
+stage=sft_vanilla rc=0
+stage=chat_eval_catalog rc=1
+stage=chat_eval_vanilla rc=0

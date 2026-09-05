@@ -1,0 +1,63 @@
+=== gate ===
+{"cases":50000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+  }
+}
+--- catalog: phase1b-global.json ---
+{
+  "run_id": "run-c7d81def-catalog-1788073089",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.011882781982422,
+  "loss_last": 6.576997756958008,
+  "val_ppl": 691.9023576001662,
+  "t1_audits": 9,
+  "t1_green": 9,
+  "wall_s": 136.8,
+  "timing": {
+    "compute_s": 114.11,
+    "ledger_s": 12.96,
+    "audit_capture_s": 0.23,
+    "verify_offline_s": 0.17
+  },
+  "runlog": "/run/hytorch/run-c7d81def-catalog-1788073089.runlog.json"
+}
+--- catalog: phase1b-slot.json ---
+{
+  "run_id": "run-b10d0320-catalog-1788073269",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.011820793151855,
+  "loss_last": 6.586847305297852,
+  "val_ppl": 694.3849757233726,
+  "t1_audits": 5,
+  "t1_green": 5,
+  "wall_s": 135.8,
+  "timing": {
+    "compute_s": 113.53,
+    "ledger_s": 12.78,
+    "audit_capture_s": 0.14,
+    "verify_offline_s": 0.1
+  },
+  "runlog": "/run/hytorch/run-b10d0320-catalog-1788073269.runlog.json"
+}
+--- baseline ---
+{
+  "run_id": "run-c7d81def-baseline-1788073409",
+  "arm": "baseline",
+  "steps": 300,
+  "loss_first": 11.014427185058594,
+  "loss_last": 6.576628684997559,
+  "val_ppl": 673.3569642012512,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 16.2,
+  "timing": {
+    "compute_s": 15.46,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/run-c7d81def-baseline-1788073409.runlog.json"
+}

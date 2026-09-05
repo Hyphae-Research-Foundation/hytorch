@@ -1,0 +1,58 @@
+=== [1/5] differential gate (this silicon) ===
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/5] python stack ===
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 NVIDIA H200
+=== [3/5] dataset (wikitext-103 -> bins) ===
+      "sha256": "397ae25de9c593190ddc226fe15577337038a549046a90eaa785a1fc6fc7e979"
+    }
+  }
+}
+=== [4/5] build facts ===
+{
+  "build.apply_ref_hash": "44caa29af3d10f631a481a0ff84c05bec6c2881bd83ce321c057cb9eace811b4",
+  "build.harness_commit": "26d294a3e2a194d69334c0c299b0a9de3947fca9",
+  "build.torch_wheel": "torch-2.13.0+cu130",
+  "build.backend_wheel": "cuda-13.0",
+  "infra.driver": "nvidia-580.173.02"
+}
+=== [5/5] both arms ===
+--- catalog arm ---
+{
+  "run_id": "run-c7d81def-catalog-1788073852",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.011882781982422,
+  "loss_last": 5.214179992675781,
+  "val_ppl": 167.79792949174782,
+  "t1_audits": 309,
+  "t1_green": 309,
+  "wall_s": 8561.6,
+  "timing": {
+    "compute_s": 7619.67,
+    "ledger_s": 823.99,
+    "audit_capture_s": 8.65,
+    "verify_offline_s": 5.13
+  },
+  "runlog": "/run/hytorch/run-c7d81def-catalog-1788073852.runlog.json"
+}
+--- baseline arm ---
+{
+  "run_id": "run-c7d81def-baseline-1788082457",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 11.014427185058594,
+  "loss_last": 5.862702369689941,
+  "val_ppl": 304.69668924283377,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1007.0,
+  "timing": {
+    "compute_s": 981.27,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/run-c7d81def-baseline-1788082457.runlog.json"
+}

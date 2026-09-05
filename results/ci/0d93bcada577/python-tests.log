@@ -1,0 +1,18 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+verifier: {"outcome":"consistent","step":7,"microbatch":0,"n_applied":157,"final_head":"45870193ef1de1df65df077035f7c8cab517f19265276a5081c97a1283d5d879"}
+tampered wire: {"outcome":"head_mismatch","layer":2,"got":"70d952ba9275fd47455432c107a1a62d6eb8f15e94ddcc9e06f99ce8442d054d","want":"45870193ef1de1df65df077035f7c8cab517f19265276a5081c97a1283d5d879"}
+tampered codebook: {"outcome":"residual_mismatch","got":"5d30b88648d0c16dbbf93faa6872d28288c4f6c76c9e0269a8d95caceecc6d88","want":"ea205ec034cb80e8d1f48a71a14a3dcc36e941d1d0ec0e1b7f1174c8caa48b41"}
+OK: honest accepted, wire tamper rejected, codebook tamper rejected, -0.0 survived
+PART 0 OK: placeholder RUN_START refused (no ack)
+PART 1 OK: RUN_START + POLICY committed
+step 0: receipt + chainack OK (082d054df3e0a5b6…)
+step 1: receipt + chainack OK (a6be501914a09cb4…)
+step 2: receipt + chainack OK (f3371ebad00385d9…)
+step 3: receipt + chainack OK (62c288c8e3b88b89…)
+step 4: receipt + chainack OK (7503a268dbad22ba…)
+PART 2 OK: 5 steps, receipts match independent T2, chain continuous
+PART 3 OK: codebook chain break → no chainack (fail-stop)
+PART 4 OK: EXPORT committed
+PART 5 OK: fail-stop fired: no step-99.receipt within 1500 ms — KILL THE RUN (spec §5.4: no ledger-less degradation)
+PART 6 OK: Hyphae data dir persisted: /tmp/hytorch-e2e-evzvws60/hyphae
+E2E v2 PASS

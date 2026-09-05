@@ -1,0 +1,16 @@
+/target
+**/*.so.dbg
+/results/**/tmp
+/.venv
+__pycache__/
+*.pyc
+/infra/.state
+# model weights: custodied locally, hashed in git, never committed raw
+results/models/**/*.pt
+results/models/**/*.bin
+
+# Trainium2 d10 raw artifacts (ledgers, logs, checkpoints) live in S3 custody, not git
+results/trn2-d10/d10/
+
+# operator credentials map and anything private — never committed
+docs/private/

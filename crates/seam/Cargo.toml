@@ -1,0 +1,22 @@
+[package]
+name = "seam"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "The seam: consumes verdict frames, computes T2, persists facts in embedded Hyphae, emits receipts. Spec v2.2 §06–07."
+
+[dependencies]
+binding-wire = { path = "../binding-wire" }
+hyphae-engine = "2.2.0"
+hyphae-query = "2.2.0"
+uuid = { version = "1", features = ["v7"] }
+sha2 = "0.10"
+
+[[bin]]
+name = "hytorch-seam"
+path = "src/main.rs"
+
+[[bin]]
+name = "hytorch-ledger-query"
+path = "src/bin/ledger_query.rs"

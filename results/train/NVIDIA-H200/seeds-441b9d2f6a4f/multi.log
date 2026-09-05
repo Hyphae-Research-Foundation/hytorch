@@ -1,0 +1,83 @@
+=== gate (this silicon, both selection modes) ===
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 NVIDIA H200
+  }
+}
+=== manifest: phase1b-s2026.json (catalog) ===
+{
+  "run_id": "run-791fdda2-catalog-1788105122",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.004040718078613,
+  "loss_last": 5.248169898986816,
+  "val_ppl": 167.70626712271786,
+  "t1_audits": 304,
+  "t1_green": 304,
+  "wall_s": 8530.3,
+  "timing": {
+    "compute_s": 7593.05,
+    "ledger_s": 820.58,
+    "audit_capture_s": 8.3,
+    "verify_offline_s": 4.94
+  },
+  "runlog": "/run/hytorch/phase1b-s2026/run-791fdda2-catalog-1788105122.runlog.json"
+}
+=== manifest: phase1b-s2026.json (baseline) ===
+{
+  "run_id": "run-791fdda2-baseline-1788113695",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 10.99854850769043,
+  "loss_last": 5.708706855773926,
+  "val_ppl": 291.28848147997877,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1004.8,
+  "timing": {
+    "compute_s": 979.9,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/phase1b-s2026/run-791fdda2-baseline-1788113695.runlog.json"
+}
+=== manifest: phase1b-s4242.json (catalog) ===
+{
+  "run_id": "run-e660f6ce-catalog-1788114704",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 10.978572845458984,
+  "loss_last": 4.782854080200195,
+  "val_ppl": 166.17186196664335,
+  "t1_audits": 317,
+  "t1_green": 317,
+  "wall_s": 8522.6,
+  "timing": {
+    "compute_s": 7592.35,
+    "ledger_s": 813.77,
+    "audit_capture_s": 8.44,
+    "verify_offline_s": 5.23
+  },
+  "runlog": "/run/hytorch/phase1b-s4242/run-e660f6ce-catalog-1788114704.runlog.json"
+}
+=== manifest: phase1b-s4242.json (baseline) ===
+{
+  "run_id": "run-e660f6ce-baseline-1788123230",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 10.973821640014648,
+  "loss_last": 5.5359649658203125,
+  "val_ppl": 313.9034099586645,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1005.0,
+  "timing": {
+    "compute_s": 980.24,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/phase1b-s4242/run-e660f6ce-baseline-1788123230.runlog.json"
+}

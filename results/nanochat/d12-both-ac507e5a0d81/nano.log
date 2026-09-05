@@ -1,0 +1,26 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+PY=/usr/bin/python3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.10.0+rocm7.0 8 gpus; imports ok
+nanochat pinned at 92d63d4e8bb4df75c3b71618f31ddde2378b2bcd
+gpt.py patched (law-0 seam, vanilla-identical when disabled)
+base_train.py patched: codebook param group + collective barrier + step chain
+patch applied
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+=== [2b/4] dataset shards + tokenizer (nanochat speedrun steps) ===
+Successfully downloaded shard_06542.parquet
+Done! Downloaded: 25/25 shards to /var/lib/hytorch/nanochat-cache/base_data_climbmix
+Training time: 72.29s
+Saved tokenizer encoding to /var/lib/hytorch/nanochat-cache/tokenizer/tokenizer.pkl
+Saved token_bytes to /var/lib/hytorch/nanochat-cache/tokenizer/token_bytes.pt
+science    1112     [91m249    [0m [91m4.47   [0m [92m247    [0m [92m4.50   [0m [92m   +0.8%[0m     Ours      
+climbmix-train 2948778  [92m611619 [0m [92m4.82   [0m [91m622480 [0m [91m4.74   [0m [91m   -1.8%[0m     GPT-4     
+climbmix-val 3024593  [92m631183 [0m [92m4.79   [0m [91m644914 [0m [91m4.69   [0m [91m   -2.2%[0m     GPT-4     
+=== [3/4] build facts + manifest ===
+manifest for d12 written
+=== [4/4] arms (detached; local script polls) ===
+arms launched detached

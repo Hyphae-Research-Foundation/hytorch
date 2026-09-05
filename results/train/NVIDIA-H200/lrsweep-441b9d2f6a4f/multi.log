@@ -1,0 +1,121 @@
+=== gate (this silicon, both selection modes) ===
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 NVIDIA H200
+  }
+}
+=== manifest: phase1b-lr1e4.json (catalog) ===
+{
+  "run_id": "run-192b65f2-catalog-1788105115",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.011882781982422,
+  "loss_last": 5.372893333435059,
+  "val_ppl": 187.83740265506032,
+  "t1_audits": 312,
+  "t1_green": 312,
+  "wall_s": 8453.1,
+  "timing": {
+    "compute_s": 7576.55,
+    "ledger_s": 769.84,
+    "audit_capture_s": 8.19,
+    "verify_offline_s": 4.7
+  },
+  "runlog": "/run/hytorch/phase1b-lr1e4/run-192b65f2-catalog-1788105115.runlog.json"
+}
+=== manifest: phase1b-lr1e4.json (baseline) ===
+{
+  "run_id": "run-192b65f2-baseline-1788113609",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 11.014427185058594,
+  "loss_last": 4.285478591918945,
+  "val_ppl": 58.6502614511339,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1004.8,
+  "timing": {
+    "compute_s": 981.47,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/phase1b-lr1e4/run-192b65f2-baseline-1788113609.runlog.json"
+}
+=== manifest: phase1b-lr3e4.json (catalog) ===
+{
+  "run_id": "run-c0129675-catalog-1788114618",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.011882781982422,
+  "loss_last": 5.099195957183838,
+  "val_ppl": 144.1293201377514,
+  "t1_audits": 300,
+  "t1_green": 300,
+  "wall_s": 8466.5,
+  "timing": {
+    "compute_s": 7592.67,
+    "ledger_s": 767.22,
+    "audit_capture_s": 7.73,
+    "verify_offline_s": 4.61
+  },
+  "runlog": "/run/hytorch/phase1b-lr3e4/run-c0129675-catalog-1788114618.runlog.json"
+}
+=== manifest: phase1b-lr3e4.json (baseline) ===
+{
+  "run_id": "run-c0129675-baseline-1788123088",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 11.014427185058594,
+  "loss_last": 4.1744256019592285,
+  "val_ppl": 49.33190266303965,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1005.5,
+  "timing": {
+    "compute_s": 981.63,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/phase1b-lr3e4/run-c0129675-baseline-1788123088.runlog.json"
+}
+=== manifest: phase1b-lr12e4.json (catalog) ===
+{
+  "run_id": "run-8d2fd9da-catalog-1788124098",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.011882781982422,
+  "loss_last": 5.16294002532959,
+  "val_ppl": 153.44234247679404,
+  "t1_audits": 327,
+  "t1_green": 327,
+  "wall_s": 8471.9,
+  "timing": {
+    "compute_s": 7594.29,
+    "ledger_s": 770.84,
+    "audit_capture_s": 7.99,
+    "verify_offline_s": 4.9
+  },
+  "runlog": "/run/hytorch/phase1b-lr12e4/run-8d2fd9da-catalog-1788124098.runlog.json"
+}
+=== manifest: phase1b-lr12e4.json (baseline) ===
+{
+  "run_id": "run-8d2fd9da-baseline-1788132574",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 11.014427185058594,
+  "loss_last": 5.782785415649414,
+  "val_ppl": 303.93413634382665,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 1003.5,
+  "timing": {
+    "compute_s": 979.95,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/phase1b-lr12e4/run-8d2fd9da-baseline-1788132574.runlog.json"
+}

@@ -1,0 +1,67 @@
+{
+  "task": "bigram-8tok",
+  "steps": 400,
+  "warmup": 200,
+  "commits_analyzed": 126666,
+  "associations": [
+    {
+      "token": "hola",
+      "feature": 127,
+      "lift": 7.13,
+      "purity_pct": 96.6,
+      "n_commits_pair": 3870
+    },
+    {
+      "token": "mundo",
+      "feature": 254,
+      "lift": 8.83,
+      "purity_pct": 100.0,
+      "n_commits_pair": 60
+    },
+    {
+      "token": "sol",
+      "feature": 20,
+      "lift": 10.34,
+      "purity_pct": 98.3,
+      "n_commits_pair": 3156
+    },
+    {
+      "token": "luna",
+      "feature": 58,
+      "lift": 7.66,
+      "purity_pct": 97.8,
+      "n_commits_pair": 6207
+    },
+    {
+      "token": "pan",
+      "feature": 137,
+      "lift": 5.84,
+      "purity_pct": 99.4,
+      "n_commits_pair": 5644
+    },
+    {
+      "token": "agua",
+      "feature": 82,
+      "lift": 6.59,
+      "purity_pct": 98.3,
+      "n_commits_pair": 11270
+    },
+    {
+      "token": "rio",
+      "feature": 10,
+      "lift": 8.37,
+      "purity_pct": 100.0,
+      "n_commits_pair": 195
+    },
+    {
+      "token": "mar",
+      "feature": 18,
+      "lift": 10.93,
+      "purity_pct": 97.7,
+      "n_commits_pair": 6341
+    }
+  ],
+  "mean_token_entropy_bits": 2.59,
+  "uniform_bits": 7.13,
+  "read_from": "journal only (facts), zero activations"
+}

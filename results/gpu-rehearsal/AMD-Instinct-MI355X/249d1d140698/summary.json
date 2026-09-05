@@ -1,0 +1,10 @@
+{
+  "commit": "249d1d140698b0dc27cf1d36d4602c5d45dc329f",
+  "gpu": "AMD-Instinct-MI355X (gfx950)",
+  "droplet": {"size": "gpu-mi355x1-288gb-spot", "region": "mem1", "procurement": "spot"},
+  "gate": "BIT_IDENTICAL (200k adversarial cases)",
+  "rehearsal": {"steps": 24, "t1_audits": 9, "t1_green": 9},
+  "stack": {"rocm": "7.14.0~pre3", "torch": "2.10.0+rocm7.0", "hip": "7.0.51831"},
+  "note": "losses bit-identical to H100 rehearsal on this tiny model (not a spec promise; genesis reproducibility remains unclaimed)",
+  "finished_at": "2026-08-29T20:58:17Z"
+}

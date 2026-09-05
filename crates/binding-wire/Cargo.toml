@@ -1,0 +1,12 @@
+[package]
+name = "binding-wire"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "BindingMin 16B / BindingT15 80B wire format + verdicts + T2 chain. Spec v2.2 §08–09."
+
+[dependencies]
+sha2 = "0.10"
+
+[dev-dependencies]

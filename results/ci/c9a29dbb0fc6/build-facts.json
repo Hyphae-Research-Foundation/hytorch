@@ -1,0 +1,10 @@
+{
+  "build.apply_ref_hash": "8858f5f64fe2cfd71735efcc9a5fc7441511ae69543446ab18f83f0d63f57421",
+  "build.harness_commit": "c9a29dbb0fc6ae58c100fb9d9c8d6032b302138d",
+  "build.torch_wheel": "absent",
+  "build.backend_wheel": "absent",
+  "infra.driver": "none",
+  "infra.rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+  "infra.hostname": "hytorch-ci-c9a29dbb0fc6-215419",
+  "captured_at": "2026-08-29T21:56:25Z"
+}

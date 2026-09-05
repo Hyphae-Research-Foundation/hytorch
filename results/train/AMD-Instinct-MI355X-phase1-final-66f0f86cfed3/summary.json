@@ -1,0 +1,9 @@
+{
+  "commit": "66f0f86cfed3299b773a09b58e53f1dcd6eddfde",
+  "manifest": "phase1-final.json",
+  "steps_override": 0,
+  "gpu": "",
+  "droplet": {"size": "gpu-mi355x1-288gb-spot", "region": "mem1", "procurement": "spot"},
+  "gate": "BIT_IDENTICAL",
+  "finished_at": "2026-08-30T05:46:04Z"
+}

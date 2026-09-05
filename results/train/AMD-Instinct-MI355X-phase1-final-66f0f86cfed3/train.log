@@ -1,0 +1,59 @@
+=== [1/5] differential gate (this silicon) ===
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/5] python stack ===
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.10.0+rocm7.0 AMD Radeon Graphics
+=== [3/5] dataset (wikitext-103 -> bins) ===
+      "sha256": "397ae25de9c593190ddc226fe15577337038a549046a90eaa785a1fc6fc7e979"
+    }
+  }
+}
+=== [4/5] build facts ===
+{
+  "build.apply_ref_hash": "8858f5f64fe2cfd71735efcc9a5fc7441511ae69543446ab18f83f0d63f57421",
+  "build.harness_commit": "66f0f86cfed3299b773a09b58e53f1dcd6eddfde",
+  "build.torch_wheel": "torch-2.10.0+rocm7.0",
+  "build.backend_wheel": "rocm-7.0.51831",
+  "infra.driver": ""
+}
+=== [5/5] both arms ===
+--- catalog arm ---
+{
+  "run_id": "run-c35f6284-catalog-1788057473",
+  "arm": "catalog",
+  "steps": 20000,
+  "loss_first": 11.01220703125,
+  "loss_last": 5.3315887451171875,
+  "val_ppl": 185.15177776009344,
+  "t1_audits": 291,
+  "t1_green": 291,
+  "wall_s": 10661.1,
+  "timing": {
+    "compute_s": 10281.7,
+    "ledger_s": 354.06,
+    "audit_capture_s": 2.01,
+    "verify_offline_s": 2.52
+  },
+  "runlog": "/run/hytorch/run-c35f6284-catalog-1788057473.runlog.json"
+}
+--- baseline arm ---
+{
+  "run_id": "run-c35f6284-baseline-1788068242",
+  "arm": "baseline",
+  "steps": 20000,
+  "loss_first": 11.012234687805176,
+  "loss_last": 5.176488876342773,
+  "val_ppl": 158.21434025344846,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 509.7,
+  "timing": {
+    "compute_s": 489.56,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/run-c35f6284-baseline-1788068242.runlog.json"
+}

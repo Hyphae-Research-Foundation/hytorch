@@ -1,0 +1,8 @@
+{
+  "commit": "07cebc284d82f43d4a7233dc97244407b101097e",
+  "gpu": "NVIDIA-H100-80GB-HBM3",
+  "droplet": {"size": "gpu-h100x1-80gb", "region": "ams3", "procurement": "ondemand"},
+  "iters": 200000,
+  "verdict": "BIT_IDENTICAL",
+  "finished_at": "2026-08-31T07:12:47Z"
+}

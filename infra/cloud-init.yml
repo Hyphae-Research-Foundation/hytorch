@@ -1,0 +1,18 @@
+#cloud-config
+# Minimal bootstrap for hytorch droplets. Heavier setup (repo clone at exact
+# commit, toolchain pin, build.* capture) is pushed over SSH by provision.sh so
+# that the commit is chosen by the caller, not baked into an image.
+package_update: true
+packages:
+  - git
+  - build-essential
+  - curl
+  - pkg-config
+  - rsync
+  - python3-venv
+  - python3-pip
+runcmd:
+  - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.98.0 --profile minimal
+  - ln -sf /root/.cargo/bin/cargo /usr/local/bin/cargo
+  - ln -sf /root/.cargo/bin/rustc /usr/local/bin/rustc
+  - touch /root/.hytorch-cloudinit-done

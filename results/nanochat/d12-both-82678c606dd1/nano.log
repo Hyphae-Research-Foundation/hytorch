@@ -1,0 +1,6 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+PY=/usr/bin/python3
+ERROR: Cannot uninstall typing_extensions 4.10.0, RECORD file not found. Hint: The package was installed by debian.

@@ -1,0 +1,30 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+PY=/usr/bin/python3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.10.0+rocm7.0 8 gpus; imports ok
+nanochat pinned at 92d63d4e8bb4df75c3b71618f31ddde2378b2bcd
+gpt.py patched (law-0 seam, vanilla-identical when disabled)
+base_train.py patched: codebook param group + collective barrier + step chain
+checkpoint_manager.py patched: codebook pop on load (all loaders)
+chat_sft.py patched: journaled SFT (barrier + chain + codebook group)
+patch applied
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+=== [2b/4] dataset shards + tokenizer (idempotent via stamps) ===
+dataset stamped done
+tokenizer stamped done
+=== [3/4] build facts + manifest ===
+manifest for d20 written
+=== [4/4] stages (detached; local script polls) ===
+arms launched detached
+stage=base_catalog rc=0
+stage=base_vanilla rc=0
+stage=base_eval_catalog rc=0
+stage=base_eval_vanilla rc=0
+stage=sft_catalog rc=1
+stage=sft_vanilla rc=0
+stage=chat_eval_catalog rc=1
+stage=chat_eval_vanilla rc=0

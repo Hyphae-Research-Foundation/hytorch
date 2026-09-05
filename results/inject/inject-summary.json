@@ -1,0 +1,328 @@
+{
+  "summary": {
+    "honest_green": 6,
+    "injected": 36,
+    "caught": 36,
+    "detection_pct": 100.0,
+    "by_fault": {
+      "F1_mag_bitflip": [
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch"
+      ],
+      "F2_dropped_commit": [
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch"
+      ],
+      "F3_injected_commit": [
+        "apply_error",
+        "apply_error",
+        "apply_error",
+        "apply_error",
+        "apply_error",
+        "apply_error"
+      ],
+      "F4_codebook_tamper": [
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch"
+      ],
+      "F5_hfinal_lie": [
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch",
+        "residual_mismatch"
+      ],
+      "F6_reorder": [
+        "head_mismatch",
+        "apply_error",
+        "apply_error",
+        "head_mismatch",
+        "head_mismatch",
+        "head_mismatch"
+      ]
+    }
+  },
+  "detail": {
+    "honest": [
+      {
+        "step": 0,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 405,
+        "final_head": "4784ac8e59e2bcdc0217f8f33c9229413b129bab0abc99c8a73c623664380ac3",
+        "exit": 0
+      },
+      {
+        "step": 1,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 386,
+        "final_head": "852fd4fac04e00617e4313c5c09313686b4b5f7562dc138efe17b9dfec555e23",
+        "exit": 0
+      },
+      {
+        "step": 2,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 354,
+        "final_head": "ae05246f217e369b00b343ea40fc8f8053b34bfd90a416d63c7b77e6afea60c0",
+        "exit": 0
+      },
+      {
+        "step": 3,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 347,
+        "final_head": "a0775111c1f5dd08d35e8100f9281d91b6681c1c787492bbbcf43992661e8f08",
+        "exit": 0
+      },
+      {
+        "step": 4,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 356,
+        "final_head": "f6f0b563a39cbeb88cf5c8c398b89dfa723e21c343d417d56b4a9b1c2d1945ea",
+        "exit": 0
+      },
+      {
+        "step": 5,
+        "outcome": "consistent",
+        "microbatch": 0,
+        "n_applied": 357,
+        "final_head": "8563c7028231b02297ec67a85a9e4582054f13aa36072ec22a875e0c4e0129bc",
+        "exit": 0
+      }
+    ],
+    "injected": [
+      {
+        "step": 0,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 0,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 0,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 0,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 0,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 0,
+        "fault": "F6_reorder",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 1,
+        "fault": "F6_reorder",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 2,
+        "fault": "F6_reorder",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 3,
+        "fault": "F6_reorder",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 4,
+        "fault": "F6_reorder",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F1_mag_bitflip",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F2_dropped_commit",
+        "outcome": "head_mismatch",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F3_injected_commit",
+        "outcome": "apply_error",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F4_codebook_tamper",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F5_hfinal_lie",
+        "outcome": "residual_mismatch",
+        "caught": true
+      },
+      {
+        "step": 5,
+        "fault": "F6_reorder",
+        "outcome": "head_mismatch",
+        "caught": true
+      }
+    ]
+  }
+}

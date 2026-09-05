@@ -1,0 +1,25 @@
+{"cases":50000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+  }
+}
+[probe] top: {'token_id': 13, 'feature': 20338, 'lift': 177.6, 'purity_pct': 67.6, 'n_pair': 3634, 'n_token': 81290}
+[probe] ablation: {'target_token': 13, 'denied_features': [20338], 'n_target_positions': 455, 'nll_target_base': 1.5288, 'nll_target_ablated': 1.5321, 'nll_target_delta': 0.0032, 'nll_rest_base': 5.5132, 'nll_rest_ablated': 5.5129, 'nll_rest_delta': -0.0003, 'specific': True}
+{
+  "run_id": "run-c7d81def-catalog-1788105836",
+  "arm": "catalog",
+  "steps": 5000,
+  "loss_first": 11.011882781982422,
+  "loss_last": 5.656683921813965,
+  "val_ppl": 243.4210596990069,
+  "t1_audits": 71,
+  "t1_green": 71,
+  "wall_s": 2184.6,
+  "timing": {
+    "compute_s": 1890.29,
+    "ledger_s": 219.96,
+    "audit_capture_s": 2.29,
+    "verify_offline_s": 1.19
+  },
+  "runlog": "/run/hytorch/probe/run-c7d81def-catalog-1788105836.runlog.json"
+}

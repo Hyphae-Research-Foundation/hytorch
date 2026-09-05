@@ -1,0 +1,3124 @@
+{
+  "run_id": "run-c7d81def-catalog-1788073089",
+  "arm": "catalog",
+  "manifest_sha256": "c7d81def945c6fc3824ab2eda78b8dae0740014e3bba11c89505323cb15d83a8",
+  "build": {
+    "build.apply_ref_hash": "44caa29af3d10f631a481a0ff84c05bec6c2881bd83ce321c057cb9eace811b4",
+    "build.harness_commit": "ae8f892ee098c82598100c662b08a5c435076399",
+    "build.torch_wheel": "torch-2.13.0+cu130",
+    "build.backend_wheel": "cuda-13.0"
+  },
+  "data": {
+    "dataset": "wikitext-103-raw-v1",
+    "tokenizer": "gpt2-bpe(tiktoken)",
+    "eot": 50256,
+    "splits": {
+      "train": {
+        "bin": "train.bin",
+        "tokens": 119085169,
+        "sha256": "6c355b28fbe3a6d9c20cd1076f3ebc99bae0d7c731117b4ed501feb5f12cb593"
+      },
+      "val": {
+        "bin": "val.bin",
+        "tokens": 249750,
+        "sha256": "397ae25de9c593190ddc226fe15577337038a549046a90eaa785a1fc6fc7e979"
+      }
+    }
+  },
+  "n_params": 165771264,
+  "flops_per_token": {
+    "block": 188743680,
+    "head": 77194752,
+    "pack": 9437184,
+    "apply": 2304,
+    "catalog_total": 275377920,
+    "baseline_total": 265947648
+  },
+  "steps": [
+    {
+      "step": 0,
+      "loss": 11.011882781982422,
+      "aux": 178.94451904296875,
+      "audited": false,
+      "head": "e87f45f9c9de4a9c3189bb19dc379611183f7c18c9940d906976134c1b01e7ee",
+      "commit": 110719,
+      "overflow": 85889,
+      "abort": 0
+    },
+    {
+      "step": 1,
+      "loss": 10.939285278320312,
+      "aux": 10447.5263671875,
+      "audited": false,
+      "head": "06b7bc49fee1a4e5882b06c1459c88a35271f3789fa0291a4fcb25242162abbf",
+      "commit": 85776,
+      "overflow": 110832,
+      "abort": 0
+    },
+    {
+      "step": 2,
+      "loss": 10.821195602416992,
+      "aux": 46111.56640625,
+      "audited": false,
+      "head": "b5246b7d19e79f9b305531793a34a65db0f2cff003fe1e684421c9cef34ecfd6",
+      "commit": 82449,
+      "overflow": 114159,
+      "abort": 0
+    },
+    {
+      "step": 3,
+      "loss": 10.633224487304688,
+      "aux": 72826.40625,
+      "audited": false,
+      "head": "12ffebc277ba99f251a0095f697638d71a9472ef3f6dc58d65f1dbf09f5f9a2a",
+      "commit": 83489,
+      "overflow": 113119,
+      "abort": 0
+    },
+    {
+      "step": 4,
+      "loss": 10.453964233398438,
+      "aux": 88486.0078125,
+      "audited": false,
+      "head": "2a77e59f331a81e7d6686e25ad84bddf94dc0d6f16e4f9b20051196989205a24",
+      "commit": 86609,
+      "overflow": 109999,
+      "abort": 0
+    },
+    {
+      "step": 5,
+      "loss": 10.048325538635254,
+      "aux": 92067.5625,
+      "audited": false,
+      "head": "0e20a5e8f7cd944681687cc7f136e489ae9a3d4ee5bd4d5c0c08d7016f7822f1",
+      "commit": 91028,
+      "overflow": 105580,
+      "abort": 0
+    },
+    {
+      "step": 6,
+      "loss": 9.755122184753418,
+      "aux": 101507.125,
+      "audited": false,
+      "head": "6c690a00279971db669f82ea899c9d04e4caea9b03f48900162aa7828ee5e0cc",
+      "commit": 93285,
+      "overflow": 103323,
+      "abort": 0
+    },
+    {
+      "step": 7,
+      "loss": 9.496871948242188,
+      "aux": 106204.578125,
+      "audited": false,
+      "head": "dc9b04d9623151508004eccc02f6d793f94a5a08ac18db11a2d39d38197a2736",
+      "commit": 93508,
+      "overflow": 103100,
+      "abort": 0
+    },
+    {
+      "step": 8,
+      "loss": 9.35074234008789,
+      "aux": 118172.6875,
+      "audited": false,
+      "head": "80611c5bb860a5dc9f8810ea609dd47a9a5d7d62b3c0b0e297d10dc2bb03d266",
+      "commit": 87994,
+      "overflow": 108614,
+      "abort": 0
+    },
+    {
+      "step": 9,
+      "loss": 9.15758991241455,
+      "aux": 116723.828125,
+      "audited": false,
+      "head": "8933516bd33151bd3808c884ae809894cd70b3b38ac1e9d6977df4f172933796",
+      "commit": 88032,
+      "overflow": 108576,
+      "abort": 0
+    },
+    {
+      "step": 10,
+      "loss": 8.854487419128418,
+      "aux": 117476.84375,
+      "audited": false,
+      "head": "9ed41c4f962093036f023180170747fce4f81a08af69e39b7d01cb11ec88add5",
+      "commit": 86801,
+      "overflow": 109807,
+      "abort": 0
+    },
+    {
+      "step": 11,
+      "loss": 8.748278617858887,
+      "aux": 122114.578125,
+      "audited": false,
+      "head": "b924868dbbdff6338cba0917a37055d8e6cb5ca297c4723cba833dd9cd539f4f",
+      "commit": 85564,
+      "overflow": 111044,
+      "abort": 0
+    },
+    {
+      "step": 12,
+      "loss": 8.572447776794434,
+      "aux": 133926.21875,
+      "audited": false,
+      "head": "75d2ae99698bc4e0d52a56cadd6dd9524d99f7d64fba87e39b22bb71e23043ab",
+      "commit": 78776,
+      "overflow": 117665,
+      "abort": 167
+    },
+    {
+      "step": 13,
+      "loss": 8.533329010009766,
+      "aux": 171775.3125,
+      "audited": false,
+      "head": "f204dba92441bbf2371892550722d44d8a8f0cfc8d59e78839333f017c0ce1c5",
+      "commit": 69964,
+      "overflow": 124868,
+      "abort": 1776
+    },
+    {
+      "step": 14,
+      "loss": 8.480854034423828,
+      "aux": 184949.53125,
+      "audited": false,
+      "head": "7d12fda8be75405267721bfcc915bdbb5049d068a1268fe505af04efb0725d31",
+      "commit": 64775,
+      "overflow": 128835,
+      "abort": 2998
+    },
+    {
+      "step": 15,
+      "loss": 8.347704887390137,
+      "aux": 191895.8125,
+      "audited": false,
+      "head": "a4bd07f503f0565271620444ab948496f84fb4dccd2b9ea163a1ca190d9e14b1",
+      "commit": 60892,
+      "overflow": 129328,
+      "abort": 6388
+    },
+    {
+      "step": 16,
+      "loss": 8.090346336364746,
+      "aux": 167977.171875,
+      "audited": false,
+      "head": "10f5330ca5b4dbeaa5f3730c17271caa8563153f3ab4bedd3f43c74010e24767",
+      "commit": 58415,
+      "overflow": 130402,
+      "abort": 7791
+    },
+    {
+      "step": 17,
+      "loss": 8.002059936523438,
+      "aux": 183582.109375,
+      "audited": false,
+      "head": "740fefb0087b233980e1d76a82d50920e5df37d48ef569ab269ce8600eadb795",
+      "commit": 55471,
+      "overflow": 134365,
+      "abort": 6772
+    },
+    {
+      "step": 18,
+      "loss": 7.919330596923828,
+      "aux": 184615.375,
+      "audited": false,
+      "head": "36fade4e390bd9f208c0a6921a073554ca68b6304cb5bcc0fb74248cb9e1db43",
+      "commit": 51588,
+      "overflow": 137614,
+      "abort": 7406
+    },
+    {
+      "step": 19,
+      "loss": 7.977242946624756,
+      "aux": 191691.15625,
+      "audited": false,
+      "head": "ae849f88fbb8786dd9a7444632402c7f4042553a2f716c5ae8408a7d6006e36f",
+      "commit": 51755,
+      "overflow": 138559,
+      "abort": 6294
+    },
+    {
+      "step": 20,
+      "loss": 7.835047721862793,
+      "aux": 187611.453125,
+      "audited": false,
+      "head": "d05aabf46f9ad4b846355a0466cb5a7cbbdc707fffca8942dc8d11ede1c044ae",
+      "commit": 49894,
+      "overflow": 140184,
+      "abort": 6530
+    },
+    {
+      "step": 21,
+      "loss": 7.936415672302246,
+      "aux": 184911.4375,
+      "audited": false,
+      "head": "5e134df8fca918efb9ec78b250679cee06604b28014aae814823603a9eea5c3c",
+      "commit": 48653,
+      "overflow": 140796,
+      "abort": 7159
+    },
+    {
+      "step": 22,
+      "loss": 7.812750339508057,
+      "aux": 170531.09375,
+      "audited": false,
+      "head": "6d550f3ba22ac5ed987e10b25bfdfef58798eac8cba1026b4a2bc33207ae1b6e",
+      "commit": 53846,
+      "overflow": 134953,
+      "abort": 7809
+    },
+    {
+      "step": 23,
+      "loss": 7.446332931518555,
+      "aux": 155473.75,
+      "audited": false,
+      "head": "c428df7a52d81f8437fe50e362b51c8f680841be8854423dbf4468922cc0009a",
+      "commit": 53795,
+      "overflow": 135144,
+      "abort": 7669
+    },
+    {
+      "step": 24,
+      "loss": 7.783472537994385,
+      "aux": 193001.765625,
+      "audited": false,
+      "head": "7532f3d2bfccb4301bdc327bf3f7aa002d28dfe354595f591e30b966e36aca9e",
+      "commit": 46255,
+      "overflow": 141430,
+      "abort": 8923
+    },
+    {
+      "step": 25,
+      "loss": 7.6230669021606445,
+      "aux": 209160.859375,
+      "audited": false,
+      "head": "726da153551cce512d80069631022cad48d8265fab9d7128df38c270dccdd66b",
+      "commit": 42131,
+      "overflow": 144518,
+      "abort": 9959
+    },
+    {
+      "step": 26,
+      "loss": 7.52895450592041,
+      "aux": 200593.59375,
+      "audited": false,
+      "head": "6bc3233984ddfa755df5462a2bac13a378298347db6f57209c1c053df7194b69",
+      "commit": 44141,
+      "overflow": 143317,
+      "abort": 9150
+    },
+    {
+      "step": 27,
+      "loss": 7.571432590484619,
+      "aux": 187559.40625,
+      "audited": false,
+      "head": "a420cb7a93e276011c19fd6ccde46eb3ccf63c6e0e1b820b80186eb54456d2a1",
+      "commit": 47164,
+      "overflow": 142374,
+      "abort": 7070
+    },
+    {
+      "step": 28,
+      "loss": 7.420773983001709,
+      "aux": 162233.40625,
+      "audited": false,
+      "head": "7912b8c95df7ee3addf6022a86458f6f42fbd5380b220bef0ddfb5f1add9f4ad",
+      "commit": 52276,
+      "overflow": 136799,
+      "abort": 7533
+    },
+    {
+      "step": 29,
+      "loss": 7.475999355316162,
+      "aux": 142760.8125,
+      "audited": false,
+      "head": "bfb487b1ac307b039bbb6fa4eefbec1e40722b96e03656fbd3e52ecf421900c5",
+      "commit": 58492,
+      "overflow": 131403,
+      "abort": 6713
+    },
+    {
+      "step": 30,
+      "loss": 7.642975807189941,
+      "aux": 146253.140625,
+      "audited": false,
+      "head": "3a112db1bbde16e03781191950b3974db294b4ef63515a5d8d2144afeb70ea0f",
+      "commit": 61705,
+      "overflow": 128724,
+      "abort": 6179
+    },
+    {
+      "step": 31,
+      "loss": 7.518200397491455,
+      "aux": 148538.109375,
+      "audited": false,
+      "head": "90789778b23a4867aa45e884d41fa6030bd7abbbffeb9a7b14bd17fcb80e7365",
+      "commit": 62106,
+      "overflow": 128674,
+      "abort": 5828
+    },
+    {
+      "step": 32,
+      "loss": 7.606895446777344,
+      "aux": 147082.4375,
+      "audited": false,
+      "head": "51043393d3ab0e34330f657d4d300bfa8563d05708c3a9c9215088766d4ead12",
+      "commit": 63314,
+      "overflow": 127418,
+      "abort": 5876
+    },
+    {
+      "step": 33,
+      "loss": 7.579497337341309,
+      "aux": 153375.09375,
+      "audited": false,
+      "head": "949b93729fbc9a8c2cd8dd995ca2aa797021806a1bd21ae78d159ebf1481e373",
+      "commit": 61917,
+      "overflow": 130211,
+      "abort": 4480
+    },
+    {
+      "step": 34,
+      "loss": 7.423300743103027,
+      "aux": 164467.671875,
+      "audited": false,
+      "head": "7c7097feb443cc43694c63acc7cc64e5804c379a2e0a440ea941d8daffb8e08a",
+      "commit": 56757,
+      "overflow": 137017,
+      "abort": 2834
+    },
+    {
+      "step": 35,
+      "loss": 7.416709899902344,
+      "aux": 161314.390625,
+      "audited": false,
+      "head": "9a1674e50e8187c525e23094a1d0aa765056ea842be24f27f56b1552d30f91a0",
+      "commit": 56037,
+      "overflow": 135545,
+      "abort": 5026
+    },
+    {
+      "step": 36,
+      "loss": 7.610385417938232,
+      "aux": 169315.40625,
+      "audited": false,
+      "head": "d83f1a8b0e898379f5b34b2b63dcb9583bc4382b972e99076ca8a8e14a0d632f",
+      "commit": 53724,
+      "overflow": 134878,
+      "abort": 8006
+    },
+    {
+      "step": 37,
+      "loss": 7.448707580566406,
+      "aux": 166409.90625,
+      "audited": false,
+      "head": "78201c07bfb407752bb42ceae78f832544dd36b918bce6773e54d6bd60afec24",
+      "commit": 52695,
+      "overflow": 135995,
+      "abort": 7918
+    },
+    {
+      "step": 38,
+      "loss": 7.750545501708984,
+      "aux": 167791.0,
+      "audited": false,
+      "head": "bb3ed2e8aefc3b37c45569c6ad9a356e8f1f8b704d1eb0f1484ac04b91b7f04f",
+      "commit": 51714,
+      "overflow": 137595,
+      "abort": 7299
+    },
+    {
+      "step": 39,
+      "loss": 7.452797889709473,
+      "aux": 157112.375,
+      "audited": false,
+      "head": "c47a9d6c2d297b3c70d26330c707508b74bf5d32292185bae27a19f36ac46ec7",
+      "commit": 51266,
+      "overflow": 138998,
+      "abort": 6344
+    },
+    {
+      "step": 40,
+      "loss": 7.324997901916504,
+      "aux": 144299.28125,
+      "audited": false,
+      "head": "3bff2e42fdd67b1570a82c0098a315ea03fc9c1618fb88c553afa2f095ef7e43",
+      "commit": 51758,
+      "overflow": 138974,
+      "abort": 5876
+    },
+    {
+      "step": 41,
+      "loss": 7.333389759063721,
+      "aux": 135791.4375,
+      "audited": false,
+      "head": "ff9a74391b9bf2f95b78215b22c01c591777999b2844fd509a0b07160fa59a34",
+      "commit": 50741,
+      "overflow": 139937,
+      "abort": 5930
+    },
+    {
+      "step": 42,
+      "loss": 7.213448524475098,
+      "aux": 137464.71875,
+      "audited": false,
+      "head": "806eb13462b15e21c85ec0af1281e575a4d65f84e8b9a2ae7244dbbd274f1d82",
+      "commit": 49113,
+      "overflow": 141137,
+      "abort": 6358
+    },
+    {
+      "step": 43,
+      "loss": 7.440079212188721,
+      "aux": 136098.828125,
+      "audited": false,
+      "head": "3f1b319618ca10e3453bd61937f6c8802be367932f4e0801f585ef762ffd35df",
+      "commit": 48414,
+      "overflow": 141659,
+      "abort": 6535
+    },
+    {
+      "step": 44,
+      "loss": 7.333297252655029,
+      "aux": 139351.484375,
+      "audited": false,
+      "head": "70a6c71270a257076e7ba3416df5c0d6c623dd1c88139e7367149486142f0189",
+      "commit": 49168,
+      "overflow": 141080,
+      "abort": 6360
+    },
+    {
+      "step": 45,
+      "loss": 7.4473419189453125,
+      "aux": 137009.4375,
+      "audited": false,
+      "head": "6a13e1706a2b23db7b1482e7d8ad77d2e0e9925fa467d2ff172253a58ccd2bd0",
+      "commit": 49565,
+      "overflow": 141240,
+      "abort": 5803
+    },
+    {
+      "step": 46,
+      "loss": 7.618729591369629,
+      "aux": 144277.0,
+      "audited": false,
+      "head": "9d7b931e636ea3aeef512a024f193ee1c68a5bc7c51db3b84951bf9470a23847",
+      "commit": 47985,
+      "overflow": 144018,
+      "abort": 4605
+    },
+    {
+      "step": 47,
+      "loss": 7.266567707061768,
+      "aux": 157726.578125,
+      "audited": false,
+      "head": "296b151a13ed25039838cd7047eb4a3e378769f14db671a7e96c19a7ff819f5d",
+      "commit": 43103,
+      "overflow": 149917,
+      "abort": 3588
+    },
+    {
+      "step": 48,
+      "loss": 6.947999000549316,
+      "aux": 157987.46875,
+      "audited": false,
+      "head": "7ddb1c349576e0157e876874167b4919cfdd735df39f52f1999987539b912586",
+      "commit": 43691,
+      "overflow": 149986,
+      "abort": 2931
+    },
+    {
+      "step": 49,
+      "loss": 7.370057106018066,
+      "aux": 166090.25,
+      "audited": false,
+      "head": "eb8e76e758405b361986d2f519b6ab6e93af6a68a05d19352e81cc500d52ebb4",
+      "commit": 44979,
+      "overflow": 149482,
+      "abort": 2147
+    },
+    {
+      "step": 50,
+      "loss": 7.488394260406494,
+      "aux": 165487.71875,
+      "audited": false,
+      "head": "ddd863733746d61d8878174b736f74a2adc6610ee59eaeee188585f4fb9a998c",
+      "commit": 44101,
+      "overflow": 150667,
+      "abort": 1840
+    },
+    {
+      "step": 51,
+      "loss": 7.29640007019043,
+      "aux": 167870.671875,
+      "audited": true,
+      "head": "c31dd6511f49ec22ce7e3019d040700b3e395d2a676b661de5017c18977b4c06",
+      "commit": 44326,
+      "overflow": 150816,
+      "abort": 1466
+    },
+    {
+      "step": 52,
+      "loss": 7.43623685836792,
+      "aux": 162755.1875,
+      "audited": false,
+      "head": "c5764c39252557228786220462f956c7d7ba502b1293bd2686d60881c5b49906",
+      "commit": 44100,
+      "overflow": 151746,
+      "abort": 762
+    },
+    {
+      "step": 53,
+      "loss": 7.422919273376465,
+      "aux": 174907.34375,
+      "audited": false,
+      "head": "286a5ec04f7795e01fbf194778bf57fb1e93274d0e3dd7e70b57144c4f86087c",
+      "commit": 44524,
+      "overflow": 151672,
+      "abort": 412
+    },
+    {
+      "step": 54,
+      "loss": 7.290162086486816,
+      "aux": 182009.015625,
+      "audited": false,
+      "head": "8c781d0602e8ed428c2da7edf5e9362b42bb735b27da6b2e2333f662b40b0cad",
+      "commit": 44496,
+      "overflow": 151959,
+      "abort": 153
+    },
+    {
+      "step": 55,
+      "loss": 7.048684597015381,
+      "aux": 178004.625,
+      "audited": false,
+      "head": "f25fdd92b0ec266904ac4f101628ace422b21b0cb219fdc06ebb01c6997d1242",
+      "commit": 42775,
+      "overflow": 153552,
+      "abort": 281
+    },
+    {
+      "step": 56,
+      "loss": 7.2262468338012695,
+      "aux": 186624.71875,
+      "audited": false,
+      "head": "9cdd45a9a6ff9e2755261e67d139166a628e83f7d4c54abdb63556b437d2ebb3",
+      "commit": 40729,
+      "overflow": 155558,
+      "abort": 321
+    },
+    {
+      "step": 57,
+      "loss": 6.994007110595703,
+      "aux": 178818.140625,
+      "audited": false,
+      "head": "e4f903f6373f0b5b4a1c15a3da7a25ba63d87b7f29e639956b5c9f7a0fa86143",
+      "commit": 40348,
+      "overflow": 155901,
+      "abort": 359
+    },
+    {
+      "step": 58,
+      "loss": 6.9825944900512695,
+      "aux": 172771.109375,
+      "audited": false,
+      "head": "8d6c041eb0b367504a8c3ba6282645a289a79fdb0678bd0625791a9c4977728e",
+      "commit": 40445,
+      "overflow": 155548,
+      "abort": 615
+    },
+    {
+      "step": 59,
+      "loss": 7.177085876464844,
+      "aux": 160982.546875,
+      "audited": false,
+      "head": "efa1350109d5a1ec98b0039bc03d76abde0c9fdd4d69b275adb2285be524dc18",
+      "commit": 40297,
+      "overflow": 155283,
+      "abort": 1028
+    },
+    {
+      "step": 60,
+      "loss": 7.24116849899292,
+      "aux": 151437.890625,
+      "audited": false,
+      "head": "bbfe9dc6288cea0e67ca99566e9b156b23f62e85f34e5ba7492db2a7a1696079",
+      "commit": 40460,
+      "overflow": 154837,
+      "abort": 1311
+    },
+    {
+      "step": 61,
+      "loss": 7.100053787231445,
+      "aux": 158743.234375,
+      "audited": false,
+      "head": "a9d86d8dcd508a3735ad8c37d2c79f9d8ab4d03be77d1e5249f3f2b4d589bc11",
+      "commit": 40143,
+      "overflow": 155033,
+      "abort": 1432
+    },
+    {
+      "step": 62,
+      "loss": 7.014925003051758,
+      "aux": 142903.34375,
+      "audited": false,
+      "head": "df7948a2586bbb7d763d8339178d1f36f06c43047e9a7df81884a2645dac15a5",
+      "commit": 40300,
+      "overflow": 154708,
+      "abort": 1600
+    },
+    {
+      "step": 63,
+      "loss": 7.306272506713867,
+      "aux": 152245.625,
+      "audited": false,
+      "head": "34e90b580f1311cec1e2a632b505f7d9cb456ea77f25df29a0c02ea57d8e0513",
+      "commit": 38773,
+      "overflow": 156118,
+      "abort": 1717
+    },
+    {
+      "step": 64,
+      "loss": 6.958391189575195,
+      "aux": 149970.71875,
+      "audited": false,
+      "head": "0af7242833a8b5ebc0c60fe478133abc8eb35e36a893ec27858a75b194b826af",
+      "commit": 38166,
+      "overflow": 156665,
+      "abort": 1777
+    },
+    {
+      "step": 65,
+      "loss": 7.272129058837891,
+      "aux": 167163.28125,
+      "audited": false,
+      "head": "31279b3b9fd135b740d28c4ea38baa2a90dce092a3c2f1747fdbd61caf99e3d2",
+      "commit": 36923,
+      "overflow": 157936,
+      "abort": 1749
+    },
+    {
+      "step": 66,
+      "loss": 7.165374755859375,
+      "aux": 166047.421875,
+      "audited": false,
+      "head": "b9ae75d758db7fe1eba28125c4081bc277b510b964fcdc6b13e3a7566fd9136a",
+      "commit": 37218,
+      "overflow": 157638,
+      "abort": 1752
+    },
+    {
+      "step": 67,
+      "loss": 7.377173900604248,
+      "aux": 167172.28125,
+      "audited": false,
+      "head": "972b5800cabac0c5639ffb20cd097e631aa863213a4d32a018313fcaa7bfdd48",
+      "commit": 37206,
+      "overflow": 157773,
+      "abort": 1629
+    },
+    {
+      "step": 68,
+      "loss": 7.19659423828125,
+      "aux": 173371.75,
+      "audited": false,
+      "head": "62316487816375dee2c05594cc3db989951240cadb8276af5b81f4d970bcfe04",
+      "commit": 37883,
+      "overflow": 157255,
+      "abort": 1470
+    },
+    {
+      "step": 69,
+      "loss": 6.812838554382324,
+      "aux": 156335.546875,
+      "audited": false,
+      "head": "478687bff85337d81c041e62cc2a1b96b4a3f06c926f6e49e0dbfbd85ba482fd",
+      "commit": 37567,
+      "overflow": 157800,
+      "abort": 1241
+    },
+    {
+      "step": 70,
+      "loss": 7.105996608734131,
+      "aux": 163010.875,
+      "audited": false,
+      "head": "fadae42f22c5ab4bb0a3e96e20904028577a422184a99d986a7745caa66ff38c",
+      "commit": 37190,
+      "overflow": 158341,
+      "abort": 1077
+    },
+    {
+      "step": 71,
+      "loss": 7.21990966796875,
+      "aux": 175509.640625,
+      "audited": false,
+      "head": "22df418b659eed4cfd7e65096b0ed86e2c8730b836ba979f1ac58fc790949db5",
+      "commit": 36407,
+      "overflow": 159245,
+      "abort": 956
+    },
+    {
+      "step": 72,
+      "loss": 7.318432807922363,
+      "aux": 161489.984375,
+      "audited": false,
+      "head": "c3a0cd3a688671f971b934e0a3c672ef2efed52ebfa0ff2274a8093f917b9f53",
+      "commit": 38270,
+      "overflow": 157589,
+      "abort": 749
+    },
+    {
+      "step": 73,
+      "loss": 7.093815803527832,
+      "aux": 155926.75,
+      "audited": false,
+      "head": "a5dda20a8f9c1b325d85f16fcc0bf9e5d1df0a39ab2f007822e6d7f071f8d01d",
+      "commit": 38790,
+      "overflow": 157172,
+      "abort": 646
+    },
+    {
+      "step": 74,
+      "loss": 6.890252113342285,
+      "aux": 145340.125,
+      "audited": false,
+      "head": "98e8bfec64fddfb0be8286cfd355354751a57beb0599a5f8a3df6b0ffedde147",
+      "commit": 39360,
+      "overflow": 156767,
+      "abort": 481
+    },
+    {
+      "step": 75,
+      "loss": 7.257657051086426,
+      "aux": 160402.296875,
+      "audited": false,
+      "head": "656169e279b2c4d5bad33d74ff93a1c41259f7206e37ebe90f400e316e9c2c52",
+      "commit": 39081,
+      "overflow": 157317,
+      "abort": 210
+    },
+    {
+      "step": 76,
+      "loss": 6.852780818939209,
+      "aux": 144687.078125,
+      "audited": false,
+      "head": "c675fee32b866e855e0c8103d7b4c4b318a7e341c409215545dd66bfd106ce78",
+      "commit": 39001,
+      "overflow": 157427,
+      "abort": 180
+    },
+    {
+      "step": 77,
+      "loss": 6.779813766479492,
+      "aux": 136390.984375,
+      "audited": false,
+      "head": "22986d91023490af4093a5e670c5579af6bbd31ff214668ae0ebb06ce1abc829",
+      "commit": 39078,
+      "overflow": 157480,
+      "abort": 50
+    },
+    {
+      "step": 78,
+      "loss": 6.9593424797058105,
+      "aux": 143901.5,
+      "audited": false,
+      "head": "a151f6f748679b019bca4f5363ac58707051719dec845fc1da7b7aaa9a6029e4",
+      "commit": 38750,
+      "overflow": 157828,
+      "abort": 30
+    },
+    {
+      "step": 79,
+      "loss": 6.958188533782959,
+      "aux": 147004.96875,
+      "audited": false,
+      "head": "90ea0ec737b09f8c950aceaf0cc7f24e4ce0495aa0b81fcf5faa57b90feef3b8",
+      "commit": 38887,
+      "overflow": 157689,
+      "abort": 32
+    },
+    {
+      "step": 80,
+      "loss": 7.22230863571167,
+      "aux": 155115.5,
+      "audited": false,
+      "head": "e8cf627ebf53fc2f91b1b6de0d9362271fc81cffbae6c6d65177baa3e6d8b595",
+      "commit": 38529,
+      "overflow": 158029,
+      "abort": 50
+    },
+    {
+      "step": 81,
+      "loss": 6.839555740356445,
+      "aux": 131986.65625,
+      "audited": false,
+      "head": "0d495dce4017a66eefe8dbe41e1d09ffb4498db285098dd61f1a8309dd5f970d",
+      "commit": 38398,
+      "overflow": 158147,
+      "abort": 63
+    },
+    {
+      "step": 82,
+      "loss": 6.694471836090088,
+      "aux": 133368.265625,
+      "audited": false,
+      "head": "6c6ad920e2ce7a5524c9dde0f37da9203ed2ae5b53875f5dbd0904c128cf9ad4",
+      "commit": 37971,
+      "overflow": 158581,
+      "abort": 56
+    },
+    {
+      "step": 83,
+      "loss": 6.886040210723877,
+      "aux": 143126.0,
+      "audited": false,
+      "head": "1833b4321a86ee13427671a8615ab53728918d32ee0593b7afa043a6059c9296",
+      "commit": 37816,
+      "overflow": 158729,
+      "abort": 63
+    },
+    {
+      "step": 84,
+      "loss": 7.093225479125977,
+      "aux": 159629.328125,
+      "audited": false,
+      "head": "334f2c12204d0b1ce4018be7f10b09f17c9e5e45594c3d427d8238e79e693188",
+      "commit": 37165,
+      "overflow": 159360,
+      "abort": 83
+    },
+    {
+      "step": 85,
+      "loss": 7.2862348556518555,
+      "aux": 166479.0,
+      "audited": false,
+      "head": "fffc372b0d08758da192dbfae2918192b5715189cf9f829657d7475a1f5bde73",
+      "commit": 35936,
+      "overflow": 160608,
+      "abort": 64
+    },
+    {
+      "step": 86,
+      "loss": 7.207396030426025,
+      "aux": 159421.6875,
+      "audited": false,
+      "head": "dfce0b966b3285f47afa34887b5127d272bbd5ce9f6e7affe89639582e38c280",
+      "commit": 35933,
+      "overflow": 160612,
+      "abort": 63
+    },
+    {
+      "step": 87,
+      "loss": 7.191310882568359,
+      "aux": 161442.125,
+      "audited": false,
+      "head": "3e6fbfeeccd80a9d37158f9aca8d27338e9113effd7d86ccb19d6e86b5c4ea34",
+      "commit": 34925,
+      "overflow": 161600,
+      "abort": 83
+    },
+    {
+      "step": 88,
+      "loss": 7.129055023193359,
+      "aux": 152853.015625,
+      "audited": false,
+      "head": "cd60c7ed15595272e4b3d4ac76e5de9dc790eb1314d59f231e41d0fcc272bad8",
+      "commit": 34572,
+      "overflow": 161965,
+      "abort": 71
+    },
+    {
+      "step": 89,
+      "loss": 7.178905963897705,
+      "aux": 155020.140625,
+      "audited": false,
+      "head": "d6dc0bfd05f545f8047a0ad722f735ec972880df5b52d11c2fe54afa046d85f4",
+      "commit": 34988,
+      "overflow": 161567,
+      "abort": 53
+    },
+    {
+      "step": 90,
+      "loss": 6.892038345336914,
+      "aux": 145679.234375,
+      "audited": false,
+      "head": "bd6ac9406f098d16171ad169562850deb8234de1934ad54e3c145fddb4804146",
+      "commit": 34294,
+      "overflow": 162236,
+      "abort": 78
+    },
+    {
+      "step": 91,
+      "loss": 6.794744491577148,
+      "aux": 139654.046875,
+      "audited": false,
+      "head": "369e50fe3ec0a3bfc1260247667893e8edafeb834864b2fe6ef8542334ef3187",
+      "commit": 33791,
+      "overflow": 162737,
+      "abort": 80
+    },
+    {
+      "step": 92,
+      "loss": 6.966970443725586,
+      "aux": 159790.09375,
+      "audited": false,
+      "head": "4b6d3f1e171be0f4b4d47037c6a680d87b28ff201dcf69c2d1080cda8860b233",
+      "commit": 32550,
+      "overflow": 163954,
+      "abort": 104
+    },
+    {
+      "step": 93,
+      "loss": 6.838772773742676,
+      "aux": 155047.125,
+      "audited": false,
+      "head": "acb1d5659ba852f0f9129ed1707d53dc0ff50e2065331535a718a85a8ea2a6db",
+      "commit": 33335,
+      "overflow": 163149,
+      "abort": 124
+    },
+    {
+      "step": 94,
+      "loss": 6.9740400314331055,
+      "aux": 162987.4375,
+      "audited": false,
+      "head": "57e6edf556fab4443fe152d5dc975a48926daec07f3d58d96b685c0fabb93500",
+      "commit": 33404,
+      "overflow": 163053,
+      "abort": 151
+    },
+    {
+      "step": 95,
+      "loss": 7.079009532928467,
+      "aux": 153933.75,
+      "audited": false,
+      "head": "1c7564f9cbdea48c17fb6a57b2b1e15f317629bfaa6bce904fcf96596b5187aa",
+      "commit": 33377,
+      "overflow": 163076,
+      "abort": 155
+    },
+    {
+      "step": 96,
+      "loss": 6.9297356605529785,
+      "aux": 142077.953125,
+      "audited": false,
+      "head": "1dc4e2ef05a20b134096fab20020740a1ea54a700dfff0a99c66d0fc85446d81",
+      "commit": 33193,
+      "overflow": 163256,
+      "abort": 159
+    },
+    {
+      "step": 97,
+      "loss": 6.953943252563477,
+      "aux": 140517.171875,
+      "audited": false,
+      "head": "118dbc053cea330ebdd4505d444f9ac1fb7f7b477fd85164c8cb768744046798",
+      "commit": 34398,
+      "overflow": 162077,
+      "abort": 133
+    },
+    {
+      "step": 98,
+      "loss": 7.1608805656433105,
+      "aux": 140563.421875,
+      "audited": true,
+      "head": "a20a60c66e281e16c6e0927c4207777cf053c0b851e36010644554c73505b70e",
+      "commit": 35026,
+      "overflow": 161495,
+      "abort": 87
+    },
+    {
+      "step": 99,
+      "loss": 7.083027362823486,
+      "aux": 133407.078125,
+      "audited": false,
+      "head": "8769e45f0ba3ebd81f93adc7e490b3e04b177f345d5561c043e042f94e8b0231",
+      "commit": 35560,
+      "overflow": 160946,
+      "abort": 102
+    },
+    {
+      "step": 100,
+      "loss": 7.010035514831543,
+      "aux": 133538.609375,
+      "audited": false,
+      "head": "ea7873da658862e3e92054ca9de49239f71cba99b8ed94e3e8536dae5467c119",
+      "commit": 35996,
+      "overflow": 160490,
+      "abort": 122
+    },
+    {
+      "step": 101,
+      "loss": 6.965126037597656,
+      "aux": 129404.6640625,
+      "audited": false,
+      "head": "e74465c6d848dbedc0e327ea8178f86cea236002daa04f063dd0b84618039e67",
+      "commit": 35892,
+      "overflow": 160583,
+      "abort": 133
+    },
+    {
+      "step": 102,
+      "loss": 6.993560791015625,
+      "aux": 138290.296875,
+      "audited": false,
+      "head": "e0c919468bca2ae3432c27eca74c400bb65c7fb4194e0ecc7c3a4364c7303ba8",
+      "commit": 35544,
+      "overflow": 160863,
+      "abort": 201
+    },
+    {
+      "step": 103,
+      "loss": 6.92573356628418,
+      "aux": 132447.953125,
+      "audited": false,
+      "head": "56f7bfefbeaab4fdf15a32869150c45caec597b9741b8567c9462b1d81e520ba",
+      "commit": 35079,
+      "overflow": 161272,
+      "abort": 257
+    },
+    {
+      "step": 104,
+      "loss": 7.026028633117676,
+      "aux": 143133.15625,
+      "audited": false,
+      "head": "5aadadfab5d15675bdf75b7575d24f5146b5deab369911d77e170a72077c12ac",
+      "commit": 34359,
+      "overflow": 161970,
+      "abort": 279
+    },
+    {
+      "step": 105,
+      "loss": 7.236175537109375,
+      "aux": 141478.8125,
+      "audited": false,
+      "head": "678aff86b27df4e481eee1e187cf5b14bcc07ea0c42e501e2eb5730aaa8e1883",
+      "commit": 33683,
+      "overflow": 162646,
+      "abort": 279
+    },
+    {
+      "step": 106,
+      "loss": 6.9951324462890625,
+      "aux": 137852.5,
+      "audited": false,
+      "head": "88df94550b223131b9f0555312d4f34bca78308188f1f13d5c41e603c197fc4e",
+      "commit": 34804,
+      "overflow": 161334,
+      "abort": 470
+    },
+    {
+      "step": 107,
+      "loss": 6.979979991912842,
+      "aux": 135988.625,
+      "audited": false,
+      "head": "e3e01389069c92cce1f3d88949beacd90e8ea3406c180780ec6797dee3334167",
+      "commit": 34941,
+      "overflow": 161140,
+      "abort": 527
+    },
+    {
+      "step": 108,
+      "loss": 6.847199440002441,
+      "aux": 125537.046875,
+      "audited": false,
+      "head": "e5ed0c261f7562b6b101c94ae9ae1219e7b8961f67f04f259b9e9291f6b49253",
+      "commit": 34832,
+      "overflow": 161164,
+      "abort": 612
+    },
+    {
+      "step": 109,
+      "loss": 7.043979644775391,
+      "aux": 153794.90625,
+      "audited": false,
+      "head": "1fdad881eb15321e59c1c42e2fef8451310f1e7cec6811328ae53a79abf3cd21",
+      "commit": 33711,
+      "overflow": 162251,
+      "abort": 646
+    },
+    {
+      "step": 110,
+      "loss": 7.047079086303711,
+      "aux": 150986.59375,
+      "audited": false,
+      "head": "05efc2f9215ac19c218e4da21cb6299782368b089b5d807d2156cd1ccb7f1829",
+      "commit": 33191,
+      "overflow": 162876,
+      "abort": 541
+    },
+    {
+      "step": 111,
+      "loss": 7.042182922363281,
+      "aux": 145119.65625,
+      "audited": false,
+      "head": "433b70c719986e6baeafe080865b75f672e94d8c55e18e2657f37d138f1c7e7c",
+      "commit": 33825,
+      "overflow": 162330,
+      "abort": 453
+    },
+    {
+      "step": 112,
+      "loss": 7.019783973693848,
+      "aux": 139037.140625,
+      "audited": false,
+      "head": "4613c25cacc61313c76d7cf684e896bfe4382d452510ec004292b903c62a3ec2",
+      "commit": 33723,
+      "overflow": 162574,
+      "abort": 311
+    },
+    {
+      "step": 113,
+      "loss": 6.917747974395752,
+      "aux": 129042.359375,
+      "audited": false,
+      "head": "0086e840eca5e9abe6d826baeffea672f477367fab13a4639ef6543fffdaae56",
+      "commit": 33977,
+      "overflow": 162371,
+      "abort": 260
+    },
+    {
+      "step": 114,
+      "loss": 6.853689670562744,
+      "aux": 127077.453125,
+      "audited": false,
+      "head": "33255890d42c093b0798635cda34fdd72d3b3727d3b646527634e1b5e59feab7",
+      "commit": 34400,
+      "overflow": 161985,
+      "abort": 223
+    },
+    {
+      "step": 115,
+      "loss": 6.78963565826416,
+      "aux": 119515.9765625,
+      "audited": false,
+      "head": "430362b763c74728aa4d1ebdbb46d3ac9f4f35e5f7071bd0278eeab97c4dd4ea",
+      "commit": 34036,
+      "overflow": 162383,
+      "abort": 189
+    },
+    {
+      "step": 116,
+      "loss": 6.772866249084473,
+      "aux": 121414.4375,
+      "audited": false,
+      "head": "8ae3cd249d4e16e14f41bf798d17e08ecec578c09ec83aa2f1b4428cc305df9c",
+      "commit": 34146,
+      "overflow": 162278,
+      "abort": 184
+    },
+    {
+      "step": 117,
+      "loss": 7.054598808288574,
+      "aux": 137280.109375,
+      "audited": false,
+      "head": "16c182640bbe7cbf02cee65684a9c11cceb551f32bc5f3c00d7e6139f06c8c7e",
+      "commit": 34184,
+      "overflow": 162266,
+      "abort": 158
+    },
+    {
+      "step": 118,
+      "loss": 6.946949481964111,
+      "aux": 135679.46875,
+      "audited": false,
+      "head": "c2d9e4f458ba292ad3c050554be92c4f8d081b654a3374cb4bd6e98bd0e45157",
+      "commit": 33923,
+      "overflow": 162518,
+      "abort": 167
+    },
+    {
+      "step": 119,
+      "loss": 6.972256660461426,
+      "aux": 135982.0625,
+      "audited": false,
+      "head": "30a19478eb748ef9903ca877595efaf79e5454fb4c4a6a4a7418da8ae949ef49",
+      "commit": 33901,
+      "overflow": 162540,
+      "abort": 167
+    },
+    {
+      "step": 120,
+      "loss": 7.054363250732422,
+      "aux": 135951.5,
+      "audited": false,
+      "head": "74ba4b3bfa1ebe7e1059d5afb286234a6bca62e149fb7f75ad9ae6c95d95d438",
+      "commit": 34356,
+      "overflow": 162138,
+      "abort": 114
+    },
+    {
+      "step": 121,
+      "loss": 7.04093074798584,
+      "aux": 136138.4375,
+      "audited": false,
+      "head": "c9a7a8cbcfe7d9d887bdbaa76deb9ad90d67c7e68058cddd9ccebc83e373cc59",
+      "commit": 34359,
+      "overflow": 162161,
+      "abort": 88
+    },
+    {
+      "step": 122,
+      "loss": 7.017142295837402,
+      "aux": 132330.28125,
+      "audited": false,
+      "head": "ed6a80645a0f55faad0484e85dd62e4246a76aa2f9669baaa7c043e7e0c8098a",
+      "commit": 34415,
+      "overflow": 162087,
+      "abort": 106
+    },
+    {
+      "step": 123,
+      "loss": 6.937272071838379,
+      "aux": 131068.703125,
+      "audited": false,
+      "head": "1ea5b629c0729715b9d3e67dc274cbad878f3dfaeebb1bb9d47eb5200180a2a3",
+      "commit": 34277,
+      "overflow": 162245,
+      "abort": 86
+    },
+    {
+      "step": 124,
+      "loss": 7.102546691894531,
+      "aux": 134342.21875,
+      "audited": false,
+      "head": "fe6881d6345b058b2451518febfac74d79a6860e35a1263e555d8de13dc1ec46",
+      "commit": 35028,
+      "overflow": 161500,
+      "abort": 80
+    },
+    {
+      "step": 125,
+      "loss": 6.932228088378906,
+      "aux": 128303.375,
+      "audited": false,
+      "head": "5da88778c3ddbe513f82a6c24a3936147e0edee270d5ee408e061767fcb37024",
+      "commit": 35907,
+      "overflow": 160610,
+      "abort": 91
+    },
+    {
+      "step": 126,
+      "loss": 6.743377685546875,
+      "aux": 118366.59375,
+      "audited": false,
+      "head": "d28e40b508a1359d32de9061267ec553adeb5a81aa5e125381a8d19acc89b498",
+      "commit": 35921,
+      "overflow": 160620,
+      "abort": 67
+    },
+    {
+      "step": 127,
+      "loss": 6.859147071838379,
+      "aux": 122822.3671875,
+      "audited": false,
+      "head": "b398992d58949dbd7f781d4ebd6e17c4151df99ff615e664a4c889588dd4f89f",
+      "commit": 35589,
+      "overflow": 160951,
+      "abort": 68
+    },
+    {
+      "step": 128,
+      "loss": 6.718451976776123,
+      "aux": 123349.3359375,
+      "audited": false,
+      "head": "308b59ecbd7a94e64641db73c3eef197b50dad8920fe2e506cf89fcd9e05e3ad",
+      "commit": 34732,
+      "overflow": 161821,
+      "abort": 55
+    },
+    {
+      "step": 129,
+      "loss": 7.060155391693115,
+      "aux": 124560.828125,
+      "audited": false,
+      "head": "931a25e3756233395b8f4e40a45359033408e8c3f66eaa3bd082f7c21699cece",
+      "commit": 33932,
+      "overflow": 162629,
+      "abort": 47
+    },
+    {
+      "step": 130,
+      "loss": 6.67690372467041,
+      "aux": 121238.515625,
+      "audited": false,
+      "head": "2da93762052fa8f48e2d42d9d69a3185856885eda27a363675e9fc2e90351a2c",
+      "commit": 33386,
+      "overflow": 163169,
+      "abort": 53
+    },
+    {
+      "step": 131,
+      "loss": 6.806556701660156,
+      "aux": 127392.171875,
+      "audited": false,
+      "head": "4615281fe9e7d7ce6e8af7f6255872339c85135cc5282535a22c9c40de036712",
+      "commit": 33219,
+      "overflow": 163357,
+      "abort": 32
+    },
+    {
+      "step": 132,
+      "loss": 6.786773681640625,
+      "aux": 130239.078125,
+      "audited": false,
+      "head": "7981bff06f928e571829d2d60820cac888f7e9dbdf7bab3bea9b487e15dfb523",
+      "commit": 32927,
+      "overflow": 163652,
+      "abort": 29
+    },
+    {
+      "step": 133,
+      "loss": 6.863870620727539,
+      "aux": 129816.75,
+      "audited": false,
+      "head": "853c34a782f0c38737140b5635cd6c9941d59e1b07007508b45614b0023ac7c6",
+      "commit": 32169,
+      "overflow": 164421,
+      "abort": 18
+    },
+    {
+      "step": 134,
+      "loss": 6.818198204040527,
+      "aux": 128733.4140625,
+      "audited": false,
+      "head": "9d71926ebe52a92f28f385de65b2de83deb0e7b2e9f3e98cd5c8c59084ae5a2c",
+      "commit": 32315,
+      "overflow": 164272,
+      "abort": 21
+    },
+    {
+      "step": 135,
+      "loss": 6.7178168296813965,
+      "aux": 129089.453125,
+      "audited": false,
+      "head": "056804438c02e8472bc17f974965ea492da96acce473dfab0b1e6bf214f06e74",
+      "commit": 32565,
+      "overflow": 164024,
+      "abort": 19
+    },
+    {
+      "step": 136,
+      "loss": 7.100521564483643,
+      "aux": 122400.421875,
+      "audited": false,
+      "head": "c821f0401c1fd019a444e46b8ed99d419850924349cf75d6d383aa20a340590e",
+      "commit": 33663,
+      "overflow": 162914,
+      "abort": 31
+    },
+    {
+      "step": 137,
+      "loss": 6.522120475769043,
+      "aux": 102032.71875,
+      "audited": false,
+      "head": "c6abac1ee69e42044c4f655651893eeeb04b48a48253a213f8a49cfbd9f76aee",
+      "commit": 34587,
+      "overflow": 161964,
+      "abort": 57
+    },
+    {
+      "step": 138,
+      "loss": 6.872267723083496,
+      "aux": 107698.0234375,
+      "audited": false,
+      "head": "7e150eb75e9ec421421d7262da5f3fae5b31510cbb9c555722a3eebd615208b7",
+      "commit": 34615,
+      "overflow": 161899,
+      "abort": 94
+    },
+    {
+      "step": 139,
+      "loss": 6.969222545623779,
+      "aux": 106820.203125,
+      "audited": false,
+      "head": "c55b4267ee10112493b1a456350d8e01b9b294976c0568be57e49cadf95f2ae5",
+      "commit": 34791,
+      "overflow": 161733,
+      "abort": 84
+    },
+    {
+      "step": 140,
+      "loss": 7.06607723236084,
+      "aux": 110377.7421875,
+      "audited": false,
+      "head": "c0e5abcaa8bf5f1913205a662f4ee7cc8a2b3adc95e4fd7f5fbd27158e4f861c",
+      "commit": 35064,
+      "overflow": 161417,
+      "abort": 127
+    },
+    {
+      "step": 141,
+      "loss": 6.797230243682861,
+      "aux": 109785.6484375,
+      "audited": false,
+      "head": "5af6bbcb54bb056b895f2cac905139e202f2a90e36fee7cc8c3e2283fe7ee23c",
+      "commit": 35082,
+      "overflow": 161410,
+      "abort": 116
+    },
+    {
+      "step": 142,
+      "loss": 6.867897987365723,
+      "aux": 118074.4765625,
+      "audited": false,
+      "head": "b1220c9c6f128fbfbbd68e02e0691a53e06fcbb5f9dc4ac30ee117472cd9d2f0",
+      "commit": 34333,
+      "overflow": 162123,
+      "abort": 152
+    },
+    {
+      "step": 143,
+      "loss": 6.6952223777771,
+      "aux": 110692.296875,
+      "audited": false,
+      "head": "a901777fa2791a1a0c101e4beda7dbef5c8cdf04ff92194bab4f1d3393c7889f",
+      "commit": 35125,
+      "overflow": 161313,
+      "abort": 170
+    },
+    {
+      "step": 144,
+      "loss": 6.675018310546875,
+      "aux": 105950.859375,
+      "audited": false,
+      "head": "ae41ee3fdcff4edb457dfa91bfee7f0c9cd8abb27111285556bca0914cdd95dc",
+      "commit": 35362,
+      "overflow": 161055,
+      "abort": 191
+    },
+    {
+      "step": 145,
+      "loss": 6.8020710945129395,
+      "aux": 120890.0234375,
+      "audited": false,
+      "head": "5ebdbb51e24071f7e9b3f5651a86e2d4ecded1d825d9228100313639fa12c565",
+      "commit": 34366,
+      "overflow": 162058,
+      "abort": 184
+    },
+    {
+      "step": 146,
+      "loss": 6.767149925231934,
+      "aux": 119999.234375,
+      "audited": false,
+      "head": "a28041525dc660983f71397af57b2d132fcf31e624833a11a6375bf1cfce705e",
+      "commit": 34133,
+      "overflow": 162301,
+      "abort": 174
+    },
+    {
+      "step": 147,
+      "loss": 6.945557117462158,
+      "aux": 115132.3671875,
+      "audited": false,
+      "head": "d0d7044c6c38c96f8077b473f13e44518c62e76d4cc309c48f9bf3a5b127f696",
+      "commit": 34222,
+      "overflow": 162235,
+      "abort": 151
+    },
+    {
+      "step": 148,
+      "loss": 6.73121976852417,
+      "aux": 105919.421875,
+      "audited": false,
+      "head": "f313d5efd9307d6be6577955d770ae5d01040bbe7277afad6998a62c6b5ee39d",
+      "commit": 34256,
+      "overflow": 162247,
+      "abort": 105
+    },
+    {
+      "step": 149,
+      "loss": 6.906184196472168,
+      "aux": 115078.2265625,
+      "audited": false,
+      "head": "906b752ec4220ef590c77aad2a15f3efdddd4040deb0bb82c3cf00b3faaad002",
+      "commit": 33933,
+      "overflow": 162564,
+      "abort": 111
+    },
+    {
+      "step": 150,
+      "loss": 6.971445560455322,
+      "aux": 112215.8828125,
+      "audited": false,
+      "head": "643a2b84fc07125360a1dee5924a01873306352fc23a05269d193a5eab483cff",
+      "commit": 34483,
+      "overflow": 162014,
+      "abort": 111
+    },
+    {
+      "step": 151,
+      "loss": 6.993947982788086,
+      "aux": 115949.5625,
+      "audited": false,
+      "head": "8cb5664cce8aee1e1a5a443c833542d54eaed1269cf118827f742689e8b1a81c",
+      "commit": 34855,
+      "overflow": 161635,
+      "abort": 118
+    },
+    {
+      "step": 152,
+      "loss": 6.928349018096924,
+      "aux": 116180.390625,
+      "audited": false,
+      "head": "5318ca896072a64a77f4af463163f79992c29721accd04fdbe40a7daa05379e7",
+      "commit": 34036,
+      "overflow": 162465,
+      "abort": 107
+    },
+    {
+      "step": 153,
+      "loss": 6.8281450271606445,
+      "aux": 120591.953125,
+      "audited": false,
+      "head": "9f38dff0e9bbae743d957f912136062c6160b24ff51d319d9ba736ae9c466daf",
+      "commit": 32610,
+      "overflow": 163873,
+      "abort": 125
+    },
+    {
+      "step": 154,
+      "loss": 6.691034317016602,
+      "aux": 125225.140625,
+      "audited": false,
+      "head": "32cd7ef4ba874e925668bf3e80f33b8bc03de1e0319a46fde21d49ae8de1771c",
+      "commit": 31942,
+      "overflow": 164564,
+      "abort": 102
+    },
+    {
+      "step": 155,
+      "loss": 7.02580451965332,
+      "aux": 130456.7890625,
+      "audited": false,
+      "head": "8faeca52b1114f02ab9d5b5127a7dbc1e9dc294bb7eb7f5a09e337580ed7debe",
+      "commit": 32763,
+      "overflow": 163743,
+      "abort": 102
+    },
+    {
+      "step": 156,
+      "loss": 6.922999382019043,
+      "aux": 124685.4765625,
+      "audited": false,
+      "head": "48464307fb19f8047cbcf60dcf5481992454cb2640a212f8d9a67ab048febcd9",
+      "commit": 33135,
+      "overflow": 163406,
+      "abort": 67
+    },
+    {
+      "step": 157,
+      "loss": 6.5873517990112305,
+      "aux": 114919.84375,
+      "audited": false,
+      "head": "a3226c691d4d7abe6f19a0c3497fa484367bd10447823fa240253b47d1e6a122",
+      "commit": 33444,
+      "overflow": 163057,
+      "abort": 107
+    },
+    {
+      "step": 158,
+      "loss": 7.00558614730835,
+      "aux": 109446.5703125,
+      "audited": false,
+      "head": "32f0d0f0815d348e9453a6933a6c69cd159df2a726b07ae8beb21a4e246dfa4c",
+      "commit": 34611,
+      "overflow": 161913,
+      "abort": 84
+    },
+    {
+      "step": 159,
+      "loss": 6.873830318450928,
+      "aux": 105775.1484375,
+      "audited": false,
+      "head": "00bc5083d56a29156d2bd41cb47a0fda5e9d90714a30b22aacbfd55d230a08de",
+      "commit": 35493,
+      "overflow": 161009,
+      "abort": 106
+    },
+    {
+      "step": 160,
+      "loss": 6.895301818847656,
+      "aux": 103255.4921875,
+      "audited": true,
+      "head": "c39de8b234c9dc3d54cf7d6e3f5b9716776a2c747e865e813a56009d23b3556a",
+      "commit": 34674,
+      "overflow": 161834,
+      "abort": 100
+    },
+    {
+      "step": 161,
+      "loss": 6.696558475494385,
+      "aux": 118761.4140625,
+      "audited": false,
+      "head": "1c09ebb64ddb62564a4c8c92e0c6041bbb49e1df51905aef0895a83e66009ef1",
+      "commit": 33254,
+      "overflow": 163145,
+      "abort": 209
+    },
+    {
+      "step": 162,
+      "loss": 6.720144271850586,
+      "aux": 105347.234375,
+      "audited": false,
+      "head": "8651a1a86e23b13158c905eb4747a9fbc83fc4d2ec5235cbd0d024840f8556fc",
+      "commit": 33405,
+      "overflow": 163013,
+      "abort": 190
+    },
+    {
+      "step": 163,
+      "loss": 6.804623603820801,
+      "aux": 115694.4375,
+      "audited": false,
+      "head": "aa117ba8f12a244cb5292f58059fcd6d3f65fe5b710cc0e41b30313d025137b2",
+      "commit": 32037,
+      "overflow": 164280,
+      "abort": 291
+    },
+    {
+      "step": 164,
+      "loss": 6.664909362792969,
+      "aux": 108478.7578125,
+      "audited": false,
+      "head": "18c7577b32c090d448c4586ee53b6264133476fbdb03d5c65f5bb9ea9e4e03c1",
+      "commit": 32610,
+      "overflow": 163785,
+      "abort": 213
+    },
+    {
+      "step": 165,
+      "loss": 6.571843147277832,
+      "aux": 102999.21875,
+      "audited": false,
+      "head": "8755787186748ff92458e8d50624836bdca24f4786750e5b6eaffca0973fe469",
+      "commit": 32926,
+      "overflow": 163472,
+      "abort": 210
+    },
+    {
+      "step": 166,
+      "loss": 6.479003429412842,
+      "aux": 105573.9609375,
+      "audited": false,
+      "head": "44d1ea613ac2762b6dd7c2cbbe15ac7b91d5d50e4b7f8ef6286ffa284f2f4029",
+      "commit": 32600,
+      "overflow": 163748,
+      "abort": 260
+    },
+    {
+      "step": 167,
+      "loss": 6.7110137939453125,
+      "aux": 109876.8671875,
+      "audited": false,
+      "head": "7b1c8352f2384a3d3f19e56bb10366790fce8cbdc9cc54aef51a34632b5614a1",
+      "commit": 32907,
+      "overflow": 163476,
+      "abort": 225
+    },
+    {
+      "step": 168,
+      "loss": 6.702683448791504,
+      "aux": 98046.6875,
+      "audited": false,
+      "head": "2c6a7d23217a7d1f2a318a7e0a0c855c2fe989269592701686122145b939ac93",
+      "commit": 34470,
+      "overflow": 161866,
+      "abort": 272
+    },
+    {
+      "step": 169,
+      "loss": 6.98442268371582,
+      "aux": 103957.609375,
+      "audited": true,
+      "head": "ae06c8ebdcb20f8c5588464b56edaff7f9855802a30b7fa41d3c46a74c26bb04",
+      "commit": 34298,
+      "overflow": 162095,
+      "abort": 215
+    },
+    {
+      "step": 170,
+      "loss": 6.644205093383789,
+      "aux": 104306.765625,
+      "audited": false,
+      "head": "fefd593f50799d16699e675099b758388d57c59c088dc91abc10723798234ebb",
+      "commit": 34031,
+      "overflow": 162360,
+      "abort": 217
+    },
+    {
+      "step": 171,
+      "loss": 6.917713165283203,
+      "aux": 108534.515625,
+      "audited": true,
+      "head": "f7717bd1b7a2c793e926a48eef51ff091001458d87b9385d1719162c1580bc6d",
+      "commit": 33632,
+      "overflow": 162794,
+      "abort": 182
+    },
+    {
+      "step": 172,
+      "loss": 6.583624839782715,
+      "aux": 95424.0546875,
+      "audited": false,
+      "head": "0915171e9b30b12e525e9bd4a36b070e87e7a11d903bede58b84960aab55c561",
+      "commit": 34038,
+      "overflow": 162372,
+      "abort": 198
+    },
+    {
+      "step": 173,
+      "loss": 6.815868377685547,
+      "aux": 113373.53125,
+      "audited": false,
+      "head": "334bedf420fdb89780bd36868f645b2560af335d54ec76c16c89b3b1c6cd58fe",
+      "commit": 32922,
+      "overflow": 163397,
+      "abort": 289
+    },
+    {
+      "step": 174,
+      "loss": 6.540670394897461,
+      "aux": 106778.1875,
+      "audited": false,
+      "head": "fc0f852ce2346bfdb1df9349270d862e0a8ce65b5c6130f1f710089a56609652",
+      "commit": 32510,
+      "overflow": 163806,
+      "abort": 292
+    },
+    {
+      "step": 175,
+      "loss": 6.731172561645508,
+      "aux": 104571.78125,
+      "audited": false,
+      "head": "a5ac7856ed678bd5a2d35d4ed55436b23a2b312abce680bc146e9190fd42765e",
+      "commit": 33018,
+      "overflow": 163339,
+      "abort": 251
+    },
+    {
+      "step": 176,
+      "loss": 7.054651260375977,
+      "aux": 114331.484375,
+      "audited": false,
+      "head": "d26a502ad6f043a813d9a50961fe0f7c7c33d3c62b4b8dc72eac721e2db17359",
+      "commit": 32613,
+      "overflow": 163739,
+      "abort": 256
+    },
+    {
+      "step": 177,
+      "loss": 7.087333679199219,
+      "aux": 120537.640625,
+      "audited": false,
+      "head": "79b122c68a559f2d124d5fab1749e9ed9f4c4a9590b371e5cf76a97b20c8c3d1",
+      "commit": 32595,
+      "overflow": 163771,
+      "abort": 242
+    },
+    {
+      "step": 178,
+      "loss": 6.721923828125,
+      "aux": 112162.1015625,
+      "audited": false,
+      "head": "27bb3101d16ab60fe99752a80830290c51d0081f7265bc699699600638294d45",
+      "commit": 32905,
+      "overflow": 163487,
+      "abort": 216
+    },
+    {
+      "step": 179,
+      "loss": 6.850980281829834,
+      "aux": 109569.90625,
+      "audited": false,
+      "head": "a5aca035b4cbc5adc25807a0b712338088b0994a48656d62cd7f1bf33bdb3da4",
+      "commit": 33311,
+      "overflow": 163145,
+      "abort": 152
+    },
+    {
+      "step": 180,
+      "loss": 6.820827484130859,
+      "aux": 104839.25,
+      "audited": false,
+      "head": "752e1482fd413a28e6f576df544016e05ca4b53dc191c7c34fa5fb034ddee770",
+      "commit": 33234,
+      "overflow": 163260,
+      "abort": 114
+    },
+    {
+      "step": 181,
+      "loss": 6.827065944671631,
+      "aux": 108154.3515625,
+      "audited": false,
+      "head": "509a40ea35d8a127b6f1da8cd4cdcb738f8820b3dfca936df38939cc96b73169",
+      "commit": 32839,
+      "overflow": 163682,
+      "abort": 87
+    },
+    {
+      "step": 182,
+      "loss": 6.705987930297852,
+      "aux": 112635.359375,
+      "audited": false,
+      "head": "05461969a7db24f5737da79ff2e05a69d82110c3637675ecd6a0094446d94c9d",
+      "commit": 32638,
+      "overflow": 163841,
+      "abort": 129
+    },
+    {
+      "step": 183,
+      "loss": 6.624843597412109,
+      "aux": 101311.78125,
+      "audited": false,
+      "head": "1ed9e62a7922df953dd3a2e6121c3ace90f6e768d26c527969c0596043a11b42",
+      "commit": 33243,
+      "overflow": 163256,
+      "abort": 109
+    },
+    {
+      "step": 184,
+      "loss": 6.414998531341553,
+      "aux": 104675.859375,
+      "audited": false,
+      "head": "aa408043d7e204df1a5fbed1738f0a3099a72dc0b1daf50f19abeabb608252dd",
+      "commit": 33102,
+      "overflow": 163400,
+      "abort": 106
+    },
+    {
+      "step": 185,
+      "loss": 6.7975664138793945,
+      "aux": 108806.0234375,
+      "audited": false,
+      "head": "082012bb1c7bf419767a3520fd8b91447acc77f1ecbf3b6f62799b366c01766e",
+      "commit": 33371,
+      "overflow": 163094,
+      "abort": 143
+    },
+    {
+      "step": 186,
+      "loss": 6.579244136810303,
+      "aux": 107352.8828125,
+      "audited": false,
+      "head": "eddb577935888de5b626e240cedf5fc753e04d93303ab186cae501e064c4fa28",
+      "commit": 33007,
+      "overflow": 163398,
+      "abort": 203
+    },
+    {
+      "step": 187,
+      "loss": 6.987605094909668,
+      "aux": 120910.1484375,
+      "audited": false,
+      "head": "9219fe0b85ec7d11be99c301322b88c4e4bff4593bc47db11df871efeba94eeb",
+      "commit": 32432,
+      "overflow": 163956,
+      "abort": 220
+    },
+    {
+      "step": 188,
+      "loss": 6.821269512176514,
+      "aux": 108430.9375,
+      "audited": false,
+      "head": "d75ab3084b4ffef6a2979babbdedab81bcef77c1b4b765088da7a55cbd5b4fbb",
+      "commit": 32473,
+      "overflow": 163929,
+      "abort": 206
+    },
+    {
+      "step": 189,
+      "loss": 6.645327568054199,
+      "aux": 108779.484375,
+      "audited": false,
+      "head": "789332b168e34d55d426bfe89d51465892fd9f47d8a8e1090d78f0a4bb86baab",
+      "commit": 32244,
+      "overflow": 164103,
+      "abort": 261
+    },
+    {
+      "step": 190,
+      "loss": 6.763211250305176,
+      "aux": 110334.28125,
+      "audited": false,
+      "head": "d269bdbbda82a3ee9269679117474d20f86bb6634fd35e95fa8e529f68da06af",
+      "commit": 32001,
+      "overflow": 164421,
+      "abort": 186
+    },
+    {
+      "step": 191,
+      "loss": 6.8711090087890625,
+      "aux": 117840.7578125,
+      "audited": false,
+      "head": "80a2ce2c2c1d550b220752c8bd148e65dff9d62c43546aef0b2377ec4b62d7a9",
+      "commit": 32342,
+      "overflow": 164120,
+      "abort": 146
+    },
+    {
+      "step": 192,
+      "loss": 6.934872627258301,
+      "aux": 120441.3046875,
+      "audited": false,
+      "head": "3a79c306fe62b7a61729ae5498abe3f995751482e807c3675dc2f7600289ff21",
+      "commit": 32765,
+      "overflow": 163646,
+      "abort": 197
+    },
+    {
+      "step": 193,
+      "loss": 7.117502689361572,
+      "aux": 118624.375,
+      "audited": false,
+      "head": "571b841acf81b6c40292a3e97ab1c0d609c78467a2e4927ff528f99d2d933d28",
+      "commit": 32752,
+      "overflow": 163656,
+      "abort": 200
+    },
+    {
+      "step": 194,
+      "loss": 6.804782867431641,
+      "aux": 104650.59375,
+      "audited": false,
+      "head": "41c5a22b7c9d7d829dc5e277bc259f9139f66121a00b48ccd50e42426821dc70",
+      "commit": 32894,
+      "overflow": 163512,
+      "abort": 202
+    },
+    {
+      "step": 195,
+      "loss": 7.014645576477051,
+      "aux": 107384.296875,
+      "audited": false,
+      "head": "5fec862d872fafbbaf7d771595660a7723f4f4e618f6d762f2ecc1183c1f8235",
+      "commit": 32922,
+      "overflow": 163408,
+      "abort": 278
+    },
+    {
+      "step": 196,
+      "loss": 7.215795040130615,
+      "aux": 114636.53125,
+      "audited": false,
+      "head": "68d662b8c41ab91a653c5e1cbdfd59291268abf104fb7878cc6c911d2cd81c06",
+      "commit": 33442,
+      "overflow": 162831,
+      "abort": 335
+    },
+    {
+      "step": 197,
+      "loss": 6.691117286682129,
+      "aux": 101294.703125,
+      "audited": false,
+      "head": "0f91d7d7c9ba0ff0b8c35bae7683ac96a5ead5a65b339a9c2a71eec6b4cc05d2",
+      "commit": 33429,
+      "overflow": 162796,
+      "abort": 383
+    },
+    {
+      "step": 198,
+      "loss": 6.495942115783691,
+      "aux": 97033.484375,
+      "audited": false,
+      "head": "34f00ccbfd8d94ef766d0b2efb448dd0e9d4b5a806bba8abcccb4eb6caa89f5d",
+      "commit": 32780,
+      "overflow": 163526,
+      "abort": 302
+    },
+    {
+      "step": 199,
+      "loss": 6.714637756347656,
+      "aux": 103363.328125,
+      "audited": false,
+      "head": "5ee011208eb4ee08c6864b7bf6647a24cad77cc9fd5c6d741b629c96aa4df9a4",
+      "commit": 32162,
+      "overflow": 164157,
+      "abort": 289
+    },
+    {
+      "step": 200,
+      "loss": 6.430427551269531,
+      "aux": 99352.078125,
+      "audited": false,
+      "head": "60d37a6e2efa9eeb3b6ecdc3a3572e7060ab4d62f13c8c1f76b40c99bf676547",
+      "commit": 32151,
+      "overflow": 164224,
+      "abort": 233
+    },
+    {
+      "step": 201,
+      "loss": 6.744829177856445,
+      "aux": 106104.5,
+      "audited": false,
+      "head": "aea3449662660ed07dc0ef56c7af32bc5eee333915e6d2526f0ff213918a0006",
+      "commit": 31888,
+      "overflow": 164471,
+      "abort": 249
+    },
+    {
+      "step": 202,
+      "loss": 6.815023899078369,
+      "aux": 104726.6171875,
+      "audited": false,
+      "head": "294789657055aaad6e19caeed50861ce8934d5f27fbda2524f78ae3d95d49093",
+      "commit": 31751,
+      "overflow": 164592,
+      "abort": 265
+    },
+    {
+      "step": 203,
+      "loss": 6.772289276123047,
+      "aux": 102863.0078125,
+      "audited": true,
+      "head": "2934a13cade347d11b04d6fe5d64b8fca2e689a3794cc1454ad22c5730280865",
+      "commit": 32752,
+      "overflow": 163675,
+      "abort": 181
+    },
+    {
+      "step": 204,
+      "loss": 6.680706024169922,
+      "aux": 91294.34375,
+      "audited": false,
+      "head": "f4ad337ef344b7015a8d863d6dd046ce08556d8b18af9c7ddecea3551a0063ab",
+      "commit": 34067,
+      "overflow": 162373,
+      "abort": 168
+    },
+    {
+      "step": 205,
+      "loss": 6.865627288818359,
+      "aux": 94250.984375,
+      "audited": true,
+      "head": "63ccdcbbbf22f1b768fec75d1c16f4b0235b12340a4e7b6e1f407c393dea4086",
+      "commit": 34041,
+      "overflow": 162354,
+      "abort": 213
+    },
+    {
+      "step": 206,
+      "loss": 6.474946975708008,
+      "aux": 81723.53125,
+      "audited": false,
+      "head": "72518ea194543dd12cbad1d1d310cd20a7c187f2c3743982f4db5ab80cbd48e8",
+      "commit": 35035,
+      "overflow": 161423,
+      "abort": 150
+    },
+    {
+      "step": 207,
+      "loss": 7.093802452087402,
+      "aux": 97346.453125,
+      "audited": false,
+      "head": "15f569408f36a5b193557054b1f410e7cd70a2274c2ab7a58ca87b2cc1c68f05",
+      "commit": 34272,
+      "overflow": 162180,
+      "abort": 156
+    },
+    {
+      "step": 208,
+      "loss": 6.673074722290039,
+      "aux": 90742.8046875,
+      "audited": false,
+      "head": "2a9773f2386eeda42a63d8b7d54dde536334ab2712010117957e403cd46c2be4",
+      "commit": 34272,
+      "overflow": 162141,
+      "abort": 195
+    },
+    {
+      "step": 209,
+      "loss": 6.576491832733154,
+      "aux": 90215.515625,
+      "audited": false,
+      "head": "f2ce5146bc21de0f5848a5265b4cc8c9886908c0403ac390dbdca69ac03f550e",
+      "commit": 34436,
+      "overflow": 161949,
+      "abort": 223
+    },
+    {
+      "step": 210,
+      "loss": 6.8873515129089355,
+      "aux": 89540.75,
+      "audited": false,
+      "head": "2985a54bc979ca37824d91729f734626f17921923336e45a1d66ffb5d3011107",
+      "commit": 34598,
+      "overflow": 161772,
+      "abort": 238
+    },
+    {
+      "step": 211,
+      "loss": 6.500792980194092,
+      "aux": 87968.75,
+      "audited": false,
+      "head": "5d82b164489cc4a15f437f8d01eff986a999d7e1d86d2a9afe5659ce4c12f482",
+      "commit": 34678,
+      "overflow": 161715,
+      "abort": 215
+    },
+    {
+      "step": 212,
+      "loss": 6.669712066650391,
+      "aux": 90495.171875,
+      "audited": false,
+      "head": "0add9945aef345d32292c2e9d53a45f91c660b2e608ac47dcb8f0f858763d699",
+      "commit": 34261,
+      "overflow": 162157,
+      "abort": 190
+    },
+    {
+      "step": 213,
+      "loss": 6.921521186828613,
+      "aux": 98135.484375,
+      "audited": false,
+      "head": "b73680652d007dfdce95c4fb4cab04fafbfe76668e5672270af9b363b3af4419",
+      "commit": 33941,
+      "overflow": 162361,
+      "abort": 306
+    },
+    {
+      "step": 214,
+      "loss": 6.503989219665527,
+      "aux": 92801.671875,
+      "audited": false,
+      "head": "401b3d183b207e8856d968c3b469c92a674d6481c18dd848de729df1a7b26936",
+      "commit": 33941,
+      "overflow": 162383,
+      "abort": 284
+    },
+    {
+      "step": 215,
+      "loss": 7.109183311462402,
+      "aux": 98380.1171875,
+      "audited": false,
+      "head": "3a2c6ac985d5adad010f5a6b97ddb5395f14f18e1ad8acc505aa5bd4c459c15b",
+      "commit": 33803,
+      "overflow": 162584,
+      "abort": 221
+    },
+    {
+      "step": 216,
+      "loss": 6.595935821533203,
+      "aux": 88866.6953125,
+      "audited": false,
+      "head": "c5d3848e615a5acb45c16098a01a34f7eb0a627dcf566963a62dad32baed7b1a",
+      "commit": 34193,
+      "overflow": 162174,
+      "abort": 241
+    },
+    {
+      "step": 217,
+      "loss": 6.757924556732178,
+      "aux": 93557.0390625,
+      "audited": false,
+      "head": "0e632550a7c01694c76b14f5c9335b79f99401aebe6e6356fe16bd34dd622e43",
+      "commit": 33666,
+      "overflow": 162700,
+      "abort": 242
+    },
+    {
+      "step": 218,
+      "loss": 6.529197692871094,
+      "aux": 87783.4453125,
+      "audited": false,
+      "head": "46bcf4b30eb0d3bc2da309f45ee19ce4c977e10936b5fc4c22dda15783f38ef0",
+      "commit": 34078,
+      "overflow": 162363,
+      "abort": 167
+    },
+    {
+      "step": 219,
+      "loss": 6.539308547973633,
+      "aux": 81104.5390625,
+      "audited": false,
+      "head": "89c33d624e6ab18a6c2bb6734c3b3fca3a742473bf2d7d928fd7b52564a4a07c",
+      "commit": 33570,
+      "overflow": 162843,
+      "abort": 195
+    },
+    {
+      "step": 220,
+      "loss": 6.655275821685791,
+      "aux": 86214.2421875,
+      "audited": false,
+      "head": "08924ddf5fc0e93397cced7b54eede55107ae66fa919817baad3d6dfb6525548",
+      "commit": 33131,
+      "overflow": 163227,
+      "abort": 250
+    },
+    {
+      "step": 221,
+      "loss": 6.979216575622559,
+      "aux": 93114.8203125,
+      "audited": false,
+      "head": "d95fcf07568351e71b7cacbe699fbe05582ff7dd8ebba62390eef2d8610dfa03",
+      "commit": 33451,
+      "overflow": 162973,
+      "abort": 184
+    },
+    {
+      "step": 222,
+      "loss": 6.378519058227539,
+      "aux": 81442.9296875,
+      "audited": false,
+      "head": "17baeebab65a222dc43e1d415a5fd376069c7d018c583da3c90b89e28fe7cc6a",
+      "commit": 34054,
+      "overflow": 162336,
+      "abort": 218
+    },
+    {
+      "step": 223,
+      "loss": 6.721179485321045,
+      "aux": 86729.296875,
+      "audited": false,
+      "head": "9108313b978ae2d166d1d754ad18bb5e7237a134b6028130c94690fff3e2c3aa",
+      "commit": 33698,
+      "overflow": 162741,
+      "abort": 169
+    },
+    {
+      "step": 224,
+      "loss": 6.773195266723633,
+      "aux": 87746.2578125,
+      "audited": false,
+      "head": "9192e2feb7368280f5c15033c053a38a640d75ab7b5840772424ad8897da1da6",
+      "commit": 33570,
+      "overflow": 162825,
+      "abort": 213
+    },
+    {
+      "step": 225,
+      "loss": 6.500885009765625,
+      "aux": 81407.25,
+      "audited": false,
+      "head": "ff62cb73531d88aba819c5f3218c0a6a274b175e8fce0823a2decc6740b50df4",
+      "commit": 33657,
+      "overflow": 162734,
+      "abort": 217
+    },
+    {
+      "step": 226,
+      "loss": 6.638855934143066,
+      "aux": 85571.265625,
+      "audited": false,
+      "head": "85839fb37e7eaca2eda602a66d29138e70d8fb260d85cde4216933e6766eb658",
+      "commit": 33379,
+      "overflow": 163048,
+      "abort": 181
+    },
+    {
+      "step": 227,
+      "loss": 6.7371625900268555,
+      "aux": 86890.609375,
+      "audited": false,
+      "head": "c7493df0e5b98b80f70fea67b430aeea6b8100dfc8ed2cd5c8b608c446c01016",
+      "commit": 33519,
+      "overflow": 162878,
+      "abort": 211
+    },
+    {
+      "step": 228,
+      "loss": 6.728280544281006,
+      "aux": 82749.1328125,
+      "audited": false,
+      "head": "9889c8bfcb2db5d2b03d7110d38d8d1fd66beed131835dca4da36d3989d4f2b7",
+      "commit": 34244,
+      "overflow": 162179,
+      "abort": 185
+    },
+    {
+      "step": 229,
+      "loss": 6.55173397064209,
+      "aux": 81509.421875,
+      "audited": false,
+      "head": "16840e607201384333a8094a2deefb4e57962acc0ecd81b5754bda1e9f41816e",
+      "commit": 33815,
+      "overflow": 162550,
+      "abort": 243
+    },
+    {
+      "step": 230,
+      "loss": 7.027016639709473,
+      "aux": 88252.28125,
+      "audited": false,
+      "head": "3ee8c3fb101e25ae19079120b18ca52c529194affa05048ecaa18f93aa142a62",
+      "commit": 33613,
+      "overflow": 162806,
+      "abort": 189
+    },
+    {
+      "step": 231,
+      "loss": 6.602619171142578,
+      "aux": 85032.046875,
+      "audited": false,
+      "head": "ce8230686766d159d8696edbff7c260e2b7680d565b7604bc5962e5d4b6ecd20",
+      "commit": 33205,
+      "overflow": 163201,
+      "abort": 202
+    },
+    {
+      "step": 232,
+      "loss": 7.034720420837402,
+      "aux": 91427.203125,
+      "audited": false,
+      "head": "d0eebb5fc6b4843d8b20e70b121468f2ba3b5903f69370275cf9c482cecd2f7d",
+      "commit": 33577,
+      "overflow": 162880,
+      "abort": 151
+    },
+    {
+      "step": 233,
+      "loss": 6.550375461578369,
+      "aux": 86389.1484375,
+      "audited": false,
+      "head": "79ea421394476dd6e6ec741520d4e6a44e664a2e158e4ca1f5907849bce72177",
+      "commit": 33768,
+      "overflow": 162677,
+      "abort": 163
+    },
+    {
+      "step": 234,
+      "loss": 6.4629130363464355,
+      "aux": 81246.5625,
+      "audited": false,
+      "head": "4687837f052d1ce321a3d9ca84dcfeaca02f60182a31a3da45cd14ec1eeac2be",
+      "commit": 33835,
+      "overflow": 162618,
+      "abort": 155
+    },
+    {
+      "step": 235,
+      "loss": 6.863593101501465,
+      "aux": 85971.25,
+      "audited": false,
+      "head": "ad80a76c6d701e8ea5449bc85318ee6562866ac787c57a64ebe199d820a5a8a0",
+      "commit": 33928,
+      "overflow": 162559,
+      "abort": 121
+    },
+    {
+      "step": 236,
+      "loss": 6.590641498565674,
+      "aux": 82023.34375,
+      "audited": false,
+      "head": "5992fddfcf63e9a7489c30aae29e85c96d812deec3d281460e75264a6c14e431",
+      "commit": 34331,
+      "overflow": 162148,
+      "abort": 129
+    },
+    {
+      "step": 237,
+      "loss": 6.743350028991699,
+      "aux": 87808.359375,
+      "audited": false,
+      "head": "f98a57d795b3d757c96e365ff8752e61662577eb5c7afe90e84d5365ea0e8b54",
+      "commit": 33808,
+      "overflow": 162638,
+      "abort": 162
+    },
+    {
+      "step": 238,
+      "loss": 6.78201961517334,
+      "aux": 85000.8828125,
+      "audited": false,
+      "head": "92a758f275071d445c5ef59c26eed1edc87db909aff7af938c060ab59c73dcf1",
+      "commit": 34163,
+      "overflow": 162279,
+      "abort": 166
+    },
+    {
+      "step": 239,
+      "loss": 6.55413818359375,
+      "aux": 84420.484375,
+      "audited": false,
+      "head": "90ff46b7ab9f717589501523c98b4e20da206997119de61243c0893790c61740",
+      "commit": 34711,
+      "overflow": 161750,
+      "abort": 147
+    },
+    {
+      "step": 240,
+      "loss": 6.477482795715332,
+      "aux": 83292.6171875,
+      "audited": false,
+      "head": "df9a883efac2b72f7e3e0d992ff66ed6d9d6cee88a15278c942e82d4fa3f845f",
+      "commit": 34779,
+      "overflow": 161674,
+      "abort": 155
+    },
+    {
+      "step": 241,
+      "loss": 6.6261138916015625,
+      "aux": 86478.0,
+      "audited": false,
+      "head": "6585fb8130741ded45198376901ae2d686d991fb35aea749f4a1ee3dec35759c",
+      "commit": 34520,
+      "overflow": 161908,
+      "abort": 180
+    },
+    {
+      "step": 242,
+      "loss": 6.707245349884033,
+      "aux": 83678.0546875,
+      "audited": true,
+      "head": "6389868a0f7f85724ce39e5f4b6069032785478ba005e5e46b95735ba5017cf1",
+      "commit": 34723,
+      "overflow": 161698,
+      "abort": 187
+    },
+    {
+      "step": 243,
+      "loss": 6.863726615905762,
+      "aux": 88129.1796875,
+      "audited": false,
+      "head": "8c46e9b17ec436662bfa7e4f8a68ecb4f62cf6cbc0c82a05d1ba8d7b38a58a5b",
+      "commit": 34775,
+      "overflow": 161648,
+      "abort": 185
+    },
+    {
+      "step": 244,
+      "loss": 6.546647071838379,
+      "aux": 84022.1171875,
+      "audited": false,
+      "head": "c6329010a1d4a8b80fc335297b0251a267bc40a92f776029356a475205c82692",
+      "commit": 34639,
+      "overflow": 161733,
+      "abort": 236
+    },
+    {
+      "step": 245,
+      "loss": 6.896875858306885,
+      "aux": 88186.796875,
+      "audited": false,
+      "head": "b99c52e38cc46d70d2298a2c5cf5c6e1eb86c6dc91d7c175fdd9bcb2d69a00fa",
+      "commit": 34548,
+      "overflow": 161833,
+      "abort": 227
+    },
+    {
+      "step": 246,
+      "loss": 6.822060585021973,
+      "aux": 77630.515625,
+      "audited": false,
+      "head": "6f7cd66a68277c8a63d567ef791e8b3493753a37db6d13c29f55cc69fa652f56",
+      "commit": 35062,
+      "overflow": 161326,
+      "abort": 220
+    },
+    {
+      "step": 247,
+      "loss": 6.881011486053467,
+      "aux": 79615.9921875,
+      "audited": false,
+      "head": "e4f4c40f230fccd43a2e773df77bbb49007b4de80180080188affbd61a7b2cf2",
+      "commit": 35701,
+      "overflow": 160738,
+      "abort": 169
+    },
+    {
+      "step": 248,
+      "loss": 6.678638458251953,
+      "aux": 77395.140625,
+      "audited": false,
+      "head": "5a91d52029862fe9569a8ba0b86a94ce396a75a01ed089c2f95a7ae54449d56a",
+      "commit": 35311,
+      "overflow": 161042,
+      "abort": 255
+    },
+    {
+      "step": 249,
+      "loss": 6.540462970733643,
+      "aux": 71617.765625,
+      "audited": false,
+      "head": "f964d1cd2139f1e8fc903eec209e6c5f192840d5ec10f24c450a6223606d80c9",
+      "commit": 35456,
+      "overflow": 160901,
+      "abort": 251
+    },
+    {
+      "step": 250,
+      "loss": 6.818215370178223,
+      "aux": 85601.46875,
+      "audited": false,
+      "head": "294467758380b28607d80a90d497419cce267d5e328d49a6a5353e12534cbba7",
+      "commit": 34989,
+      "overflow": 161362,
+      "abort": 257
+    },
+    {
+      "step": 251,
+      "loss": 6.3997392654418945,
+      "aux": 84144.078125,
+      "audited": false,
+      "head": "309187e8b9574e531b7d498f57248b2381524d7ca2c2c8d1d1f2a334d80d1cfc",
+      "commit": 34495,
+      "overflow": 161823,
+      "abort": 290
+    },
+    {
+      "step": 252,
+      "loss": 6.433955192565918,
+      "aux": 83751.8828125,
+      "audited": false,
+      "head": "b7629d8bcc0e78685c79f6260b07c5310e88d7bc4cd03dd63886b8e2539b86ee",
+      "commit": 35064,
+      "overflow": 161180,
+      "abort": 364
+    },
+    {
+      "step": 253,
+      "loss": 6.577363967895508,
+      "aux": 87284.4140625,
+      "audited": false,
+      "head": "3e121d69483e16d897865617be1e4017a47d24cae4c8d5268daa2854ffe0192e",
+      "commit": 34971,
+      "overflow": 161360,
+      "abort": 277
+    },
+    {
+      "step": 254,
+      "loss": 6.9901227951049805,
+      "aux": 94398.3984375,
+      "audited": false,
+      "head": "d00a5a2fb68d18ffbdd7e8b7d7658133a88df691f3be0a7eb9d6e1025a31e227",
+      "commit": 34307,
+      "overflow": 162065,
+      "abort": 236
+    },
+    {
+      "step": 255,
+      "loss": 6.480218887329102,
+      "aux": 82820.390625,
+      "audited": false,
+      "head": "afc462ebd4697dc0cbc09255fb4084e791f2bdc4019abcff331b33ba024c2293",
+      "commit": 34567,
+      "overflow": 161631,
+      "abort": 410
+    },
+    {
+      "step": 256,
+      "loss": 6.428552627563477,
+      "aux": 82042.890625,
+      "audited": false,
+      "head": "df5f000524f92c80b69612aa1e8200cfc2f61d0dcf7b1c7a71293806076f0577",
+      "commit": 34493,
+      "overflow": 161808,
+      "abort": 307
+    },
+    {
+      "step": 257,
+      "loss": 6.899938106536865,
+      "aux": 86502.5546875,
+      "audited": false,
+      "head": "e18ddd858a5861bd3c47b76a20d5400292789c91dba91e57f3fa22e4b13b41ff",
+      "commit": 34632,
+      "overflow": 161633,
+      "abort": 343
+    },
+    {
+      "step": 258,
+      "loss": 6.361955642700195,
+      "aux": 78594.7734375,
+      "audited": false,
+      "head": "a3959c3a082a29b15f85a81fcbe697335c70a34e71ca48d5cc0760815fbe4e09",
+      "commit": 35408,
+      "overflow": 160905,
+      "abort": 295
+    },
+    {
+      "step": 259,
+      "loss": 6.784542560577393,
+      "aux": 80829.2421875,
+      "audited": false,
+      "head": "8ac666296acf0a76a7a1343140f6063c7ab03162a1c53e7ec22df6e2205c271f",
+      "commit": 35218,
+      "overflow": 161131,
+      "abort": 259
+    },
+    {
+      "step": 260,
+      "loss": 6.656401634216309,
+      "aux": 80729.828125,
+      "audited": false,
+      "head": "39b60f8b7d01e2ebf549e7869be3aeb3dedd35b649faafc3f6adca3e73de7ad5",
+      "commit": 33912,
+      "overflow": 162424,
+      "abort": 272
+    },
+    {
+      "step": 261,
+      "loss": 6.586484909057617,
+      "aux": 74480.3125,
+      "audited": false,
+      "head": "67b6a78ca88623a58dd99d4aa67441601c7af0a890a86a03daba82a38c4ce78a",
+      "commit": 34456,
+      "overflow": 161885,
+      "abort": 267
+    },
+    {
+      "step": 262,
+      "loss": 6.693843841552734,
+      "aux": 74727.015625,
+      "audited": false,
+      "head": "685567a9c5740a22c70b3a342ae421633dbcef787c9baf46d04dcffab5d1f5bd",
+      "commit": 34516,
+      "overflow": 161873,
+      "abort": 219
+    },
+    {
+      "step": 263,
+      "loss": 7.225111961364746,
+      "aux": 86539.2734375,
+      "audited": false,
+      "head": "e53c517897559cac13a76f16699fb3c320c0ff8031fb200053a5b2e88414fbb7",
+      "commit": 34512,
+      "overflow": 161894,
+      "abort": 202
+    },
+    {
+      "step": 264,
+      "loss": 6.964876174926758,
+      "aux": 76991.625,
+      "audited": false,
+      "head": "cb8f9a15aa97628840715434fe61522017e0a22cc2b36b9bf98ff250db82a8bf",
+      "commit": 35151,
+      "overflow": 161271,
+      "abort": 186
+    },
+    {
+      "step": 265,
+      "loss": 6.82651424407959,
+      "aux": 76559.296875,
+      "audited": false,
+      "head": "4d2e96552ab35bf07c0dfddfe66ef01df9953623f0a3a1beb871b4f523cf8665",
+      "commit": 35384,
+      "overflow": 160945,
+      "abort": 279
+    },
+    {
+      "step": 266,
+      "loss": 6.543907165527344,
+      "aux": 65843.484375,
+      "audited": false,
+      "head": "8ffefbff601a4e39d04a3d2bd0ba458e789b60cd38c7f521ca8f196714d87888",
+      "commit": 35172,
+      "overflow": 161153,
+      "abort": 283
+    },
+    {
+      "step": 267,
+      "loss": 6.673552513122559,
+      "aux": 79944.5703125,
+      "audited": false,
+      "head": "d4b806b81a8eef37b5ad3cf6f803ceb6b8947e7b6a22beb783f43d8756bb01e1",
+      "commit": 35500,
+      "overflow": 160798,
+      "abort": 310
+    },
+    {
+      "step": 268,
+      "loss": 6.400402069091797,
+      "aux": 78041.3828125,
+      "audited": false,
+      "head": "f5eb9d234f6bc45e1fbb570cb8b3c0c958f48f0d903a38944b4eaeb48be117a7",
+      "commit": 35042,
+      "overflow": 161196,
+      "abort": 370
+    },
+    {
+      "step": 269,
+      "loss": 6.766263008117676,
+      "aux": 88203.03125,
+      "audited": false,
+      "head": "a8d06e408ff40d991d8f1043ee79c24b8cf6135d7e17d9df02b06be94726c050",
+      "commit": 34526,
+      "overflow": 161654,
+      "abort": 428
+    },
+    {
+      "step": 270,
+      "loss": 6.693469047546387,
+      "aux": 86266.984375,
+      "audited": false,
+      "head": "dd1f11838f891a5cdde766df1bffaa307e93cfc5d061c90fc4263533a1f9ba76",
+      "commit": 34830,
+      "overflow": 161429,
+      "abort": 349
+    },
+    {
+      "step": 271,
+      "loss": 6.798671245574951,
+      "aux": 82113.3359375,
+      "audited": true,
+      "head": "ed89b32fc68ac99605c73dd131de7be67254dc67517155fbd5cb0fb3b159e94b",
+      "commit": 35703,
+      "overflow": 160603,
+      "abort": 302
+    },
+    {
+      "step": 272,
+      "loss": 6.633114814758301,
+      "aux": 78917.3828125,
+      "audited": false,
+      "head": "56978e0cca398c8c0fa73d823d78bf1b7a8c6be6ce4686dd46419c2f5cd6fd50",
+      "commit": 35348,
+      "overflow": 160947,
+      "abort": 313
+    },
+    {
+      "step": 273,
+      "loss": 6.850132942199707,
+      "aux": 83687.515625,
+      "audited": false,
+      "head": "e039f7ff3ead4a290c360d61527f56ceb2b52cc4fea2fa8b0991f4ad5158ea66",
+      "commit": 34593,
+      "overflow": 161733,
+      "abort": 282
+    },
+    {
+      "step": 274,
+      "loss": 6.437623023986816,
+      "aux": 78824.6328125,
+      "audited": false,
+      "head": "aa82d2ad273abcb76b6189fac1398da310de9f5ca1765b937ac38c569160aaf5",
+      "commit": 34349,
+      "overflow": 161865,
+      "abort": 394
+    },
+    {
+      "step": 275,
+      "loss": 6.614025592803955,
+      "aux": 86592.5234375,
+      "audited": false,
+      "head": "96c6f09e1d96216093ee100a39b8b6de66dcd7d92dbf772f2bed5373db5f14a4",
+      "commit": 33598,
+      "overflow": 162555,
+      "abort": 455
+    },
+    {
+      "step": 276,
+      "loss": 6.517810821533203,
+      "aux": 76522.1796875,
+      "audited": false,
+      "head": "4a302ea90c84b37acb9fc027f08edd84eee581656b1fdf510b3c3f70f2c6cae5",
+      "commit": 34296,
+      "overflow": 161856,
+      "abort": 456
+    },
+    {
+      "step": 277,
+      "loss": 6.514247894287109,
+      "aux": 85155.5703125,
+      "audited": false,
+      "head": "dd79dcf0a614c127d35c83c93c1e5b8ad28463169d597c8355ab8379f53b39cc",
+      "commit": 34127,
+      "overflow": 162124,
+      "abort": 357
+    },
+    {
+      "step": 278,
+      "loss": 6.328548431396484,
+      "aux": 71183.53125,
+      "audited": false,
+      "head": "dd1fdf6174f93fd47a0d609a887bac3b6495dc22677553106e2ed8c53288f54c",
+      "commit": 35094,
+      "overflow": 161206,
+      "abort": 308
+    },
+    {
+      "step": 279,
+      "loss": 6.381998062133789,
+      "aux": 72589.7265625,
+      "audited": false,
+      "head": "123fe2a915cba72aad2883555d8f132f06c2288fa25c9cc3a508c0a8d4374123",
+      "commit": 35274,
+      "overflow": 160894,
+      "abort": 440
+    },
+    {
+      "step": 280,
+      "loss": 6.741615295410156,
+      "aux": 78454.890625,
+      "audited": false,
+      "head": "cd8ce9d676f165ee9c7b2709e058fec33bf72867d71cf19d68879d47437e9775",
+      "commit": 35510,
+      "overflow": 160801,
+      "abort": 297
+    },
+    {
+      "step": 281,
+      "loss": 6.6084184646606445,
+      "aux": 73865.4296875,
+      "audited": false,
+      "head": "ec9c182c8e8c8b5e6589f79438cf91f578948d4fb97d60c124beb9824c600b33",
+      "commit": 35463,
+      "overflow": 160757,
+      "abort": 388
+    },
+    {
+      "step": 282,
+      "loss": 6.829300880432129,
+      "aux": 72280.5703125,
+      "audited": false,
+      "head": "08ac7d9b28a4e36445fbade12fe8e641967cb318f26a08b4784a8965fd32ff42",
+      "commit": 35369,
+      "overflow": 160983,
+      "abort": 256
+    },
+    {
+      "step": 283,
+      "loss": 6.722838878631592,
+      "aux": 70153.40625,
+      "audited": false,
+      "head": "e47dc373e69bd61877409d9c545a518db048c205d19dc83596dc17d642ab375c",
+      "commit": 35680,
+      "overflow": 160582,
+      "abort": 346
+    },
+    {
+      "step": 284,
+      "loss": 6.731727600097656,
+      "aux": 76951.2109375,
+      "audited": false,
+      "head": "f1a1a2bdc96e3a657da6674c379f88f8aef26a93443330693c473077e99f093d",
+      "commit": 35898,
+      "overflow": 160371,
+      "abort": 339
+    },
+    {
+      "step": 285,
+      "loss": 6.432461738586426,
+      "aux": 70108.0625,
+      "audited": false,
+      "head": "767b525a8ec38b2cae818fd2a6b2f3511ddfcbdbedae0a98a9f9992166f50b66",
+      "commit": 35467,
+      "overflow": 160815,
+      "abort": 326
+    },
+    {
+      "step": 286,
+      "loss": 6.511450290679932,
+      "aux": 74229.15625,
+      "audited": false,
+      "head": "00d97b5ca1d43dfbaff570acbe65be366f4ed236c683cc29636377551d9264ea",
+      "commit": 35119,
+      "overflow": 161197,
+      "abort": 292
+    },
+    {
+      "step": 287,
+      "loss": 6.2375030517578125,
+      "aux": 72108.7578125,
+      "audited": false,
+      "head": "f1f7869fce598d26a586d9f8b048f8c16555434e5c54969a22bfb9a507bfcf63",
+      "commit": 34992,
+      "overflow": 161373,
+      "abort": 243
+    },
+    {
+      "step": 288,
+      "loss": 6.743779182434082,
+      "aux": 74503.328125,
+      "audited": false,
+      "head": "13e7dfc0beaf0f6a87c108d4458326c5ea12e0aead7d3f7cb4ea0d6d7adc93ea",
+      "commit": 34444,
+      "overflow": 161985,
+      "abort": 179
+    },
+    {
+      "step": 289,
+      "loss": 6.465740203857422,
+      "aux": 80212.1953125,
+      "audited": false,
+      "head": "48f908a3abb2e0148d9d8fda5739ea7f47e2bcd6907f3acd3a88b066104b3067",
+      "commit": 34230,
+      "overflow": 162144,
+      "abort": 234
+    },
+    {
+      "step": 290,
+      "loss": 6.3717875480651855,
+      "aux": 71965.96875,
+      "audited": false,
+      "head": "48d7ce91dcc1f0389c2df1082253d762f495ed5648942aa5c5b07e1a2765db19",
+      "commit": 34338,
+      "overflow": 161986,
+      "abort": 284
+    },
+    {
+      "step": 291,
+      "loss": 6.470563888549805,
+      "aux": 77211.7734375,
+      "audited": false,
+      "head": "490455c388a3b4d87e7a4608b2d1a8f91a492e5b590942d7d1d995bf2f65ee50",
+      "commit": 33847,
+      "overflow": 162499,
+      "abort": 262
+    },
+    {
+      "step": 292,
+      "loss": 6.425217151641846,
+      "aux": 74939.4765625,
+      "audited": false,
+      "head": "f91f7c4a6fe54231ca9bb47ee4f82487cf720545585c09bbafe69f51f0aa2872",
+      "commit": 34303,
+      "overflow": 162077,
+      "abort": 228
+    },
+    {
+      "step": 293,
+      "loss": 6.365765571594238,
+      "aux": 75308.53125,
+      "audited": false,
+      "head": "d7d40ea157c5df24335a2082518e4432e6c15e52c4572acff433351ba5c63419",
+      "commit": 34662,
+      "overflow": 161698,
+      "abort": 248
+    },
+    {
+      "step": 294,
+      "loss": 6.4830217361450195,
+      "aux": 76322.09375,
+      "audited": false,
+      "head": "fc29e916f20a70ddae211048d69af1388ac59b9e2350c8fd6b3a90d69c74e47e",
+      "commit": 34671,
+      "overflow": 161710,
+      "abort": 227
+    },
+    {
+      "step": 295,
+      "loss": 6.33526611328125,
+      "aux": 74731.3671875,
+      "audited": false,
+      "head": "2aa1b6c17344c3fb3fc16a22d294686d71288485465c7374cf4f5b2a1ce3bf20",
+      "commit": 34714,
+      "overflow": 161684,
+      "abort": 210
+    },
+    {
+      "step": 296,
+      "loss": 6.457048416137695,
+      "aux": 77152.25,
+      "audited": false,
+      "head": "0e0697de6d51d0ea94170907ff9ab43648d0b98d5585fd14fdf9f8c167cfef15",
+      "commit": 34553,
+      "overflow": 161774,
+      "abort": 281
+    },
+    {
+      "step": 297,
+      "loss": 6.157344818115234,
+      "aux": 73079.0078125,
+      "audited": false,
+      "head": "a5fe8c37c2ca3d6bfa1d51748e6b25ae0a52ddce68a837c2cd68fc1cc7de48dc",
+      "commit": 35173,
+      "overflow": 161270,
+      "abort": 165
+    },
+    {
+      "step": 298,
+      "loss": 6.396466255187988,
+      "aux": 69523.4375,
+      "audited": false,
+      "head": "8007f688d9401a67ab604d03f77f6ad4a1ec0679064227642f7285aac328009d",
+      "commit": 35447,
+      "overflow": 160873,
+      "abort": 288
+    },
+    {
+      "step": 299,
+      "loss": 6.576997756958008,
+      "aux": 68843.59375,
+      "audited": false,
+      "head": "4aaf2585ba4785453e13f390615044b6836c9c4725d6d4c8f1d40bc0d0a30df9",
+      "commit": 35719,
+      "overflow": 160680,
+      "abort": 209
+    }
+  ],
+  "t1": [
+    {
+      "step": 51,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 44326,
+      "final_head": "c31dd6511f49ec22ce7e3019d040700b3e395d2a676b661de5017c18977b4c06"
+    },
+    {
+      "step": 98,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 35026,
+      "final_head": "a20a60c66e281e16c6e0927c4207777cf053c0b851e36010644554c73505b70e"
+    },
+    {
+      "step": 160,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 34674,
+      "final_head": "c39de8b234c9dc3d54cf7d6e3f5b9716776a2c747e865e813a56009d23b3556a"
+    },
+    {
+      "step": 169,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 34298,
+      "final_head": "ae06c8ebdcb20f8c5588464b56edaff7f9855802a30b7fa41d3c46a74c26bb04"
+    },
+    {
+      "step": 171,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 33632,
+      "final_head": "f7717bd1b7a2c793e926a48eef51ff091001458d87b9385d1719162c1580bc6d"
+    },
+    {
+      "step": 203,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 32752,
+      "final_head": "2934a13cade347d11b04d6fe5d64b8fca2e689a3794cc1454ad22c5730280865"
+    },
+    {
+      "step": 205,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 34041,
+      "final_head": "63ccdcbbbf22f1b768fec75d1c16f4b0235b12340a4e7b6e1f407c393dea4086"
+    },
+    {
+      "step": 242,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 34723,
+      "final_head": "6389868a0f7f85724ce39e5f4b6069032785478ba005e5e46b95735ba5017cf1"
+    },
+    {
+      "step": 271,
+      "outcome": "consistent",
+      "microbatch": 0,
+      "n_applied": 35703,
+      "final_head": "ed89b32fc68ac99605c73dd131de7be67254dc67517155fbd5cb0fb3b159e94b"
+    }
+  ],
+  "evals": [
+    {
+      "step": 300,
+      "val_ppl": 691.9023576001662
+    }
+  ],
+  "codebook_resets": [],
+  "timing": {
+    "compute_s": 114.1135368347168,
+    "ledger_s": 12.958974838256836,
+    "audit_capture_s": 0.23366880416870117,
+    "verify_offline_s": 0.16546130180358887
+  },
+  "wall_s": 136.75836491584778,
+  "export": {
+    "theta_sha256": "015735e833960bfd91b7becc24daae00332c8201a94b142e72b82bca4d832f4c",
+    "c_sha256": "096308002eb77a6a0e96470cb78801636d0fe509bfc435c04dc078062c61bf1e",
+    "final_head": "4aaf2585ba4785453e13f390615044b6836c9c4725d6d4c8f1d40bc0d0a30df9",
+    "val_ppl": 691.9023576001662
+  }
+}

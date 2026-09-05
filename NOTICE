@@ -1,0 +1,24 @@
+hytorch — a transactional residual stream for transformer training
+Copyright 2026 Hyphae Research Foundation
+
+Licensing
+---------
+* Source code (crates/, python/, kernels/, infra/, nanochat/, trn/, manifests/,
+  paper/make_figs.py) is licensed under the Apache License, Version 2.0.
+  See LICENSE.
+* Documentation, the paper (paper/main.tex, paper/main.pdf, paper/figs/,
+  paper/notes/), docs/, and the prose, tables and notes under results/ are
+  licensed under the Creative Commons Attribution-ShareAlike 4.0
+  International License. See LICENSE-CC-BY-SA-4.0.
+* Raw experimental artifacts under results/ (logs, CSVs, JSON summaries)
+  are data; to the extent they are copyrightable they are CC BY-SA 4.0.
+
+Third-party components
+----------------------
+* nanochat (Andrej Karpathy) is integrated by patch (nanochat/apply-patch.sh,
+  trn/apply-patch.sh) against a pinned upstream commit; it is not
+  redistributed here and keeps its own license.
+* The Trainium training script under /opt/trn on the experiment box is the
+  AWS Neuron competition tree, likewise pinned and not redistributed.
+* AWS Neuron SDK, torch-xla, PyTorch, ROCm and CUDA are used under their
+  respective licenses.

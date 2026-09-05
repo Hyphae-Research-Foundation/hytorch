@@ -1,0 +1,100 @@
+{
+  "$comment": "Manifiesto fase 1 \u2014 hytorch. INMUTABLE una vez citado por un RUN_START. Umbrales prerregistrados ANTES del step 0 (spec \u00a710\u201311). Los campos build.* e infra.* se rellenan en el droplet del run por capture-build.sh; el resto queda congelado aqu\u00ed.",
+  "manifest_version": 1,
+  "phase": 1,
+  "model": {
+    "d_model": 768,
+    "s_slots": 64,
+    "d_slot": 12,
+    "n_layers": 12,
+    "n_heads": 12,
+    "block": "parallel",
+    "write_path_init": 0
+  },
+  "catalog": {
+    "n_features": 32768,
+    "k": 8,
+    "home": "mod_S",
+    "metric": "cosine_l2normed",
+    "reduction": "seq_fp32_nofma",
+    "tie": "score_desc,feature_asc,slot_asc",
+    "eps_bits": "0x38800000",
+    "mag_max": 8.0,
+    "abort_rules": [
+      "nonfinite",
+      "mag_overflow"
+    ]
+  },
+  "codebook": {
+    "mechanism": "ste",
+    "post_step": "renorm",
+    "min_norm": 0.00390625,
+    "reset": "min_norm_reinit",
+    "reset_min_norm": 0.00390625,
+    "$reset_comment": "review 2026-09-02: code implements renorm_or_reset (row norm < reset_min_norm -> random unit reinit, CODEBOOK_RESET fact); the previously declared ema_dead/dead_window never existed in code"
+  },
+  "training": {
+    "dataset": "wikitext-103",
+    "tokenizer": "gpt2-bpe",
+    "steps": 20000,
+    "seq_len": 512,
+    "batch_seq": 4,
+    "n_tokens_per_step": 2048,
+    "seeds": [
+      1337,
+      2026,
+      4242
+    ],
+    "optimizer": "adamw",
+    "lr": 0.0006,
+    "aux_balance_coeff": 0.01
+  },
+  "baseline": {
+    "block": "parallel",
+    "flops_matched": true,
+    "$comment": "Denso parallel-block, misma topolog\u00eda funcional. FLOPs cuentan layer + pack (barrido N_f) + apply_ref (spec C2/\u00a711)."
+  },
+  "budgets": {
+    "binding_profile": "min",
+    "beta_bytes": 16,
+    "wal_max_bytes_per_token": 3072,
+    "wal_max_bytes_per_step": 6291456,
+    "d2h_max_bytes_per_step": 8388608,
+    "d2h_overlap": "backward",
+    "barrier_budget_ms": 250,
+    "seal_every_k_steps": 1000,
+    "wal_elide_zero_commits": true
+  },
+  "t1": {
+    "sample_rate_inv_n": 64,
+    "selection": "hash(run_id,step_id,mb) mod N == 0",
+    "max_h0_bytes_per_day": 4294967296,
+    "threat_model": "implementation-faults-not-adversaries"
+  },
+  "harness": {
+    "alias_check": "t1_rate",
+    "hash": "sha256"
+  },
+  "thresholds": {
+    "$comment": "PRERREGISTRADOS. Firmados por el usuario 2026-08-29. Cruzarlos mata la rama y publica el negativo con manifiesto.",
+    "ppl_gap_max_pct": 10.0,
+    "t1_injected_mutation_detection_pct": 100.0,
+    "t2_bitflip_detection_pct": 100.0,
+    "codebook_min_usage_entropy_bits": 8.0,
+    "wall_overhead_max_pct": 10.0
+  },
+  "build": {
+    "apply_ref_hash": "FILLED_BY_CAPTURE_BUILD",
+    "harness_commit": "FILLED_BY_CAPTURE_BUILD",
+    "torch_wheel": "FILLED_BY_CAPTURE_BUILD",
+    "backend_wheel": "FILLED_BY_CAPTURE_BUILD"
+  },
+  "infra": {
+    "$comment": "SPEC_AMEND-001",
+    "device_slug": "FILLED_AT_RUN",
+    "region": "FILLED_AT_RUN",
+    "procurement": "FILLED_AT_RUN",
+    "preemption_count": 0,
+    "driver": "FILLED_AT_RUN"
+  }
+}

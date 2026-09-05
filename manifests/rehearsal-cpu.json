@@ -1,0 +1,94 @@
+{
+  "$comment": "REHEARSAL manifest \u2014 CPU, tiny, NOT citable. Exercises the full harness circuit (RUN_START gate, receipts, T1 audits, SEAL, EXPORT) before GPU runs. Thresholds identical in FORM to phase1; numbers scaled down.",
+  "manifest_version": 1,
+  "phase": 0,
+  "model": {
+    "d_model": 128,
+    "s_slots": 16,
+    "d_slot": 8,
+    "n_layers": 2,
+    "n_heads": 4,
+    "block": "parallel",
+    "init": "gpt2_scaled_1_over_sqrt_2L"
+  },
+  "catalog": {
+    "n_features": 256,
+    "k": 4,
+    "home": "mod_S",
+    "metric": "cosine_l2normed",
+    "reduction": "seq_fp32_nofma",
+    "tie": "score_desc,feature_asc,slot_asc",
+    "eps_bits": "0x38800000",
+    "mag_max": 8.0,
+    "abort_rules": [
+      "nonfinite",
+      "mag_overflow"
+    ],
+    "selection": "global_topk"
+  },
+  "codebook": {
+    "mechanism": "ste",
+    "post_step": "renorm",
+    "min_norm": 0.00390625,
+    "reset": "min_norm_reinit",
+    "reset_min_norm": 0.00390625,
+    "$reset_comment": "review 2026-09-02: code implements renorm_or_reset (row norm < reset_min_norm -> random unit reinit, CODEBOOK_RESET fact); the previously declared ema_dead/dead_window never existed in code"
+  },
+  "training": {
+    "dataset": "synthetic-shift1",
+    "tokenizer": "byte",
+    "steps": 24,
+    "seq_len": 32,
+    "batch_seq": 4,
+    "n_tokens_per_step": 128,
+    "seeds": [
+      1337
+    ],
+    "optimizer": "adamw",
+    "lr": 0.003,
+    "aux_balance_coeff": 0.01
+  },
+  "baseline": {
+    "block": "parallel",
+    "flops_matched": false
+  },
+  "budgets": {
+    "binding_profile": "min",
+    "beta_bytes": 16,
+    "wal_max_bytes_per_token": 3072,
+    "wal_max_bytes_per_step": 6291456,
+    "d2h_max_bytes_per_step": 8388608,
+    "d2h_overlap": "none",
+    "barrier_budget_ms": 5000,
+    "seal_every_k_steps": 10,
+    "wal_elide_zero_commits": true
+  },
+  "t1": {
+    "sample_rate_inv_n": 4,
+    "selection": "hash(run_id,step_id,mb) mod N == 0",
+    "max_h0_bytes_per_day": 4294967296,
+    "threat_model": "implementation-faults-not-adversaries"
+  },
+  "harness": {
+    "alias_check": "t1_rate",
+    "hash": "sha256"
+  },
+  "thresholds": {
+    "ppl_gap_max_pct": null,
+    "t1_injected_mutation_detection_pct": 100.0,
+    "t2_bitflip_detection_pct": 100.0
+  },
+  "build": {
+    "apply_ref_hash": "FILLED_BY_CAPTURE_BUILD",
+    "harness_commit": "FILLED_BY_CAPTURE_BUILD",
+    "torch_wheel": "FILLED_BY_CAPTURE_BUILD",
+    "backend_wheel": "FILLED_BY_CAPTURE_BUILD"
+  },
+  "infra": {
+    "device_slug": "FILLED_AT_RUN",
+    "region": "FILLED_AT_RUN",
+    "procurement": "FILLED_AT_RUN",
+    "preemption_count": 0,
+    "driver": "FILLED_AT_RUN"
+  }
+}

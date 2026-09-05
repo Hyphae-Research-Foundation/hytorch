@@ -1,0 +1,40 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 1 gpus
+nanochat pinned at 92d63d4e8bb4df75c3b71618f31ddde2378b2bcd
+gpt.py patched (law-0 seam, vanilla-identical when disabled)
+base_train.py patched: codebook param group + collective barrier + step chain
+patch applied
+ERROR: Project file:///opt/nanochat has a 'pyproject.toml' and its build backend is missing the 'build_editable' hook. Since it does not have a 'setup.py' nor a 'setup.cfg', it cannot be installed in editable mode. Consider using a build backend that supports PEP 660.
+=== [3/4] build facts + manifest ===
+manifest for d4 written
+=== [4/4] arms ===
+=== ARM: catalog (HYTORCH_CATALOG=1) ===
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/nanochat/scripts/base_train.py", line 31, in <module>
+    from nanochat.tokenizer import get_tokenizer, get_token_bytes
+  File "/opt/nanochat/nanochat/tokenizer.py", line 31, in <module>
+    import rustbpe
+ModuleNotFoundError: No module named 'rustbpe'
+=== ARM: vanilla (same tree, flag off) ===
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/nanochat/scripts/base_train.py", line 31, in <module>
+    from nanochat.tokenizer import get_tokenizer, get_token_bytes
+  File "/opt/nanochat/nanochat/tokenizer.py", line 31, in <module>
+    import rustbpe
+ModuleNotFoundError: No module named 'rustbpe'

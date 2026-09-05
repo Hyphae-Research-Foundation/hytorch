@@ -1,0 +1,82 @@
+=== gate ===
+{"cases":50000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+  }
+}
+--- catalog: sweep-p3-a0.json ---
+{
+  "run_id": "run-b5f43e2a-catalog-1788043782",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.012207984924316,
+  "loss_last": 6.6593523025512695,
+  "val_ppl": 753.6003997123877,
+  "t1_audits": 3,
+  "t1_green": 3,
+  "wall_s": 187.1,
+  "timing": {
+    "compute_s": 161.95,
+    "ledger_s": 14.63,
+    "audit_capture_s": 0.08,
+    "verify_offline_s": 0.05
+  },
+  "runlog": "/run/hytorch/run-b5f43e2a-catalog-1788043782.runlog.json"
+}
+--- catalog: sweep-p3-a002.json ---
+{
+  "run_id": "run-b4c3f8a5-catalog-1788044007",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.012207984924316,
+  "loss_last": 6.778975486755371,
+  "val_ppl": 836.4856981792058,
+  "t1_audits": 3,
+  "t1_green": 3,
+  "wall_s": 189.4,
+  "timing": {
+    "compute_s": 164.31,
+    "ledger_s": 14.41,
+    "audit_capture_s": 0.08,
+    "verify_offline_s": 0.05
+  },
+  "runlog": "/run/hytorch/run-b4c3f8a5-catalog-1788044007.runlog.json"
+}
+--- catalog: sweep-p3-a02.json ---
+{
+  "run_id": "run-ac6d69e6-catalog-1788044200",
+  "arm": "catalog",
+  "steps": 300,
+  "loss_first": 11.012207984924316,
+  "loss_last": 6.839783668518066,
+  "val_ppl": 884.926701100532,
+  "t1_audits": 4,
+  "t1_green": 4,
+  "wall_s": 189.9,
+  "timing": {
+    "compute_s": 164.59,
+    "ledger_s": 14.55,
+    "audit_capture_s": 0.11,
+    "verify_offline_s": 0.07
+  },
+  "runlog": "/run/hytorch/run-ac6d69e6-catalog-1788044200.runlog.json"
+}
+--- baseline ---
+{
+  "run_id": "run-b5f43e2a-baseline-1788044394",
+  "arm": "baseline",
+  "steps": 300,
+  "loss_first": 11.012234687805176,
+  "loss_last": 6.616180896759033,
+  "val_ppl": 717.5347366793688,
+  "t1_audits": 0,
+  "t1_green": 0,
+  "wall_s": 64.8,
+  "timing": {
+    "compute_s": 62.87,
+    "ledger_s": 0.0,
+    "audit_capture_s": 0.0,
+    "verify_offline_s": 0.0
+  },
+  "runlog": "/run/hytorch/run-b5f43e2a-baseline-1788044394.runlog.json"
+}

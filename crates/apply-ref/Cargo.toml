@@ -1,0 +1,16 @@
+[package]
+name = "apply-ref"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Bit-exact reference for apply(): bf16<->fp32, RNE, no FMA, signed-zero no-op. Spec v2.2 §04."
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+# ZERO runtime dependencies. The .so hash is build.apply_ref_hash.
+[dependencies]
+
+[dev-dependencies]
+sha2 = "0.10"

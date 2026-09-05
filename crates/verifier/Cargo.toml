@@ -1,0 +1,16 @@
+[package]
+name = "verifier"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "T1 same-binary replay + T2 chain walk. CPU only, no GPU. Spec v2.2 §09."
+
+[dependencies]
+apply-ref = { path = "../apply-ref" }
+binding-wire = { path = "../binding-wire" }
+sha2 = "0.10"
+
+[[bin]]
+name = "hytorch-verify"
+path = "src/main.rs"

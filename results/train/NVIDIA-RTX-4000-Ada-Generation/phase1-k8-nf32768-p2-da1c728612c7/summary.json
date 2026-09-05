@@ -1,0 +1,9 @@
+{
+  "commit": "da1c728612c7a7b0c75ac427f9c5f13613007ef8",
+  "manifest": "phase1-k8-nf32768-p2.json",
+  "steps_override": 300,
+  "gpu": "NVIDIA-RTX-4000-Ada-Generation",
+  "droplet": {"size": "gpu-4000adax1-20gb", "region": "tor1", "procurement": "ondemand"},
+  "gate": "BIT_IDENTICAL",
+  "finished_at": "2026-08-29T22:40:00Z"
+}

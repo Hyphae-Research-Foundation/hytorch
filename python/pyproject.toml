@@ -1,0 +1,14 @@
+[project]
+name = "hytorch"
+version = "0.1.0"
+description = "A transactional residual stream for transformer training (trainer side)"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+dependencies = ["torch", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pyarrow", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hytorch*"]

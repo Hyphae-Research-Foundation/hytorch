@@ -1,0 +1,4 @@
+=== [1/5] differential gate (this silicon) ===
+{"cases":200000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/5] python stack ===
+no torch and no rocm — abort

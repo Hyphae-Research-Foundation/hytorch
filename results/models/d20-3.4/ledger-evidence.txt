@@ -1,0 +1,8 @@
+== run/nano-d20-catalog/RUN_START
+Object({"build.apply_ref_hash": String("680a9dd6a33d7276e6ce58ae77a2ae84217037ec13ce998001368fba89a09973"), "build.backend_wheel": String("rocm-7.0.51831"), "build.harness_commit": String("1e6982d38aa98de825804c2925db8cd0c5937274"), "build.torch_wheel": String("torch-2.10.0+rocm7.0"), "infra.device_slug": String("unknown"), "infra.driver": String("unknown"), "infra.procurement": String("unknown"), "infra.region": String("unknown"), "kind": String("RUN_START"), "manifest_sha256": String("7219507e3b358bf903a0ced8491f47b741ec1a6eb8f0024e6a56d233006aabc7")})
+== run/nano-d20-catalog/POLICY/6
+Object({"abort_rules": Array([String("nonfinite"), String("mag_overflow")]), "home": String("mod_S"), "k": Integer(8), "kind": String("POLICY"), "mag_max": String("64"), "metric": String("cosine_l2normed"), "n_features": Integer(32768), "nan_canonical": String("SPEC_AMEND-002"), "policy_id": Integer(6), "reduction": String("seq_fp32_nofma"), "s_slots": Integer(64), "selection": String("global_topk"), "tie": String("score_desc,feature_asc,slot_asc")})
+== run/nano-d20-catalog/step/00001999/RECEIPT
+Object({"final_head": String("a1c73682638f7934c22c6e1d0796f83052fb4115b00c4092929c47c557745c59"), "kind": String("RECEIPT"), "n_elided": Integer(0), "n_layers": Integer(640), "n_persisted": Integer(167772160), "step_id": Integer(1999)})
+== run/nano-d20-catalog/step/00001999/STEP
+Object({"c_next": String("92096257d78af749002c24e3c981c9479b3bc1812ac7aa55f289202bb7c587cb"), "c_prev": String("92096257d78af749002c24e3c981c9479b3bc1812ac7aa55f289202bb7c587cb"), "grad_norm": String("0"), "kind": String("STEP"), "lr": String("0.05073076923076924"), "policy_id": Integer(6), "step_id": Integer(1999)})

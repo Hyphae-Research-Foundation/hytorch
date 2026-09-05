@@ -1,0 +1,25 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+ERROR: Cannot uninstall typing_extensions 4.10.0, RECORD file not found. Hint: The package was installed by debian.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.10.0+rocm7.0 8 gpus
+nanochat pinned at 92d63d4e8bb4df75c3b71618f31ddde2378b2bcd
+gpt.py patched (law-0 seam, vanilla-identical when disabled)
+base_train.py patched: codebook param group + collective barrier + step chain
+patch applied
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+=== [2b/4] dataset shards + tokenizer (nanochat speedrun steps) ===
+Successfully downloaded shard_00023.parquet
+Done! Downloaded: 25/25 shards to /var/lib/hytorch/nanochat-cache/base_data_climbmix
+  File "/opt/nanochat/nanochat/tokenizer.py", line 32, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+  File "/opt/nanochat/nanochat/tokenizer.py", line 32, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+=== [3/4] build facts + manifest ===
+manifest for d12 written
+=== [4/4] arms (detached; local script polls) ===
+arms launched detached

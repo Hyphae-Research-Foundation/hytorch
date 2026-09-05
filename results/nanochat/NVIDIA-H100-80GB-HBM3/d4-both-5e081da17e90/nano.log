@@ -1,0 +1,83 @@
+=== [1/4] gate (this silicon, both selection modes) ===
+{"cases":100000,"pack_mismatch":0,"apply_mismatch":0,"verdict":"BIT_IDENTICAL"}
+=== [2/4] python stack + nanochat ===
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2.13.0+cu130 1 gpus
+nanochat pinned at 92d63d4e8bb4df75c3b71618f31ddde2378b2bcd
+gpt.py patched (law-0 seam, vanilla-identical when disabled)
+base_train.py patched: codebook param group + collective barrier + step chain
+patch applied
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+=== [2b/4] dataset shards + tokenizer (nanochat speedrun steps) ===
+Successfully downloaded shard_06542.parquet
+Done! Downloaded: 9/9 shards to /var/lib/hytorch/nanochat-cache/base_data_climbmix
+Training time: 52.34s
+Saved tokenizer encoding to /var/lib/hytorch/nanochat-cache/tokenizer/tokenizer.pkl
+Saved token_bytes to /var/lib/hytorch/nanochat-cache/tokenizer/token_bytes.pt
+science    1112     [91m249    [0m [91m4.47   [0m [92m247    [0m [92m4.50   [0m [92m   +0.8%[0m     Ours      
+climbmix-train 2948778  [92m611619 [0m [92m4.82   [0m [91m622511 [0m [91m4.74   [0m [91m   -1.8%[0m     GPT-4     
+climbmix-val 3024593  [92m631183 [0m [92m4.79   [0m [91m644939 [0m [91m4.69   [0m [91m   -2.2%[0m     GPT-4     
+=== [3/4] build facts + manifest ===
+manifest for d4 written
+=== [4/4] arms ===
+=== ARM: catalog (HYTORCH_CATALOG=1) ===
+usage: base_train.py [-h] [--run RUN] [--device-type DEVICE_TYPE] [--fp8]
+                     [--fp8-recipe {rowwise,tensorwise}] [--depth DEPTH]
+                     [--aspect-ratio ASPECT_RATIO] [--head-dim HEAD_DIM]
+                     [--max-seq-len MAX_SEQ_LEN]
+                     [--window-pattern WINDOW_PATTERN]
+                     [--num-iterations NUM_ITERATIONS]
+                     [--target-flops TARGET_FLOPS]
+                     [--target-param-data-ratio TARGET_PARAM_DATA_RATIO]
+                     [--device-batch-size DEVICE_BATCH_SIZE]
+                     [--total-batch-size TOTAL_BATCH_SIZE]
+                     [--embedding-lr EMBEDDING_LR]
+                     [--unembedding-lr UNEMBEDDING_LR]
+                     [--weight-decay WEIGHT_DECAY] [--matrix-lr MATRIX_LR]
+                     [--scalar-lr SCALAR_LR] [--warmup-steps WARMUP_STEPS]
+                     [--warmdown-ratio WARMDOWN_RATIO]
+                     [--final-lr-frac FINAL_LR_FRAC]
+                     [--resume-from-step RESUME_FROM_STEP]
+                     [--eval-every EVAL_EVERY] [--eval-tokens EVAL_TOKENS]
+                     [--core-metric-every CORE_METRIC_EVERY]
+                     [--core-metric-max-per-task CORE_METRIC_MAX_PER_TASK]
+                     [--sample-every SAMPLE_EVERY] [--save-every SAVE_EVERY]
+                     [--model-tag MODEL_TAG]
+base_train.py: error: unrecognized arguments: -- --depth=4 --num-iterations=60 --core-metric-every=-1 --sample-every=-1 --run=dummy
+
+                                                       █████                █████
+                                                      ░░███                ░░███
+     ████████    ██████   ████████    ██████   ██████  ░███████    ██████  ███████
+    ░░███░░███  ░░░░░███ ░░███░░███  ███░░███ ███░░███ ░███░░███  ░░░░░███░░░███░
+     ░███ ░███   ███████  ░███ ░███ ░███ ░███░███ ░░░  ░███ ░███   ███████  ░███
+     ░███ ░███  ███░░███  ░███ ░███ ░███ ░███░███  ███ ░███ ░███  ███░░███  ░███ ███
+     ████ █████░░████████ ████ █████░░██████ ░░██████  ████ █████░░███████  ░░█████
+    ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░   ░░░░░
+    
+=== ARM: vanilla (same tree, flag off) ===
+                     [--device-batch-size DEVICE_BATCH_SIZE]
+                     [--total-batch-size TOTAL_BATCH_SIZE]
+                     [--embedding-lr EMBEDDING_LR]
+                     [--unembedding-lr UNEMBEDDING_LR]
+                     [--weight-decay WEIGHT_DECAY] [--matrix-lr MATRIX_LR]
+                     [--scalar-lr SCALAR_LR] [--warmup-steps WARMUP_STEPS]
+                     [--warmdown-ratio WARMDOWN_RATIO]
+                     [--final-lr-frac FINAL_LR_FRAC]
+                     [--resume-from-step RESUME_FROM_STEP]
+                     [--eval-every EVAL_EVERY] [--eval-tokens EVAL_TOKENS]
+                     [--core-metric-every CORE_METRIC_EVERY]
+                     [--core-metric-max-per-task CORE_METRIC_MAX_PER_TASK]
+                     [--sample-every SAMPLE_EVERY] [--save-every SAVE_EVERY]
+                     [--model-tag MODEL_TAG]
+base_train.py: error: unrecognized arguments: -- --depth=4 --num-iterations=60 --core-metric-every=-1 --sample-every=-1 --run=dummy
+
+                                                       █████                █████
+                                                      ░░███                ░░███
+     ████████    ██████   ████████    ██████   ██████  ░███████    ██████  ███████
+    ░░███░░███  ░░░░░███ ░░███░░███  ███░░███ ███░░███ ░███░░███  ░░░░░███░░░███░
+     ░███ ░███   ███████  ░███ ░███ ░███ ░███░███ ░░░  ░███ ░███   ███████  ░███
+     ░███ ░███  ███░░███  ░███ ░███ ░███ ░███░███  ███ ░███ ░███  ███░░███  ░███ ███
+     ████ █████░░████████ ████ █████░░██████ ░░██████  ████ █████░░███████  ░░█████
+    ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░   ░░░░░
+    
