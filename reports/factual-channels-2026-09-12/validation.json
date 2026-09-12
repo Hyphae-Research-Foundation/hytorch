@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "all_fonts_embedded": true,
+    "all_pages_visually_reviewed": true,
+    "embedded_font_count": 31,
+    "external_peer_review_claimed": false,
+    "internal_scientific_review_completed": true,
+    "missing_references": 0,
+    "native_queries": 0,
+    "new_model_forwards": 0,
+    "new_training_updates": 0,
+    "pdf_pages": 11,
+    "pdf_raster_images": 0,
+    "selection_reproduced": "no-control-match",
+    "tex_layout_warnings": 0,
+    "v6_plan_verified": true
+  },
+  "clean_checkout": {
+    "generated_files_byte_identical": 12,
+    "make_preview_exit_code": 0,
+    "original_scientific_sources_absent": 42,
+    "original_scientific_sources_available": 0,
+    "portable_export_check_exit_code": 0,
+    "scheduler_test_seconds": 0.82,
+    "scheduler_tests_passed": 62
+  },
+  "environment": {
+    "SOURCE_DATE_EPOCH": 1789171200,
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "python": "3.14.7",
+    "tectonic": "0.15.0"
+  },
+  "pdf_sha256": "1099fee21f7a518e8ba450f307c717476beff0f62758f6bf9bb0826963a155e1",
+  "publication_base_commit": "9b80a661c71bd366b18e992579017c82379e2efc",
+  "report_data_sha256": "3ce963af049d2fda267bbd45f675901b240b8dc87125107cb149fc01b75df5ff",
+  "schema": "hytorch.technical-report-publication-validation.v1",
+  "scope": "report build, reduced-table recomputation and prospective schedule mechanics; no neural replay or new experiment",
+  "scope_limits": [
+    "Raw captures, model checkpoints and Native ledgers are not included or revalidated by this build.",
+    "The V6 schedule remains a prospective design, not a qualified runtime or trained control.",
+    "The internal review does not constitute external peer review or a confirmed hallucination mechanism."
+  ]
+}

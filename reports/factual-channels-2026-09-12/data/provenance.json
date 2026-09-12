@@ -1,0 +1,422 @@
+{
+  "curated": {
+    "n_bytes": 98333,
+    "path": "reports/factual-channels-2026-09-12/data/report-data.json",
+    "sha256": "3ce963af049d2fda267bbd45f675901b240b8dc87125107cb149fc01b75df5ff"
+  },
+  "curated_hash_is_distinct_from_source_hashes": true,
+  "evidence_ids": {
+    "E01": {
+      "field": "measurement.evaluations and numeric_gate",
+      "source_id": "reference_admission"
+    },
+    "E02": {
+      "field": "final measurement result and stage timings",
+      "source_id": "worker"
+    },
+    "E03": {
+      "field": "terminal closure and elapsed_seconds",
+      "source_id": "supervisor"
+    },
+    "E04": {
+      "field": "result.selection",
+      "portable_file": "selection-result.json",
+      "source_id": "selection"
+    },
+    "E05": {
+      "field": "tables",
+      "portable_file": "selection-tables.json.gz",
+      "source_id": "assembly"
+    },
+    "E06": {
+      "field": "complete prospective schedule; illustrative slices in report-data.json",
+      "source_id": "v6_plan"
+    }
+  },
+  "exporter": {
+    "path": "reports/factual-channels-2026-09-12/data/export_data.py",
+    "sha256": "3c3c6a62499c3919a5117dc064b4dee4556c61f5223d8eb58cf2db5118f2302e"
+  },
+  "field_methods": {
+    "design_v6.arm_summaries": {
+      "fields": "balance.counts, first_half_counts, second_half_counts",
+      "method": "Copy opportunity counts from the closed pure design audit; not measured candidate denials or matched empirical damage.",
+      "source": "v6_audit"
+    },
+    "design_v6.calendar_examples": {
+      "fields": "calendars[arm][0:16] and calendars[arm][1992:2008]",
+      "method": "Slice the pinned complete calendar for all17 arms. Indices are zero-based; null is sham. No new calendar or world is generated.",
+      "source": "v6_plan"
+    },
+    "design_v6.cost": {
+      "fields": "cost",
+      "method": "Copy serial CPU extrapolation, after checking every source terminal hash/status/time. Base excludes new qualification/captures/curves/diagnostics/storage/contingency and is not a sufficient authorized cap.",
+      "source": "v6_contract and eight cost_terminal sources"
+    },
+    "measurement.batteries": {
+      "fields": "batteries[battery][unit]",
+      "method": "Copy both full unit tables, 19 fact_effects per unit, all three positions and raw summary sums/counts. Global values and selection are unchanged.",
+      "source": "review"
+    },
+    "measurement.batteries.units.positions": {
+      "fields": "batteries[].positions[]",
+      "method": "Additional g=NLL_veto-NLL_healthy; m=sqrt(applied_sum_squares/element_count); r=sqrt(residual_sum_squares/element_count); rho=m/r; p=admitted/total_candidates. These are summary arithmetic, not new model observations.",
+      "source": "review"
+    },
+    "measurement.custody.closed_checks": {
+      "fields": "raw_readback outcome/payload_bytes_read/recomputation flags; raw_final_custody outcome/file_count/directory_count/recheck flags; terminal process-group closure",
+      "method": "Copy final retained summaries after hash/worker and transcript/snapshot joins. payload_bytes_read is consumed capture-reader bytes, not total archive size. The export opens JSON metadata only and does not rehash raw payloads or rerun their reductions.",
+      "source": "raw_readback,raw_final_custody,supervisor"
+    },
+    "measurement.geometry": {
+      "fields": "geometry.qualification; qualification.same_geometry_inputs and cross_geometry_diagnostic; behavior archived_prefixes/same_geometry_inputs/argmax_changes/criterion",
+      "method": "Verify the closed report binding shared by geometry and behavior. Aggregate the all_equal flags over219 same-geometry inputs. Copy all three B1/B16 diagnostic rows:384 archived prefixes/map, differing full428 vectors and maximum logit difference, with no new forward; summed argmax changes/prefix counts must equal the retained behavior gate.",
+      "source": "geometry,geometry_qualification,reference_behavior"
+    },
+    "measurement.matching": {
+      "fields": "matching, rule, localizer_rankings, repeat_checks",
+      "method": "Copy all candidates, signed differences, distances, individual calipers and both numerical repetitions. No threshold adjustment, reranking, bootstrap or confidence interval.",
+      "source": "review"
+    },
+    "measurement.metric_definitions": {
+      "fields": "rule, batteries, matching",
+      "method": "Delta Value: full428 next-Value NLL difference, mean prompt/position within fact then equal facts. g: signed original valid-token NLL difference, equal maps. m/r: local RMS relative to ordinary zero-commit quantized output, global sums before sqrt. p includes magnitude-zero COMMIT and retains all healthy candidate opportunities.",
+      "source": "review"
+    },
+    "measurement.population_timing_custody": {
+      "fields": "elapsed_seconds, stage_timings, expected_population, inventory.control_text, review.cardinality and custody counters",
+      "method": "Copy final complete counts and elapsed durations; repeated batteries are numerical reproducibility, not independent training replications.",
+      "source": "worker,supervisor,inventory,request,review"
+    },
+    "portable_selection": {
+      "fields": "assembly.tables; selection.result.selection",
+      "method": "Verify worker->persistence->END->assembly and final-review links, then export canonical reduced tables as gzip (mtime=0, filename empty) and the original inner selection record. Exact stdlib selector/rule copies recompute reductions and no-control-match, without raw tensor or neural replay.",
+      "source": "assembly, capture_end, persistence, selection and exact selection_copy sources"
+    },
+    "reference.competence": {
+      "fields": "measurement.evaluations[position].metrics.exposure[stratum] or metrics.overall",
+      "method": "Copy counts and recorded macro_fact_accuracy/strict_accuracy/coverage; false_assertion_rate=false_assertion/queries. No answers or classification rows exported.",
+      "source": "reference_admission"
+    },
+    "reference.priors": {
+      "fields": "measurement.numeric_gate.checks[].baseline_macro_accuracies and measurement.generation_baselines[prior].exposure.common",
+      "method": "Copy all four declared entity-free common-discovery priors and exact count denominators; no fitted prior is recomputed.",
+      "source": "reference_admission"
+    },
+    "reference.realized_exposure": {
+      "fields": "documents.realized_exposure.scopes",
+      "method": "Copy completed_updates, rows_consumed and value_targets for all four retained scopes. Repeated exposures are not independent facts.",
+      "source": "exposure"
+    }
+  },
+  "limitations": [
+    "source hashes authenticate the retained files, not new neural replay",
+    "reference competence is common-discovery and one training seed",
+    "V5 localization is access dependence; no-control-match is preserved",
+    "two repeated batteries are not independent scientific replications",
+    "V6 calendars are prospective and empirical_control_validated remains false"
+  ],
+  "omitted": [
+    "raw tensors/checkpoints",
+    "training text and token arrays",
+    "answers and private labels",
+    "Native ledgers",
+    "machine-local paths and infrastructure addresses"
+  ],
+  "portable_selection": {
+    "files": {
+      "FACTUAL-CAUSAL-ADMISSION-V1.md": {
+        "n_bytes": 13865,
+        "sha256": "a9f1aef9f00e5bb98aa7fe9e294771f279c0693a9815ae40a1ea34167d469f79"
+      },
+      "FACTUAL-CAUSAL-PILOT-PROTOCOL.md": {
+        "n_bytes": 15287,
+        "sha256": "b5a564a0e9ddd28c29abb608ab2a0df705785f440ba4bc327002811405c2f46d"
+      },
+      "causal_selection.py": {
+        "n_bytes": 21201,
+        "sha256": "55445a19d520528618cf6e1d2264c66faffdadbb012e20e35e56c762a2c86b3e"
+      },
+      "selection-result.json": {
+        "n_bytes": 46449,
+        "sha256": "4c243572fe1180f4fa6e21408f2dcf03672f87dd11c3b70da6b0ad59cf87ab60"
+      },
+      "selection-tables.json.gz": {
+        "n_bytes": 271984,
+        "sha256": "1868cffbf1d55ebc49b048ad480c7e200c8fa759e08fd15841e54648e14bd907"
+      }
+    },
+    "recomputation": {
+      "model_forwards": 0,
+      "native_queries": 0,
+      "raw_capture_bytes_reverified": false,
+      "scope": "recomputed reductions, numerical-repeat checks and unchanged selection from reduced tables; no neural/raw replay",
+      "selection_internal_sha256": "60c90a5cead081ad439cd634f0bdc0ea96d98740401a9356c107e356a24597a9",
+      "selection_status": "no-control-match",
+      "tables_canonical_sha256": "c64caa7fabc9e75f2899521ba7b7dbe3b4b3d648af7bd7c3379ef4bfacaa7b48",
+      "tables_uncompressed_bytes": 11028456,
+      "tables_uncompressed_sha256": "e14ce37ae74e26dff4e2f7be4176ab3de9d6ab74db943ecbf2a0b912ffeb4004"
+    }
+  },
+  "portable_verifier": {
+    "path": "reports/factual-channels-2026-09-12/data/verify_selection.py",
+    "sha256": "9b919f375c78551fbb392253545655c7e88f853670a2002eee20cb715b675a7c"
+  },
+  "schema": "hytorch.portable-report-provenance.v1",
+  "scope": "curated closed metadata only; no fresh measurements, raw tensor replay or causal admission",
+  "source_hashes_are_original_bytes": true,
+  "sources": [
+    {
+      "n_bytes": 945707,
+      "original_sha256": "d4c18e613237228240274e6745a4ac112023ab167ff2cabde4c32c71c3f3e02c",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/archived-reference.json",
+      "source_id": "archive"
+    },
+    {
+      "n_bytes": 11448230,
+      "original_sha256": "072c584d4dade5df2153b8c6a57225a3b2f35cc4db8ef1f06f4fe0ba8649158e",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/captures/assembly.json",
+      "source_id": "assembly"
+    },
+    {
+      "n_bytes": 2761,
+      "original_sha256": "87b6f0eb9f746c8cdd8ea51fd3cce0ae9e4fdd478db1cee8ae9c4388b7773d80",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/captures/END.json",
+      "source_id": "capture_end"
+    },
+    {
+      "n_bytes": 469,
+      "original_sha256": "3897a976f85a8533c9da676ced63b5aaf149ebf5cf663b9da33b0756f7bff45f",
+      "path": "results/factual-canonical-control-20260912/production-001/stages/acquisition/supervision/terminal.json",
+      "source_id": "cost_terminal:acquisition"
+    },
+    {
+      "n_bytes": 518,
+      "original_sha256": "1548113104595e89fece9ad692f84cd2ea5b69c7bf62669c4dfe5dcdc90a5ba0",
+      "path": "results/factual-canonical-control-20260912/evaluation-recovery-001/stages/inference_gaps4/supervision/terminal.json",
+      "source_id": "cost_terminal:gaps4"
+    },
+    {
+      "n_bytes": 517,
+      "original_sha256": "60e324de06254e3c74b5d1f2239322d886c50a642a31eca65f527afcf901bfdf",
+      "path": "results/factual-canonical-control-20260912/evaluation-recovery-001/stages/inference_identity/supervision/terminal.json",
+      "source_id": "cost_terminal:identity"
+    },
+    {
+      "n_bytes": 469,
+      "original_sha256": "6d3b59741eb4127af6749799995955c0d3324f137176393aa797e923c2f4ab74",
+      "path": "results/factual-canonical-control-20260912/production-001/stages/initialize/supervision/terminal.json",
+      "source_id": "cost_terminal:initialize"
+    },
+    {
+      "n_bytes": 518,
+      "original_sha256": "f8b314868a94acf7a319850ae284970578aff4bebf27b76a9b90d1ab0f37f738",
+      "path": "results/factual-canonical-control-20260912/evaluation-recovery-001/stages/postrun/supervision/terminal.json",
+      "source_id": "cost_terminal:postrun"
+    },
+    {
+      "n_bytes": 518,
+      "original_sha256": "198fb6d9dbac4006f7a30f7a7ee086b46ffb4c369dc0545868cbf7b6665c9321",
+      "path": "results/factual-canonical-control-20260912/evaluation-recovery-001/stages/inference_shift8/supervision/terminal.json",
+      "source_id": "cost_terminal:shift8"
+    },
+    {
+      "n_bytes": 473,
+      "original_sha256": "69c83dbb6806be5d1a9ec2804420b05025ad871c919d5ed9675a07b681f6fa69",
+      "path": "results/factual-canonical-control-20260912/production-001/stages/verify_canonical/supervision/terminal.json",
+      "source_id": "cost_terminal:verify"
+    },
+    {
+      "n_bytes": 469,
+      "original_sha256": "32e0e2e19bc3e499dadc8eebbc3a0684998051be4aa4923f8ade7fe13bf74209",
+      "path": "results/factual-canonical-control-20260912/production-001/stages/warmup/supervision/terminal.json",
+      "source_id": "cost_terminal:warmup"
+    },
+    {
+      "n_bytes": 1119713,
+      "original_sha256": "0b31106d426f9e7da5c14dd02dac5f7bd6c2dca62062e9f1198156596e3c2c6e",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/exposure.json",
+      "source_id": "exposure"
+    },
+    {
+      "n_bytes": 1419,
+      "original_sha256": "9b48bba093047f9a2a07f7308f4a977100ac9914f791f924a14c8cc7ad752e14",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/geometry.json",
+      "source_id": "geometry"
+    },
+    {
+      "n_bytes": 55090,
+      "original_sha256": "3a94c6801d377d5846689d36638231b201a927156e487654e5f586fbceeeb7d1",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/geometry-qualification/qualification.json",
+      "source_id": "geometry_qualification"
+    },
+    {
+      "n_bytes": 22025,
+      "original_sha256": "c3e61800e5ad8f7305d805c00c957ddd7c58d29e882b4adc6d70ceaaf7aedb51",
+      "path": "results/factual-canonical-control-20260912/causal-v5-preparation-v1/proposed-contract.json",
+      "source_id": "historical_cost_proposal"
+    },
+    {
+      "n_bytes": 10980779,
+      "original_sha256": "b8ffea2ff29a3543c96bdadb560c5082fd350404f4a46d46ef35ce8c98756c02",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/inventory.json",
+      "source_id": "inventory"
+    },
+    {
+      "n_bytes": 47753,
+      "original_sha256": "d583b0ca0c46ba8a4a1e931af1dc8cb049d6af9d79ceaadc353280eb9a55ba68",
+      "path": "results/factual-causal-v5-measurement-preparation-20260912/measurement_capture_store.py",
+      "source_id": "measurement_module:measurement_capture_store.py"
+    },
+    {
+      "n_bytes": 21435,
+      "original_sha256": "dff96200fa5f4021205b69e7ea4220c7e080bc6c76dd821ec6ebdf0e3f8018e5",
+      "path": "results/factual-causal-v5-measurement-preparation-20260912/measurement_native_transport.py",
+      "source_id": "measurement_module:measurement_native_transport.py"
+    },
+    {
+      "n_bytes": 8147,
+      "original_sha256": "b3720ee71bb60e6cde1199beb76ef45c46bd142059676c8c8ea6a573acc0e1f2",
+      "path": "results/factual-causal-v5-measurement-preparation-20260912/measurement_supervisor.py",
+      "source_id": "measurement_module:measurement_supervisor.py"
+    },
+    {
+      "n_bytes": 46488,
+      "original_sha256": "bbd7a5f85f412ac5a143e76cbda1af9fdd7035f64eaa624a168be8b3c053236c",
+      "path": "results/factual-causal-v5-measurement-preparation-20260912/run_measurement_phase.py",
+      "source_id": "measurement_module:run_measurement_phase.py"
+    },
+    {
+      "n_bytes": 2139,
+      "original_sha256": "f0e6e4acf44b6838c9ff3a55a8de7cc308bff66cfd1b05c410f70d713f755138",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/persistence-result.json",
+      "source_id": "persistence"
+    },
+    {
+      "n_bytes": 1017,
+      "original_sha256": "ae9123b5c4aeb48ca09061633edad54c0498a43d83972deee631056bad9c155b",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/raw-final-custody.json",
+      "source_id": "raw_final_custody"
+    },
+    {
+      "n_bytes": 9073036,
+      "original_sha256": "22615cfe62401aea96ddc1a66ab8547a77490cc2745009dc4180a2ca92bc4f1c",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/raw-readback.json",
+      "source_id": "raw_readback"
+    },
+    {
+      "n_bytes": 123563,
+      "original_sha256": "bdb63840ae28176e5cbf22aded90ad78585804415e0d5579ca9bb63da1bee9db",
+      "path": "results/factual-canonical-control-20260912/evaluation-recovery-postrun-001/score/admission.json",
+      "source_id": "reference_admission"
+    },
+    {
+      "n_bytes": 1016,
+      "original_sha256": "c89bd7fd318114be789ef47346a5b9939183e83660a1cf07f3a1dc6a276116d5",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/reference-behavior.json",
+      "source_id": "reference_behavior"
+    },
+    {
+      "n_bytes": 7769758,
+      "original_sha256": "b972250e5c26ebe19448b6d727735dcdf003f268f96be7777278fb93ce36f2f9",
+      "path": "results/factual-canonical-control-20260912/production-001/stages/verify_canonical/verification-result.json",
+      "source_id": "reference_training_verification"
+    },
+    {
+      "n_bytes": 4856,
+      "original_sha256": "96f437b5d17392b4a406ac4336c2b2a6651924c8f30b58aeb0002d5e3eb88321",
+      "path": "results/factual-causal-v5-measurement-preparation-20260912/measurement-request-001.json",
+      "source_id": "request"
+    },
+    {
+      "n_bytes": 2019522,
+      "original_sha256": "ea3cbc0053cab030bc10a83253162975ab0a431eae92dde024756e5a9ae2b1ec",
+      "path": "results/factual-causal-v5-measurement-report-20260912/causal-v5-measurement-001/review.json",
+      "source_id": "review"
+    },
+    {
+      "n_bytes": 29115,
+      "original_sha256": "ef1b3cbb783364b662974c0a605b42a9758433b2b77c864a644d08f1d6bfa78f",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/selection.json",
+      "source_id": "selection"
+    },
+    {
+      "n_bytes": 13865,
+      "original_sha256": "a9f1aef9f00e5bb98aa7fe9e294771f279c0693a9815ae40a1ea34167d469f79",
+      "path": "docs/FACTUAL-CAUSAL-ADMISSION-V1.md",
+      "source_id": "selection_copy:FACTUAL-CAUSAL-ADMISSION-V1.md"
+    },
+    {
+      "n_bytes": 15287,
+      "original_sha256": "b5a564a0e9ddd28c29abb608ab2a0df705785f440ba4bc327002811405c2f46d",
+      "path": "docs/FACTUAL-CAUSAL-PILOT-PROTOCOL.md",
+      "source_id": "selection_copy:FACTUAL-CAUSAL-PILOT-PROTOCOL.md"
+    },
+    {
+      "n_bytes": 21201,
+      "original_sha256": "55445a19d520528618cf6e1d2264c66faffdadbb012e20e35e56c762a2c86b3e",
+      "path": ".worktrees/factual-causal-v5/python/hytorch/causal_selection.py",
+      "source_id": "selection_copy:causal_selection.py"
+    },
+    {
+      "n_bytes": 469,
+      "original_sha256": "18b41a1980e6eef486a1747789cbb04b06154f403da7d52de9780a968acc6002",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001-supervision/terminal.json",
+      "source_id": "supervisor"
+    },
+    {
+      "n_bytes": 5434,
+      "original_sha256": "c842b43daaeab5ace86dc7693a16408fe48256a3eb37a8d1d95ac09d775bb609",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/design-audit.json",
+      "source_id": "v6_audit"
+    },
+    {
+      "n_bytes": 8758,
+      "original_sha256": "0133bc4579a2c07e84752005ab8d675bac1171221f2becf2805a934f83a789b3",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/control-contract.json",
+      "source_id": "v6_contract"
+    },
+    {
+      "n_bytes": 2758,
+      "original_sha256": "80220fb1a2251c6b698015b35b94749f5c7ff4b5f0c19494fdedb7d1d00577a4",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/package-final.json",
+      "source_id": "v6_package"
+    },
+    {
+      "n_bytes": 208487,
+      "original_sha256": "feb9d0cbb236831a864a4f8981772262953f198fa53570ecde01b3704c95f766",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/schedule-plan.json",
+      "source_id": "v6_plan"
+    },
+    {
+      "n_bytes": 19975,
+      "original_sha256": "6bae2857c9bf6910aa728be2cd65da5f510400190f2e45a1d909194bd48ea195",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/PROTOCOLO.md",
+      "source_id": "v6_source:PROTOCOLO.md"
+    },
+    {
+      "n_bytes": 11507,
+      "original_sha256": "7ff27c86b5da1f6b223472d9394a62f9aba1f56c4a65b19ca44057efe13916c8",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/control_schedule.py",
+      "source_id": "v6_source:control_schedule.py"
+    },
+    {
+      "n_bytes": 14320,
+      "original_sha256": "6a973b438327f2c3d3fe697adb203f8e4bbaf00cbeec0205f19d265fb14d114b",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/review_control_design.py",
+      "source_id": "v6_source:review_control_design.py"
+    },
+    {
+      "n_bytes": 1048,
+      "original_sha256": "f4baadd6cfd87af1256fab84d5760fe1942f86dcd283ee78eaaebc1703df6353",
+      "path": "results/factual-causal-v6-control-contract-preparation-20260912/preparation-validation.json",
+      "source_id": "v6_validation"
+    },
+    {
+      "n_bytes": 6569,
+      "original_sha256": "f223ec5ec1101a67528a4cd54d38ce9e4d7dd405ad0c26586f63c360d42810a2",
+      "path": "results/factual-causal-v5-measurement-20260912/causal-v5-measurement-001/result.json",
+      "source_id": "worker"
+    }
+  ]
+}

@@ -1,0 +1,1374 @@
+{
+  "result": {
+    "batteries": [
+      [
+        {
+          "delta_value_nats": 0.8802145790153174,
+          "fact_effects": [
+            {
+              "delta_value_nats": 1.7997255385441044,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": 1.765911690580348,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.1492379624193442,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 0.9453174174219992,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": 1.4322920107564034,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 2.941363666128988,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 0.34598018880933523,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 0.07509842452903588,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 1.978065210947534,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 0.5885685458779335,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 0.003320766137524818,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": 0.12180902597886718,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.2805493685106436,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.9963003521067246,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.07067304964099701,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 2.0403927930941186,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.9829563306023678,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.18951685523264436,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": 0.016997803972117254,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.11442089702392758,
+          "m": 0.5331844058887119,
+          "p": 0.6411880975729345,
+          "positions": [
+            {
+              "admitted": 87701,
+              "applied_sum_squares": 1271104.507185322,
+              "delta_value_nats": 1.19432571196895,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.487700506274374,
+              "original_abort": 0,
+              "overflow": 42827,
+              "position": "identity",
+              "residual_sum_squares": 6119153.9381992435,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 82344,
+              "applied_sum_squares": 1154009.9171304712,
+              "delta_value_nats": 0.6527373770514523,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.46955447672418366,
+              "original_abort": 0,
+              "overflow": 48184,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 5639619.368285526,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 81034,
+              "applied_sum_squares": 1137179.866041076,
+              "delta_value_nats": 0.7935806480255498,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.41732761967021126,
+              "original_abort": 0,
+              "overflow": 49494,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 5647856.989523046,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.178609383266372,
+          "rho": 0.4523843212677099,
+          "totals": {
+            "admitted": 251079,
+            "applied_sum_squares": 3562294.290356869,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 140505,
+            "residual_sum_squares": 17406630.296007816,
+            "total_candidates": 391584
+          },
+          "unit": 0
+        },
+        {
+          "delta_value_nats": -0.02127397411084674,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.010236442780296784,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.20865479305696982,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": -0.0006862494276447251,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": -0.010692706642051538,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": -0.010192198292012716,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.005803138347497831,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": -0.06448366244633993,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": -0.03827475073436896,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 0.0022269492425645394,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": -0.24973815772682428,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": -0.0004519908300911387,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": -0.00015858220346369004,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.237073615193367,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.0006296383313989887,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.0003546341152590079,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": -0.09289280061299603,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.015189933590590952,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.0006314715672791257,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": -0.00012543930157941455,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.14218376388598405,
+          "m": 0.5285742762614539,
+          "p": 0.6371097899812045,
+          "positions": [
+            {
+              "admitted": 80326,
+              "applied_sum_squares": 1097909.5211536912,
+              "delta_value_nats": -0.050548195835170576,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.38977086425867996,
+              "original_abort": 0,
+              "overflow": 50202,
+              "position": "identity",
+              "residual_sum_squares": 7443805.215441731,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 87025,
+              "applied_sum_squares": 1237457.3257844548,
+              "delta_value_nats": -0.024323886758446333,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.5230304283171615,
+              "original_abort": 0,
+              "overflow": 43503,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 6736337.856688202,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 82131,
+              "applied_sum_squares": 1165591.665940792,
+              "delta_value_nats": 0.011050160261076698,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.5450699106790968,
+              "original_abort": 0,
+              "overflow": 48397,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 6776439.755641409,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.2932210817735317,
+          "rho": 0.4087269251260301,
+          "totals": {
+            "admitted": 249482,
+            "applied_sum_squares": 3500958.512878938,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 142102,
+            "residual_sum_squares": 20956582.827771343,
+            "total_candidates": 391584
+          },
+          "unit": 1
+        },
+        {
+          "delta_value_nats": 0.6385294466449283,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.34745148843649076,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.3342134333215654,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.9446338262535695,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 2.405896014883183,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": 0.02003612686045623,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.03141551942098886,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 2.180097857179741,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 0.14621117788677412,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 0.028428184343889974,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 3.6497118724510074,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 0.33135659620165825,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": 0.008527526531149002,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.2934165823583802,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.004575434461003169,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.26297000688888755,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 1.1174162148187556,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.5004054789120952,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.1383360598930873,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": 0.0553869517940863,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.04223620982721551,
+          "m": 0.5411648778662025,
+          "p": 0.6744734207730653,
+          "positions": [
+            {
+              "admitted": 85961,
+              "applied_sum_squares": 1212658.563274869,
+              "delta_value_nats": 0.7743939412930319,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.378243015355809,
+              "original_abort": 0,
+              "overflow": 44567,
+              "position": "identity",
+              "residual_sum_squares": 8819163.01095138,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 93444,
+              "applied_sum_squares": 1276727.0229211464,
+              "delta_value_nats": 0.5202975674329345,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.38574667050321837,
+              "original_abort": 0,
+              "overflow": 37084,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 8172317.431426437,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 84708,
+              "applied_sum_squares": 1180344.4967887602,
+              "delta_value_nats": 0.6208968312088186,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.3940388552196053,
+              "original_abort": 0,
+              "overflow": 45820,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 8169120.222381176,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.4170104208740995,
+          "rho": 0.38190606779897823,
+          "totals": {
+            "admitted": 264113,
+            "applied_sum_squares": 3669730.0829847753,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 127471,
+            "residual_sum_squares": 25160600.66475899,
+            "total_candidates": 391584
+          },
+          "unit": 2
+        },
+        {
+          "delta_value_nats": 0.5041845610960177,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.09775721386298149,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.15008669688055912,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.016196266815010556,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 0.13475893721139678,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": -0.0021550510500674136,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.20343508253184459,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 1.552052735351026,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 1.223854862774412,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 1.606566123276328e-05,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 0.4756179256364703,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 1.8610910208274922,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": -1.5282436682658346e-05,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.33200284869720537,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.09975117692374624,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 1.1638893139121744,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 0.7741785291582346,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 1.794608280993998,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.002676193077756276,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": -0.00012276224333618302,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.030009476315648802,
+          "m": 0.5406318056602075,
+          "p": 0.6585458037100597,
+          "positions": [
+            {
+              "admitted": 84393,
+              "applied_sum_squares": 1200037.7199340875,
+              "delta_value_nats": 0.508723413797294,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.34789102012780226,
+              "original_abort": 0,
+              "overflow": 46135,
+              "position": "identity",
+              "residual_sum_squares": 10332737.677722346,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 85653,
+              "applied_sum_squares": 1212548.9621659068,
+              "delta_value_nats": 0.5284599702174905,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.3948129825268134,
+              "original_abort": 0,
+              "overflow": 44875,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 9492321.891872568,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 87830,
+              "applied_sum_squares": 1249917.2570529655,
+              "delta_value_nats": 0.47537029927326857,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.3786443378893169,
+              "original_abort": 0,
+              "overflow": 42698,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 9481353.831999341,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.5293041865656902,
+          "rho": 0.35351489285744203,
+          "totals": {
+            "admitted": 257876,
+            "applied_sum_squares": 3662503.9391529597,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 133708,
+            "residual_sum_squares": 29306413.401594255,
+            "total_candidates": 391584
+          },
+          "unit": 3
+        }
+      ],
+      [
+        {
+          "delta_value_nats": 0.8802145790153174,
+          "fact_effects": [
+            {
+              "delta_value_nats": 1.7997255385441044,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": 1.765911690580348,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.1492379624193442,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 0.9453174174219992,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": 1.4322920107564034,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 2.941363666128988,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 0.34598018880933523,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 0.07509842452903588,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 1.978065210947534,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 0.5885685458779335,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 0.003320766137524818,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": 0.12180902597886718,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.2805493685106436,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.9963003521067246,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.07067304964099701,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 2.0403927930941186,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.9829563306023678,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.18951685523264436,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": 0.016997803972117254,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.11442089702392758,
+          "m": 0.5331844058887119,
+          "p": 0.6411880975729345,
+          "positions": [
+            {
+              "admitted": 87701,
+              "applied_sum_squares": 1271104.507185322,
+              "delta_value_nats": 1.19432571196895,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.487700506274374,
+              "original_abort": 0,
+              "overflow": 42827,
+              "position": "identity",
+              "residual_sum_squares": 6119153.9381992435,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 82344,
+              "applied_sum_squares": 1154009.9171304712,
+              "delta_value_nats": 0.6527373770514523,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.46955447672418366,
+              "original_abort": 0,
+              "overflow": 48184,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 5639619.368285526,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 81034,
+              "applied_sum_squares": 1137179.866041076,
+              "delta_value_nats": 0.7935806480255498,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.41732761967021126,
+              "original_abort": 0,
+              "overflow": 49494,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 5647856.989523046,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.178609383266372,
+          "rho": 0.4523843212677099,
+          "totals": {
+            "admitted": 251079,
+            "applied_sum_squares": 3562294.290356869,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 140505,
+            "residual_sum_squares": 17406630.296007816,
+            "total_candidates": 391584
+          },
+          "unit": 0
+        },
+        {
+          "delta_value_nats": -0.02127397411084674,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.010236442780296784,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.20865479305696982,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": -0.0006862494276447251,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": -0.010692706642051538,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": -0.010192198292012716,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.005803138347497831,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": -0.06448366244633993,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": -0.03827475073436896,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 0.0022269492425645394,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": -0.24973815772682428,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": -0.0004519908300911387,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": -0.00015858220346369004,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.237073615193367,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.0006296383313989887,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.0003546341152590079,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": -0.09289280061299603,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.015189933590590952,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.0006314715672791257,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": -0.00012543930157941455,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.14218376388598405,
+          "m": 0.5285742762614539,
+          "p": 0.6371097899812045,
+          "positions": [
+            {
+              "admitted": 80326,
+              "applied_sum_squares": 1097909.5211536912,
+              "delta_value_nats": -0.050548195835170576,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.38977086425867996,
+              "original_abort": 0,
+              "overflow": 50202,
+              "position": "identity",
+              "residual_sum_squares": 7443805.215441731,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 87025,
+              "applied_sum_squares": 1237457.3257844548,
+              "delta_value_nats": -0.024323886758446333,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.5230304283171615,
+              "original_abort": 0,
+              "overflow": 43503,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 6736337.856688202,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 82131,
+              "applied_sum_squares": 1165591.665940792,
+              "delta_value_nats": 0.011050160261076698,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.5450699106790968,
+              "original_abort": 0,
+              "overflow": 48397,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 6776439.755641409,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.2932210817735317,
+          "rho": 0.4087269251260301,
+          "totals": {
+            "admitted": 249482,
+            "applied_sum_squares": 3500958.512878938,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 142102,
+            "residual_sum_squares": 20956582.827771343,
+            "total_candidates": 391584
+          },
+          "unit": 1
+        },
+        {
+          "delta_value_nats": 0.6385294466449283,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.34745148843649076,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.3342134333215654,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.9446338262535695,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 2.405896014883183,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": 0.02003612686045623,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.03141551942098886,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 2.180097857179741,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 0.14621117788677412,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 0.028428184343889974,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 3.6497118724510074,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 0.33135659620165825,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": 0.008527526531149002,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.2934165823583802,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.004575434461003169,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 0.26297000688888755,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 1.1174162148187556,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 0.5004054789120952,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.1383360598930873,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": 0.0553869517940863,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.04223620982721551,
+          "m": 0.5411648778662025,
+          "p": 0.6744734207730653,
+          "positions": [
+            {
+              "admitted": 85961,
+              "applied_sum_squares": 1212658.563274869,
+              "delta_value_nats": 0.7743939412930319,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.378243015355809,
+              "original_abort": 0,
+              "overflow": 44567,
+              "position": "identity",
+              "residual_sum_squares": 8819163.01095138,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 93444,
+              "applied_sum_squares": 1276727.0229211464,
+              "delta_value_nats": 0.5202975674329345,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.38574667050321837,
+              "original_abort": 0,
+              "overflow": 37084,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 8172317.431426437,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 84708,
+              "applied_sum_squares": 1180344.4967887602,
+              "delta_value_nats": 0.6208968312088186,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.3940388552196053,
+              "original_abort": 0,
+              "overflow": 45820,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 8169120.222381176,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.4170104208740995,
+          "rho": 0.38190606779897823,
+          "totals": {
+            "admitted": 264113,
+            "applied_sum_squares": 3669730.0829847753,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 127471,
+            "residual_sum_squares": 25160600.66475899,
+            "total_candidates": 391584
+          },
+          "unit": 2
+        },
+        {
+          "delta_value_nats": 0.5041845610960177,
+          "fact_effects": [
+            {
+              "delta_value_nats": 0.09775721386298149,
+              "fact_id": "Entity_00014/mineral"
+            },
+            {
+              "delta_value_nats": -0.15008669688055912,
+              "fact_id": "Entity_00019/mineral"
+            },
+            {
+              "delta_value_nats": 0.016196266815010556,
+              "fact_id": "Entity_00022/emblem"
+            },
+            {
+              "delta_value_nats": 0.13475893721139678,
+              "fact_id": "Entity_00023/emblem"
+            },
+            {
+              "delta_value_nats": -0.0021550510500674136,
+              "fact_id": "Entity_00023/mineral"
+            },
+            {
+              "delta_value_nats": 0.20343508253184459,
+              "fact_id": "Entity_00028/mineral"
+            },
+            {
+              "delta_value_nats": 1.552052735351026,
+              "fact_id": "Entity_00034/emblem"
+            },
+            {
+              "delta_value_nats": 1.223854862774412,
+              "fact_id": "Entity_00052/emblem"
+            },
+            {
+              "delta_value_nats": 1.606566123276328e-05,
+              "fact_id": "Entity_00052/mineral"
+            },
+            {
+              "delta_value_nats": 0.4756179256364703,
+              "fact_id": "Entity_00055/emblem"
+            },
+            {
+              "delta_value_nats": 1.8610910208274922,
+              "fact_id": "Entity_00063/emblem"
+            },
+            {
+              "delta_value_nats": -1.5282436682658346e-05,
+              "fact_id": "Entity_00063/mineral"
+            },
+            {
+              "delta_value_nats": 0.33200284869720537,
+              "fact_id": "Entity_00072/emblem"
+            },
+            {
+              "delta_value_nats": 0.09975117692374624,
+              "fact_id": "Entity_00072/mineral"
+            },
+            {
+              "delta_value_nats": 1.1638893139121744,
+              "fact_id": "Entity_00078/emblem"
+            },
+            {
+              "delta_value_nats": 0.7741785291582346,
+              "fact_id": "Entity_00080/mineral"
+            },
+            {
+              "delta_value_nats": 1.794608280993998,
+              "fact_id": "Entity_00081/emblem"
+            },
+            {
+              "delta_value_nats": 0.002676193077756276,
+              "fact_id": "Entity_00081/mineral"
+            },
+            {
+              "delta_value_nats": -0.00012276224333618302,
+              "fact_id": "Entity_00087/mineral"
+            }
+          ],
+          "g": 0.030009476315648802,
+          "m": 0.5406318056602075,
+          "p": 0.6585458037100597,
+          "positions": [
+            {
+              "admitted": 84393,
+              "applied_sum_squares": 1200037.7199340875,
+              "delta_value_nats": 0.508723413797294,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.3396240208223891,
+              "general_nll_veto": 0.34789102012780226,
+              "original_abort": 0,
+              "overflow": 46135,
+              "position": "identity",
+              "residual_sum_squares": 10332737.677722346,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 85653,
+              "applied_sum_squares": 1212548.9621659068,
+              "delta_value_nats": 0.5284599702174905,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.35035099825867005,
+              "general_nll_veto": 0.3948129825268134,
+              "original_abort": 0,
+              "overflow": 44875,
+              "position": "heldout-shift8",
+              "residual_sum_squares": 9492321.891872568,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            },
+            {
+              "admitted": 87830,
+              "applied_sum_squares": 1249917.2570529655,
+              "delta_value_nats": 0.47537029927326857,
+              "element_count": 4176896,
+              "general_nll_healthy": 0.341344892515927,
+              "general_nll_veto": 0.3786443378893169,
+              "original_abort": 0,
+              "overflow": 42698,
+              "position": "heldout-gaps4",
+              "residual_sum_squares": 9481353.831999341,
+              "total_candidates": 130528,
+              "valid_targets": 16316
+            }
+          ],
+          "r": 1.5293041865656902,
+          "rho": 0.35351489285744203,
+          "totals": {
+            "admitted": 257876,
+            "applied_sum_squares": 3662503.9391529597,
+            "element_count": 12530688,
+            "original_abort": 0,
+            "overflow": 133708,
+            "residual_sum_squares": 29306413.401594255,
+            "total_candidates": 391584
+          },
+          "unit": 3
+        }
+      ]
+    ],
+    "control_unit": null,
+    "declared_cardinality": {
+      "batteries": 2,
+      "control_records": 1120,
+      "facts": 19,
+      "general_nll_rows_per_battery": 16800,
+      "healthy_write_rows_per_battery": 13440,
+      "localizer_rows_per_battery": 570,
+      "positions": 3,
+      "prompts": 38,
+      "units": 4
+    },
+    "input_sha256": "c64caa7fabc9e75f2899521ba7b7dbe3b4b3d648af7bd7c3379ef4bfacaa7b48",
+    "localizer_rankings": [
+      {
+        "runner_up_gap_nats": 0.24168513237038913,
+        "units": [
+          0,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "runner_up_gap_nats": 0.24168513237038913,
+        "units": [
+          0,
+          2,
+          3,
+          1
+        ]
+      }
+    ],
+    "matching": [
+      {
+        "admissible_units": [],
+        "candidates": [
+          {
+            "admissible": false,
+            "admission_fraction_difference": -0.004078307591730002,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 1.5365991858811212,
+            "g_difference": 0.02776286686205648,
+            "relative_update_rms_ratio": 0.9034948956247216,
+            "unit": 1,
+            "update_rms_ratio": 0.9913535925350747
+          },
+          {
+            "admissible": false,
+            "admission_fraction_difference": 0.03328532320013078,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 10.236513338019321,
+            "g_difference": -0.07218468719671206,
+            "relative_update_rms_ratio": 0.8442071262080182,
+            "unit": 2,
+            "update_rms_ratio": 1.0149675644849154
+          },
+          {
+            "admissible": false,
+            "admission_fraction_difference": 0.017357706137125173,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 14.007254012529641,
+            "g_difference": -0.08441142070827877,
+            "relative_update_rms_ratio": 0.7814481542304395,
+            "unit": 3,
+            "update_rms_ratio": 1.0139677749184774
+          }
+        ],
+        "control_unit": null,
+        "general_loss_scale": 0.022884179404785515,
+        "target_unit": 0
+      },
+      {
+        "admissible_units": [],
+        "candidates": [
+          {
+            "admissible": false,
+            "admission_fraction_difference": -0.004078307591730002,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 1.5365991858811212,
+            "g_difference": 0.02776286686205648,
+            "relative_update_rms_ratio": 0.9034948956247216,
+            "unit": 1,
+            "update_rms_ratio": 0.9913535925350747
+          },
+          {
+            "admissible": false,
+            "admission_fraction_difference": 0.03328532320013078,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 10.236513338019321,
+            "g_difference": -0.07218468719671206,
+            "relative_update_rms_ratio": 0.8442071262080182,
+            "unit": 2,
+            "update_rms_ratio": 1.0149675644849154
+          },
+          {
+            "admissible": false,
+            "admission_fraction_difference": 0.017357706137125173,
+            "calipers": {
+              "admission_fraction": true,
+              "general_nll": false,
+              "relative_update_rms": true,
+              "update_rms": true
+            },
+            "distance": 14.007254012529641,
+            "g_difference": -0.08441142070827877,
+            "relative_update_rms_ratio": 0.7814481542304395,
+            "unit": 3,
+            "update_rms_ratio": 1.0139677749184774
+          }
+        ],
+        "control_unit": null,
+        "general_loss_scale": 0.022884179404785515,
+        "target_unit": 0
+      }
+    ],
+    "pending_real_bindings": [
+      "competence-report",
+      "checkpoint-and-exposure-provenance",
+      "membership-against-frozen-real-inventories",
+      "measurement-and-hardware-qualification"
+    ],
+    "positive_floor_passes": [
+      true,
+      true
+    ],
+    "repeat_checks": {
+      "all_integer_admission_counts_identical": true,
+      "max_abs_control_record_nll_drift": 0.0,
+      "max_abs_localizer_nll_drift": 0.0,
+      "raw_measurements": {
+        "candidate_classification_differences": [],
+        "max_defined_relative_rms_drift": 0.0,
+        "measurement_integrity_stable": true,
+        "rms_failures": [],
+        "rms_measurements_checked": 26880,
+        "zero_to_nonzero_rms_measurements": 0
+      },
+      "rms_drifts": [
+        {
+          "measurement": "m",
+          "relative_drift": 0.0,
+          "unit": 0
+        },
+        {
+          "measurement": "r",
+          "relative_drift": 0.0,
+          "unit": 0
+        },
+        {
+          "measurement": "m",
+          "relative_drift": 0.0,
+          "unit": 1
+        },
+        {
+          "measurement": "r",
+          "relative_drift": 0.0,
+          "unit": 1
+        },
+        {
+          "measurement": "m",
+          "relative_drift": 0.0,
+          "unit": 2
+        },
+        {
+          "measurement": "r",
+          "relative_drift": 0.0,
+          "unit": 2
+        },
+        {
+          "measurement": "m",
+          "relative_drift": 0.0,
+          "unit": 3
+        },
+        {
+          "measurement": "r",
+          "relative_drift": 0.0,
+          "unit": 3
+        }
+      ]
+    },
+    "rule": {
+      "admission_fraction_caliper": 0.1,
+      "batteries": 2,
+      "caliper_comparison": "inclusive; no extra tolerance",
+      "document_sha256": "a9f1aef9f00e5bb98aa7fe9e294771f279c0693a9815ae40a1ea34167d469f79",
+      "loss_scale_floor": 0.02,
+      "loss_scale_target_fraction": 0.2,
+      "minimum_delta_value_nats": 0.05,
+      "positions": [
+        "identity",
+        "heldout-shift8",
+        "heldout-gaps4"
+      ],
+      "positive_floor_comparison": ">",
+      "relative_update_rms_ratio_factor": 1.5,
+      "repeat_max_abs_nll_drift": 1e-05,
+      "repeat_max_rel_rms_drift": 1e-06,
+      "rms_repeat_reference": "first battery; zero/zero has zero drift; zero/nonzero is unstable",
+      "tie_break": "lowest-unit-index",
+      "units": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "update_rms_ratio_factor": 1.5
+    },
+    "rule_sha256": "5a7bff4ee31b64c22ef0e46e86ed73d4ad466009aa22f5c47f4d1935bd128a34",
+    "schema": "hytorch.causal-selection-result.v1",
+    "scientific_admission": false,
+    "scope": "unadmitted-measurements",
+    "selection_status": "no-control-match",
+    "target_unit": null,
+    "tentative_targets": [
+      0,
+      0
+    ]
+  },
+  "sha256": "60c90a5cead081ad439cd634f0bdc0ea96d98740401a9356c107e356a24597a9"
+}
