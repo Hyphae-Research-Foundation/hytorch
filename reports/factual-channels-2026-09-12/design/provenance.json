@@ -1,0 +1,24 @@
+{
+  "files": {
+    "PROTOCOLO.md": {
+      "sha256": "6bae2857c9bf6910aa728be2cd65da5f510400190f2e45a1d909194bd48ea195",
+      "source_path": "results/factual-causal-v6-control-contract-preparation-20260912/PROTOCOLO.md"
+    },
+    "control_schedule.py": {
+      "sha256": "7ff27c86b5da1f6b223472d9394a62f9aba1f56c4a65b19ca44057efe13916c8",
+      "source_path": "results/factual-causal-v6-control-contract-preparation-20260912/control_schedule.py"
+    },
+    "schedule-plan.json": {
+      "sha256": "feb9d0cbb236831a864a4f8981772262953f198fa53570ecde01b3704c95f766",
+      "source_path": "results/factual-causal-v6-control-contract-preparation-20260912/schedule-plan.json"
+    },
+    "test_control_schedule.py": {
+      "sha256": "a5754407fa8f49bd8db3b6ce5398e06014f6acc213e13f0283414945e52ff29e",
+      "source_path": "results/factual-causal-v6-control-contract-preparation-20260912/test_control_schedule.py"
+    }
+  },
+  "original_package_sha256": "80220fb1a2251c6b698015b35b94749f5c7ff4b5f0c19494fdedb7d1d00577a4",
+  "schema": "hytorch.report-v6-design-provenance.v1",
+  "scope": "copied pure prospective design, no runtime or empirical qualification",
+  "training_executed": false
+}

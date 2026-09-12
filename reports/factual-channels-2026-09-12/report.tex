@@ -1,0 +1,580 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=22mm,right=22mm,top=21mm,bottom=22mm,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands,es-nodecimaldot]{babel}
+\usepackage{tgpagella}
+\usepackage[scale=.94]{tgheros}
+\usepackage{inconsolata}
+\usepackage{microtype}
+\usepackage{graphicx,booktabs,tabularx,array,multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec,fancyhdr,lastpage}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+\definecolor{ink}{HTML}{172D46}
+\definecolor{teal}{HTML}{167D8D}
+\definecolor{amber}{HTML}{B67518}
+\definecolor{muted}{HTML}{536579}
+\definecolor{light}{HTML}{EEF3F6}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,citecolor=teal,
+  pdftitle={Actividad de escritura, acceso factual y diseño de controles en HyTorch},
+  pdfauthor={Hyphae Research Foundation},
+  pdfsubject={Informe técnico V5/V6. Resultados medidos y protocolo prospectivo},
+  pdfkeywords={HyTorch, acceso factual, control experimental, reproducibilidad, V5, V6}}
+\urlstyle{tt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{1em}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.16}
+\setlist[itemize]{leftmargin=4.5mm,itemsep=3pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=6mm,itemsep=3pt,topsep=3pt}
+\titleformat{\section}{\sffamily\Large\bfseries\color{ink}}{\thesection}{.65em}{}
+\titleformat{\subsection}{\sffamily\normalsize\bfseries\color{ink}}{\thesubsection}{.55em}{}
+\titlespacing*{\section}{0pt}{0pt}{10pt}
+\titlespacing*{\subsection}{0pt}{10pt}{3pt}
+\captionsetup{font=small,labelfont={bf,sf,color=ink},textfont=normalfont,skip=7pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize\color{muted}HYPHAE RESEARCH FOUNDATION / HYTORCH}
+\fancyhead[R]{\sffamily\footnotesize\color{muted}INFORME TÉCNICO 01}
+\fancyfoot[L]{\sffamily\footnotesize\color{muted}12 de septiembre de 2026 \enspace / \enspace Versión 1.0}
+\fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\sys}{\textsc{HyTorch}}
+\newcommand{\status}{\texttt{no-control-match}}
+\newcommand{\factloss}{\Delta_{\mathrm{Value}}}
+\newcommand{\callout}[2]{\par\vspace{3pt}\begingroup\setlength{\fboxsep}{9pt}%
+  \colorbox{light}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep\relax}%
+  {\sffamily\bfseries\color{ink}#1}\par\small #2\end{minipage}}\endgroup\par\vspace{3pt}}
+\newcommand{\figurepanel}[3]{\begin{center}\includegraphics[width=\linewidth]{figures/#1.pdf}%
+  \captionof{figure}{#2}\label{#3}\end{center}}
+\newcommand{\hash}[1]{{\small\ttfamily #1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\pageend}{\clearpage}
+\begin{document}
+\thispagestyle{empty}
+
+{\sffamily\bfseries\color{teal}\small HYPHAE RESEARCH FOUNDATION\hfill INFORME TÉCNICO 01}
+\vspace{15mm}
+
+{\sffamily\bfseries\color{ink}\fontsize{29}{34}\selectfont
+Actividad de escritura,\\
+acceso factual y\\
+diseño de controles\\
+en HyTorch\par}
+\vspace{5mm}
+{\sffamily\large\color{muted}Resultados V5 y protocolo prospectivo V6}
+
+\vspace{6mm}
+{\color{teal}\rule{\linewidth}{1.2pt}}
+\vspace{2mm}
+
+\begin{tabularx}{\linewidth}{@{}YYY@{}}
+{\sffamily\bfseries\Large 2.190} & {\sffamily\bfseries\Large 50 min 46 s} & {\sffamily\bfseries\Large 2 baterías}\\[-2pt]
+{\small lotes de medición completos} & {\small ejecución y cierre supervisado} & {\small coincidencia numérica exacta}\\
+\end{tabularx}
+
+\vspace{6mm}
+\textbf{Resumen.} Un modelo de \sys{} entrenado en un mundo factual sintético
+alcanza el criterio de competencia en hechos frecuentes de descubrimiento. Al vetar por separado las
+escrituras de sus cuatro unidades, la pérdida del valor factual y la pérdida
+del texto original responden de forma distinta. U0 produce el mayor deterioro
+factual medio; U1 tiene un efecto factual medio pequeño y heterogéneo, pese a
+alterar la pérdida del texto de control.
+
+La medición completa superó sus comprobaciones de integridad y repetibilidad.
+Sin embargo, ninguna de las otras unidades satisface todos los criterios fijados
+para servir como control comparable de U0. El resultado final es \status.
+
+\callout{Conclusión y alcance}{
+Hay evidencia de contribución al \emph{acceso factual} en el modelo ya entrenado.
+Todavía no hay una demostración de que un canal deje de aprender durante el
+entrenamiento y provoque alucinaciones. El protocolo V6 define una comparación
+nueva entre bloqueo persistente y distribuido; sus ramas no se han entrenado.}
+
+\vfill
+{\small\color{muted}
+Documento de resultados y diseño experimental. No es un artículo de investigación
+ni una afirmación confirmatoria. Incluye datos reducidos, gráficas vectoriales,
+código de reconstrucción y referencias de procedencia.\\[4pt]
+12 de septiembre de 2026 \quad / \quad Versión 1.0\\
+\url{https://github.com/Hyphae-Research-Foundation/hytorch}\\[4pt]
+Documento, figuras y datos: CC BY-SA 4.0. Código: Apache-2.0.\\
+Verificaciones de software y revisión interna; V6 no tiene validación empírica.}
+
+\pageend
+\section{Pregunta, sistema y alcance}
+\label{sec:scope}
+
+La hipótesis que motiva el trabajo es que una función factual podría dejar de
+mejorar mientras otras rutas sostienen una pérdida agregada favorable. Para
+estudiarla deben separarse tres afirmaciones:
+
+\begin{enumerate}
+\item Una métrica agregada puede ocultar diferencias de desempeño entre funciones.
+\item Un fallo local durante el aprendizaje contribuye causalmente a errores
+factuales y, bajo ciertas condiciones de respuesta, a afirmaciones falsas.
+\item El mecanismo es frecuente en otros modelos y explica una parte relevante
+de sus alucinaciones.
+\end{enumerate}
+
+La evidencia de este informe informa sobre la primera pregunta y prepara una
+intervención para la segunda. No estima la frecuencia del mecanismo en modelos
+ordinarios ni su contribución a todas las alucinaciones.
+
+\subsection{Qué es una unidad y qué se bloquea}
+El modelo contiene cuatro sitios de escritura, U0--U3, uno por bloque. Las
+propuestas pasan por validación, asignación y aplicación cuantizada al residual.
+El veto experimental convierte los COMMIT sobrevivientes de una unidad en
+denegaciones explícitas, manteniendo los frames, los abortos originales y la
+cuantización de la ruta de cero commits. No se promueven candidatos perdedores.
+
+Una escritura activa, un gradiente no nulo o un codebook que cambia no acreditan
+conocimiento factual por sí solos. A la inversa, un efecto pequeño bajo una
+ablación puede reflejar redundancia o variación entre hechos; no identifica
+automáticamente una unidad que no aprendió.
+
+\subsection{Tarea y referencia}
+El mundo sintético asigna valores a entidades y relaciones. Se distinguen hechos
+frecuentes, raros y no expuestos, además de distintas frecuencias de mención de
+entidades. La verdad de una respuesta procede del oráculo del mundo: una respuesta
+correcta por azar a un hecho no expuesto continúa siendo correcta.
+
+La referencia V5 sigue un warmup auxiliar W640 y 4.000 updates de adquisición.
+Usa secuencias de longitud 128, vocabulario de 428 tokens y batches de 48 filas:
+32 originales, ocho auxiliares y ocho canónicas. El objetivo combina las tres
+pérdidas con pesos $1$, $0{,}25$, $0{,}25$ y una regularización global de peso
+$0{,}001$. Esta receta describe la referencia evaluada; no permite inferir su
+calidad a partir del valor de la loss solamente.
+
+\begin{tabularx}{\linewidth}{@{}p{32mm}Y@{}}
+\toprule
+\textbf{Estado} & \textbf{Qué existe al cierre de este informe}\\
+\midrule
+Observado & Competencia de la referencia y medición de los cuatro sitios en dos baterías completas.\\
+Verificado & Capturas, reducciones, registros, cierre y selección bajo la regla fijada.\\
+Diseñado & Panel V6 de 17 ramas y calendarios completos con pruebas mecánicas.\\
+Pendiente & Calificación de la ejecución V6, entrenamiento de sus ramas y resultados causales.\\
+\bottomrule
+\end{tabularx}
+
+\pageend
+\section{Competencia factual de la referencia}
+\label{sec:competence}
+
+La referencia satisface el gate de competencia \emph{common-discovery}: al menos
+80\% de exactitud macro y superioridad estricta frente a los cuatro priors
+declarados en cada mapa. Este resultado corresponde al subconjunto de hechos
+frecuentes. El desempeño sobre la población completa es considerablemente menor.
+
+\figurepanel{competence}{Exactitud de la referencia por estrato y mapa de posiciones.
+Los denominadores se conservan en cada serie. La exactitud de hechos frecuentes
+no representa la exactitud de las 128 preguntas. No se presentan intervalos de
+confianza: mapas y preguntas no son réplicas independientes de entrenamiento.}{fig:competence}
+
+\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+\toprule
+\textbf{Mapa} & \textbf{Frecuentes} & \textbf{Raros} & \textbf{No expuestos} & \textbf{Total}\\
+\midrule
+Identidad & 38/38 & 26/38 & 3/52 & 67/128\\
+Desplazamiento 8 & 36/38 & 30/38 & 4/52 & 70/128\\
+Separaciones 4 & 37/38 & 23/38 & 3/52 & 63/128\\
+\bottomrule
+\end{tabularx}
+
+Se evaluaron 64 hechos de descubrimiento con dos preguntas por hecho: 19
+frecuentes, 19 raros y 26 no expuestos. En el conjunto completo, las exactitudes
+son 52,34\%, 54,69\% y 49,22\%. En frecuentes son 100\%, 94,74\% y 97,37\%.
+Los cuatro priors comunes alcanzan 0\%, 5,263\%, 10,526\% y 10,526\%.
+
+Las 384 respuestas de esta evaluación están presentes. La cobertura es 100\%,
+sin abstenciones ni salidas inválidas; los errores son afirmaciones falsas en
+este benchmark. Estos resultados pertenecen a la referencia ya entrenada y
+no comparan ramas causales de bloqueo o rescate.
+
+\callout{Una competencia suficiente, de alcance acotado}{
+La referencia permite estudiar contribuciones al acceso en hechos frecuentes
+que el sistema puede resolver. No acredita conocimiento uniforme de hechos raros
+o no expuestos, ni capacidad lingüística general.}
+
+\pageend
+\section{Cómo se realizó la medición}
+\label{sec:method}
+
+Se congeló la referencia A4000 y se ejecutaron dos baterías con pertenencia,
+orden y reglas previamente fijados. Cada input se evaluó sin veto y con cada
+uno de los cuatro vetos singleton. No hubo actualizaciones de parámetros ni
+entrenamiento durante esta fase.
+
+\begin{center}
+\begin{tikzpicture}[node distance=5mm,box/.style={draw=teal!45,fill=light,rounded corners=2pt,
+  text width=33mm,minimum height=16mm,align=center,font=\sffamily\small},
+  arr/.style={-{Stealth[length=2mm]},draw=teal,thick}]
+\node[box] (a) {Referencia e inputs\\fijados};
+\node[box,right=of a] (b) {Sano + cuatro vetos\\dos baterías};
+\node[box,right=of b] (c) {Captura y lectura\\independiente};
+\node[box,right=of c] (d) {Regla de selección\\sin modificar};
+\draw[arr] (a)--(b);\draw[arr] (b)--(c);\draw[arr] (c)--(d);
+\end{tikzpicture}
+\end{center}
+
+\subsection{Localización factual}
+La pérdida factual se mide en la frontera pública de respuesta, antes de
+suministrar el token Value correcto. Se usa la distribución completa de 428
+clases, sin renormalizar sobre el conjunto de posibles valores:
+\begin{align}
+\ell_{f,q,p}^{(u)}&=-\log\operatorname{softmax}(z_{f,q,p}^{(u)})[v_f],\\
+\factloss(u)&=\frac{1}{|F|}\sum_{f\in F}
+  \frac{1}{|Q_f||P|}\sum_{q\in Q_f,p\in P}
+  \left(\ell_{f,q,p}^{(u)}-\ell_{f,q,p}^{(\varnothing)}\right).
+\end{align}
+Cada hecho tiene el mismo peso; primero se promedian sus preguntas y posiciones.
+Un valor positivo significa que vetar la unidad reduce, en media geométrica,
+la probabilidad asignada al valor correcto. Los nats no son puntos porcentuales de exactitud.
+
+\subsection{Control de perturbación general}
+El inventario contiene las 1.120 ocurrencias originales de texto de entidades
+discovery, manteniendo multiplicidades, mezcla factual/mención, targets válidos
+y EOS. La NLL se pondera por tokens dentro de cada mapa y los tres mapas reciben
+igual peso. Para cada unidad se conservan:
+\begin{tabularx}{\linewidth}{@{}p{15mm}Y@{}}
+\toprule
+$g_u$ & Cambio firmado de NLL de texto original: veto menos sano.\\
+$m_u$ & RMS de la contribución local aplicada, respecto de la salida cuantizada de cero commits.\\
+$r_u$ & RMS de esa salida local de cero commits; $\rho_u=m_u/r_u$.\\
+$p_u$ & Candidatos admitidos entre todos los candidatos sanos válidos, incluidos overflow y abortos en el denominador.\\
+\bottomrule
+\end{tabularx}
+
+Las RMS se obtienen de sumas de cuadrados y conteos globales, no de promediar RMS
+de batches. El proxy $g$ usa texto conocido de esta tarea; no mide equivalencia
+funcional de dos unidades ni perturbación de todo el lenguaje.
+
+La población completa comprende 219 conjuntos de inputs, 2.190 lotes, 34.740
+coordenadas reales y 300 filas dummy excluidas de las métricas. No se filtraron
+hechos según los aciertos de la referencia.
+
+\pageend
+\section{Contribución de las cuatro unidades}
+\label{sec:units}
+
+U0 encabeza el localizador en ambas baterías: $\factloss=0{,}880215$ nats, con
+una diferencia de $0{,}241685$ respecto de U2. U2 y U3 también muestran efectos
+factuales medios positivos. La contribución observada no es exclusiva de U0.
+
+\figurepanel{channel-effects}{Efectos factuales y de texto original, presentados con
+sus escalas y desagregación por posición. Las métricas responden a poblaciones y
+denominadores distintos. Ambas baterías producen los mismos valores; dibujar dos
+copias no añadiría una réplica independiente.}{fig:units}
+
+\begin{tabularx}{\linewidth}{@{}Yrrrrrr@{}}
+\toprule
+\textbf{Unidad} & $\factloss$ & $g$ & $m$ & $r$ & $\rho$ & $p$\\
+\midrule
+U0 & 0,880215 & 0,114421 & 0,533184 & 1,178609 & 0,452384 & 0,641188\\
+U1 & $-0{,}021274$ & 0,142184 & 0,528574 & 1,293221 & 0,408727 & 0,637110\\
+U2 & 0,638529 & 0,042236 & 0,541165 & 1,417010 & 0,381906 & 0,674473\\
+U3 & 0,504185 & 0,030009 & 0,540632 & 1,529304 & 0,353515 & 0,658546\\
+\bottomrule
+\end{tabularx}
+{\footnotesize Valores redondeados para lectura. Las dos baterías completas y los
+valores de precisión completa se incluyen en los datos del informe.}
+
+U1 presenta un efecto factual medio pequeño, ligeramente negativo, junto a un
+incremento de NLL en texto original mayor que el de U0. Esta diferencia agregada
+es informativa, pero depende de los hechos y mapas evaluados. Sus escrituras
+están activas: el resultado no permite llamarlo un canal muerto o un módulo
+dedicado exclusivamente al lenguaje general.
+
+\pageend
+\section{Por qué no se obtuvo un control emparejado}
+\label{sec:matching}
+
+La regla exigía un efecto factual mayor que $0{,}05$ nats en ambas baterías,
+selección estable y un control distinto del objetivo que satisficiera cuatro
+criterios. Para el líder U0, el margen de pérdida de texto es:
+\[
+s_g=\max(0{,}02;\ 0{,}20|g_{U0}|)=0{,}0228841794.
+\]
+Por tanto, un candidato debía tener $g$ dentro de
+$[0{,}091536718;\ 0{,}137305076]$.
+
+\figurepanel{matching}{Evaluación de los candidatos con los límites fijados. La banda
+representa un criterio de admisibilidad, no un intervalo de confianza. Los tres
+candidatos incumplen la condición de NLL de texto; pasan las otras tres.}{fig:matching}
+
+\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+\toprule
+\textbf{Candidato} & $|g_u-g_{U0}|$ & $m_u/m_{U0}$ & $\rho_u/\rho_{U0}$ & $|p_u-p_{U0}|$\\
+\midrule
+U1 & 0,027763 & 0,991354 & 0,903495 & 0,004078\\
+U2 & 0,072185 & 1,014968 & 0,844207 & 0,033285\\
+U3 & 0,084411 & 1,013968 & 0,781448 & 0,017358\\
+\midrule
+Límite & $\leq0{,}022884$ & $[2/3;1{,}5]$ & $[2/3;1{,}5]$ & $\leq0{,}10$\\
+\bottomrule
+\end{tabularx}
+
+U1 es el candidato más cercano y aun así supera el límite de NLL en
+$0{,}004878687$ nats. El resultado no depende del redondeo: la decisión usa los
+valores completos. No se ampliaron calipers, no se sustituyó el objetivo y no
+se añadieron baterías para obtener un resultado favorable.
+
+\textbf{Resultado final: \status.} Los identificadores de objetivo y control
+quedan nulos. U0 conserva su condición de líder del localizador; la comparación
+emparejada original no queda admitida.
+
+\pageend
+\section{Heterogeneidad: el promedio no describe cada hecho}
+\label{sec:heterogeneity}
+
+La desagregación por hecho conserva información que se pierde en una sola barra.
+Los 19 efectos medios por hecho de U0 son positivos, pero sus magnitudes difieren.
+En U1, ocho hechos tienen efecto positivo y once negativo. Su rango va
+aproximadamente de $-0{,}249738$ a $0{,}237074$ nats.
+
+\figurepanel{fact-heterogeneity}{Efecto factual por hecho y unidad, promediado sobre
+dos preguntas y tres mapas. Se conservan los 19 hechos y una escala centrada en
+cero. Valores redondeados: los muy pequeños pueden aparecer como cero. Las
+celdas no son réplicas independientes de entrenamiento.}{fig:heterogeneity}
+
+\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+\toprule
+\textbf{Mapa} & $\factloss(U0)$ & $\factloss(U1)$ & $g_{U0}$ & $g_{U1}$\\
+\midrule
+Identidad & 1,194326 & $-0{,}050548$ & 0,148076 & 0,050147\\
+Desplazamiento 8 & 0,652737 & $-0{,}024324$ & 0,119203 & 0,172679\\
+Separaciones 4 & 0,793581 & 0,011050 & 0,075983 & 0,203725\\
+\bottomrule
+\end{tabularx}
+
+La mayor perturbación de texto de U1 frente a U0 en el promedio no ocurre en
+identidad: aparece con las transformaciones de posición. Tampoco el signo del
+efecto factual de U1 es constante entre los tres mapas. Por ello, el resultado
+agregado no identifica una separación simple entre una unidad de ``hechos'' y
+otra de ``lenguaje''.
+
+Esta heterogeneidad no explica por sí sola un fallo de aprendizaje persistente.
+Esa hipótesis requiere comparar trayectorias de entrenamiento intervenidas
+con sus controles.
+
+\pageend
+\section{Integridad, repetibilidad y límites de interpretación}
+\label{sec:integrity}
+
+La medición cerró en 3.046,425 segundos, dentro de los 90 minutos autorizados,
+sin reinicio automático. El supervisor registró retorno cero, grupo de procesos
+vacío y cierre confirmado. El resultado final dejó de ser provisional antes
+de producir las tablas de este informe.
+
+\begin{tabularx}{\linewidth}{@{}p{47mm}Y@{}}
+\toprule
+\textbf{Comprobación} & \textbf{Resultado y alcance}\\
+\midrule
+Captura completa & 2.190 lotes y ambas baterías; ninguna coordenada omitida para mejorar la selección.\\
+Lectura independiente & 19.656.415.525 bytes leídos; reducciones numéricas y tablas reconstruidas desde las capturas.\\
+Registros Native & 2.193 registros ordenados comprobados: inicio de run y compromisos de inicio, lotes y fin. Consulta sobre copia nueva del ledger detenido.\\
+Custodia final & Continuidad de namespace y metadatos de 39.722 archivos en 4.383 directorios.\\
+Repetición & Deriva máxima NLL y RMS: cero; conteos enteros de clasificación idénticos.\\
+Selección & Regla y pertenencia completas recalculadas; \status\ en el cierre.\\
+\bottomrule
+\end{tabularx}
+
+\subsection{Qué acreditan estas comprobaciones}
+La lectura raw verifica sus reducciones; Native enlaza registros y recibos,
+pero no calcula por sí mismo la verdad factual ni autentica toda la aritmética
+neuronal. La comprobación final de custodia conserva la continuidad de archivos
+ya hasheados en un filesystem confiable; no es una garantía frente a reescrituras
+adversarias que preserven metadatos. Los controles tienen alcances complementarios.
+
+La ruta B16 se calificó contra la referencia y el sham bajo la misma geometría.
+El cambio de B1 a B16 no es idéntico bit a bit en todos los logits, aunque no
+cambió ninguna decisión greedy en el diagnóstico fijado. Esas identidades y
+límites permanecen registrados; no se generaliza la calificación CPU a GPU o XLA.
+La evaluación de competencia citada procede de un cierre de recuperación;
+los fallos operacionales anteriores permanecen en la procedencia histórica.
+
+\subsection{Qué no se ha demostrado}
+\begin{itemize}
+\item Las dos baterías son repetición numérica de la misma población, no dos
+semillas o mundos independientes. No justifican significancia estadística.
+\item La ablación de un modelo entrenado mide acceso/predicción. No demuestra
+que los hechos nunca se adquirieron o que una ruta los almacene de forma exclusiva.
+\item La medida de NLL no equivale a clasificar una respuesta generada como
+alucinación. La medición de canales no ejecutó ramas de entrenamiento H/T/C/R.
+\item Una contribución local activa o un gradiente agregado activo no prueban
+aprendizaje factual por unidad. Tampoco el efecto medio pequeño de U1 prueba muerte.
+\end{itemize}
+
+\callout{Hallazgo útil, hipótesis causal abierta}{
+La evidencia vincula una intervención de acceso con cambios medibles de probabilidad
+factual y muestra el límite del control original. La relación entre muerte de un
+canal durante aprendizaje y afirmaciones falsas sigue sin probarse.}
+
+\pageend
+\section{V6: bloqueo persistente y distribuido}
+\label{sec:v6}
+
+El nuevo protocolo preserva \status\ y cambia explícitamente el estimando.
+Compara políticas de bloqueo persistente/concentrado con interrupciones
+distribuidas, manteniendo balance marginal de sitios e inputs en cada update
+del panel. No intenta fabricar un match de U0 ni supone igual daño general
+durante las trayectorias.
+
+\figurepanel{prospective-design}{Calendarios derivados del plan V6 fijado.
+\textbf{Es un diseño prospectivo: las ramas no se han entrenado.} Los colores
+identifican el sitio cuyo veto se programa; no representan pérdidas o resultados
+medidos. Los rescates retiran el bloqueo desde el índice de update 2000.}{fig:v6}
+
+El panel tiene 17 ramas: H sano con sham, cuatro P con una unidad fija bloqueada,
+cuatro D con bloqueos distribuidos y ocho rescates RP/RD. Todas parten del mismo
+A0 dentro del mundo/seed y terminan a A4000 con los mismos ejemplos y horizonte.
+
+Para $b=\lfloor t/4\rfloor$, $k=t\bmod4$ y una permutación $\pi_b$ fijada por
+hash a partir de un seed independiente, sin consumir el RNG del modelo o los datos, D$_s$ veta
+$\pi_b[(k+s)\bmod4]$. Cada conjunto de cuatro P o D asigna cada sitio exactamente
+una vez en cada update. Cada D visita todos los sitios una vez por bloque de
+cuatro; no queda ligada permanentemente al mismo slice auxiliar del currículo.
+
+Cada P concentra 4.000 bloqueos programados en un sitio; cada D distribuye 1.000
+por sitio. El balance no iguala COMMIT efectivos, energía borrada o gradientes
+cuando divergen los parámetros. RP/RD coinciden con sus P/D hasta A2000 y usan
+sham desde el update de índice 2000, que produce A2001. La inferencia primaria
+es sin veto. Las ejecuciones son completas e independientes; no se cambia de
+schedule mediante resume estricto.
+
+\pageend
+\section{Qué estimará V6 y qué hace falta para ejecutarlo}
+\label{sec:future}
+
+Para cada resultado final $Y$, las barras representan la media de las cuatro
+ramas de cada familia:
+\begin{align*}
+\tau&=\overline{Y}_P-\overline{Y}_D, &
+\rho_P&=\overline{Y}_{RP}-\overline{Y}_P,\\
+\rho_D&=\overline{Y}_{RD}-\overline{Y}_D, &
+\kappa&=\rho_P-\rho_D.
+\end{align*}
+$\tau$ es el contraste total entre políticas. $\kappa$ mide cuánto cambia su
+diferencia al retirar ambos tipos de bloqueo. H contextualiza competencia y
+deterioro; no es necesario asumir que los efectos de sitios distintos sean aditivos.
+
+\subsection{Resultados, datos y límites}
+El protocolo fija una realización nueva del mundo, exposición, modelo y calendario.
+La unidad de replicación es el mundo/seed, no las 17 ramas, hechos o posiciones.
+Se mantienen todos los fallos y no se reemplazan seeds por resultados desfavorables.
+
+La evaluación primaria usa todos los hechos comunes de validation a A4000,
+incluidos los que H falle; se reportan también raros y no expuestos. Las métricas
+factuales promedian por hecho. La NLL original usa un inventario global distinto:
+todas las ocurrencias TRAIN originales de entidades validation, ponderadas por
+tokens válidos/EOS dentro de cada mapa. No se mezclan sus denominadores.
+
+Los 17 entrenamientos se cierran y verifican antes de capturar validation.
+Primero se sellan las generaciones y logits completos en la frontera pública,
+sin el Value correcto; después se abren targets privados separados por split.
+El lector histórico que carga un oráculo conjunto requiere sustitución calificada.
+Validation del mundo anterior ya se evaluó en V2: no se presenta como globalmente
+ciega por no haberse leído durante V5. Test permanece cerrado en el nuevo protocolo.
+
+Se fija un margen descriptivo de 0,02 nats para interpretar conjuntamente NLL
+original y deterioro factual por mapa. No es una prueba de equivalencia funcional
+ni un gate que permita excluir, reponderar o repetir ramas después de observarlas.
+Las curvas y diagnósticos de acceso están fijados de antemano. Un rescate finito
+puede combinar recuperación de acceso y aprendizaje adicional; no identifica
+automáticamente un mecanismo único ni prueba irreversibilidad cuando falla.
+
+\subsection{Recursos y preparación técnica}
+\begin{tabularx}{\linewidth}{@{}Y>{\raggedright\arraybackslash}p{48mm}@{}}
+\toprule
+\textbf{Concepto} & \textbf{Base histórica serial CPU}\\
+\midrule
+17 adquisiciones & 39 h 2 min (aprox.)\\
+17 ramas con verificación, tres mapas y postrun & 56 h 18 min 50 s\\
+Nuevo W640 e inicialización compartida & +14 min 30 s (aprox.)\\
+Ejemplo de pre/post completos únicamente & 398,4375 GiB para 17 ramas\\
+\bottomrule
+\end{tabularx}
+
+Estas cifras son extrapolaciones de terminales históricos, no un cap suficiente
+del runner nuevo. Excluyen calificación, nuevas curvas, diagnósticos, otras
+capturas, copias y contingencia. No se descuentan paralelización o prefijos
+compartidos. GPU/AMD requiere calificación y medición de coste propias.
+
+El calendario pasó 62 pruebas y el paquete seis comprobaciones adicionales. Eso
+valida componentes puros de diseño. Todavía faltan la nueva familia de schedules
+en kernel/guard/Native, el export y lector privado, inicialización y ruta numérica
+calificadas, además del presupuesto completo. No hubo entrenamiento V6.
+
+\pageend
+\section{Reproducibilidad y procedencia}
+\label{sec:provenance}
+
+Este informe se distribuye con el código LaTeX, las cinco figuras vectoriales,
+datos reducidos y scripts de reconstrucción. El objetivo es que un clon limpio
+pueda reconstruir las gráficas y recalcular la selección, sin cargar un modelo,
+consultar Native o descargar las capturas raw completas.
+
+\begin{tabularx}{\linewidth}{@{}p{43mm}Y@{}}
+\toprule
+\textbf{Artefacto incluido} & \textbf{Qué permite comprobar}\\
+\midrule
+\texttt{data/report-data.json} & Datos curados de competencia, unidades, posiciones, hechos, límites y calendario ilustrado.\\
+\texttt{data/provenance.json} & Fuentes originales, campos de extracción y hashes; diferencia entre originales y exportaciones reducidas.\\
+Tablas y selector en \texttt{data/} & Recalcular agregados y decisión de ambas baterías bajo la regla original, desde sus tablas completas.\\
+\texttt{design/} & Protocolo V6, calendario completo y comprobación pura del balance.\\
+\texttt{make\_figures.py} & Reconstruir figuras desde los datos portables; sin selección de ejemplos posterior.\\
+\texttt{report.tex} y \texttt{Makefile} & Compilar el PDF técnico; no iniciar experimentos.\\
+\bottomrule
+\end{tabularx}
+
+La reproducción de tablas y figuras no sustituye la revalidación completa desde
+los archivos raw, checkpoints y ledgers originales, que no se incluyen en este
+paquete. El contador del readback histórico registró aproximadamente 19,66 GB
+leídos; no es el tamaño conjunto de esos tres tipos de evidencia. El exportador
+autentica los JSON y documentos fuente fijados cuando están disponibles, sin
+revalidar los blobs raw ni los checkpoints. El paquete tampoco reconstruye la trayectoria
+de entrenamiento histórica ni califica una ejecución futura por contener sus hashes.
+
+\subsection{Identificadores principales}
+Los paths repo-relative y la lista completa de fuentes están en el manifiesto
+de procedencia. Los siguientes SHA256 identifican cierres y reglas citados:
+
+{\footnotesize
+\begin{tabularx}{\linewidth}{@{}p{32mm}Y@{}}
+\toprule
+\textbf{Evidencia} & \textbf{SHA256 del artefacto original}\\
+\midrule
+Competencia V5 & \texttt{bdb63840ae28176e5cbf22aded90ad78585804415e0d5579ca9bb63da1bee9db}\\
+Cierre worker & \texttt{f223ec5ec1101a67528a4cd54d38ce9e4d7dd405ad0c26586f63c360d42810a2}\\
+Cierre supervisor & \texttt{18b41a1980e6eef486a1747789cbb04b06154f403da7d52de9780a968acc6002}\\
+Selección V5 & \texttt{ef1b3cbb783364b662974c0a605b42a9758433b2b77c864a644d08f1d6bfa78f}\\
+Regla V1 & \texttt{a9f1aef9f00e5bb98aa7fe9e294771f279c0693a9815ae40a1ea34167d469f79}\\
+Protocolo V6 & \texttt{6bae2857c9bf6910aa728be2cd65da5f510400190f2e45a1d909194bd48ea195}\\
+Plan V6, archivo & \texttt{feb9d0cbb236831a864a4f8981772262953f198fa53570ecde01b3704c95f766}\\
+\bottomrule
+\end{tabularx}}
+
+La fuente causal congelada de la medición corresponde al commit:
+\begin{center}\texttt{033450e50d6a13b355b010cabaacf686a741d25f}\end{center}
+Se conservan las identidades
+separadas de esa fuente y de la referencia histórica. Ningún hash de este informe
+confiere admisión científica o autorización de entrenamiento.
+
+\subsection{Lectura final}
+Los resultados justifican medir la contribución factual además de observar
+actividad y pérdida agregada. También documentan un límite real del diseño
+inicial: no existe control admisible entre los tres candidatos bajo la regla
+fijada. V6 propone una comparación distinta y explícita para estudiar la
+persistencia del bloqueo. La hipótesis causal permanece abierta hasta ejecutar
+y evaluar ese estudio dentro de su alcance declarado.
+
+\end{document}
