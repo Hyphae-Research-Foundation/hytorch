@@ -1,25 +1,16 @@
 {
-  "archived_spanish_manifest": "artifact-manifest.es-v1.json",
   "files": {
     ".gitignore": {
       "n_bytes": 48,
       "sha256": "34a48201c37197048a19f21ef2d65c654520ca908d647a7a5b3eecccd32f59f9"
     },
     "Makefile": {
-      "n_bytes": 945,
-      "sha256": "de5c4800b8b0f08dded90c5df28eae20a347b665b05b4c0ab75b7856c803d62b"
-    },
-    "README.en.md": {
-      "n_bytes": 6569,
-      "sha256": "39684536bc34ba01c14be5722e4fbf8aa7668e2e9ff61d5f5b67add7589aca09"
+      "n_bytes": 514,
+      "sha256": "87dc427a9c639138f53cfc4b30d5680b8d0badaf147feada3506451f9a1b33fc"
     },
     "README.md": {
-      "n_bytes": 5974,
-      "sha256": "c213f2b3a1a4e4d8b01be9cea3642399b57aa2971819116b1d1ada39b1cb1bad"
-    },
-    "artifact-manifest.es-v1.json": {
-      "n_bytes": 5330,
-      "sha256": "ecc4636e1bc0ddaad57c72d671ae31737dc8c81aa31d5ed9d7e0d40b0b1d7719"
+      "n_bytes": 5132,
+      "sha256": "ebcfc091bee4581a6de9fe6bb649e86bbe21b9eab79f891377dc7f3115fec137"
     },
     "data/FACTUAL-CAUSAL-ADMISSION-V1.md": {
       "n_bytes": 13865,
@@ -28,10 +19,6 @@
     "data/FACTUAL-CAUSAL-PILOT-PROTOCOL.md": {
       "n_bytes": 15287,
       "sha256": "b5a564a0e9ddd28c29abb608ab2a0df705785f440ba4bc327002811405c2f46d"
-    },
-    "data/README.en.md": {
-      "n_bytes": 4628,
-      "sha256": "07e216d79038301c1c337ae1515b96f7f157bd285c48aea42237605c17f897a5"
     },
     "data/README.md": {
       "n_bytes": 4361,
@@ -64,10 +51,6 @@
     "data/verify_selection.py": {
       "n_bytes": 4212,
       "sha256": "9b919f375c78551fbb392253545655c7e88f853670a2002eee20cb715b675a7c"
-    },
-    "design/PROTOCOL.en.md": {
-      "n_bytes": 20085,
-      "sha256": "d2fe0da5d0c19b8e6ae53ee0601285a2d2f0632678141b76854aee65b8dbe12e"
     },
     "design/PROTOCOLO.md": {
       "n_bytes": 19975,
@@ -109,46 +92,6 @@
       "n_bytes": 153890,
       "sha256": "9129953e82c6b6443e1393cf3b61eecb4c34d941eb2e7a4b45714ff898fd0346"
     },
-    "figures/en/channel-effects.pdf": {
-      "n_bytes": 34483,
-      "sha256": "948516e8b38c44706c3fb9aa64c66fea89251008c1ba31b5f3aa1ffeff1c4a6e"
-    },
-    "figures/en/channel-effects.png": {
-      "n_bytes": 152896,
-      "sha256": "25cc6358823f707f2cee0910043e1ea8e87d07b22746d93b1ed5e8679fec0b8b"
-    },
-    "figures/en/competence.pdf": {
-      "n_bytes": 26094,
-      "sha256": "38dd2d1eadd9eeab45ef555042641060c351a07ee10af7524597abb8b9224768"
-    },
-    "figures/en/competence.png": {
-      "n_bytes": 150731,
-      "sha256": "51e955d98c996c893b441458a91381323f20265fef0a0dff2ea53ed0f7cde198"
-    },
-    "figures/en/fact-heterogeneity.pdf": {
-      "n_bytes": 37267,
-      "sha256": "969d39161e01adc5a2a23603399e6f4c13a16ba6e332b4a3376b3ea3ea79da21"
-    },
-    "figures/en/fact-heterogeneity.png": {
-      "n_bytes": 223439,
-      "sha256": "7b69dae33090eba22064d678926e3df56543f40736183d15e36b7ef90fb50c7b"
-    },
-    "figures/en/matching.pdf": {
-      "n_bytes": 34911,
-      "sha256": "0431b91d652b0d1dead9fa9a4cffd5756f6fcb43a7d05126ce9fecc9c995df6a"
-    },
-    "figures/en/matching.png": {
-      "n_bytes": 150053,
-      "sha256": "54c151a3ce4e2c5dc3b6c5c82dd85429022386a9ef27d14e89f44930b6cc7ee1"
-    },
-    "figures/en/prospective-design.pdf": {
-      "n_bytes": 44893,
-      "sha256": "7f7e4ec2fd852c7078dd5ddc2f4f8eb0a15f81ce15a14a10bc091b454cc34d15"
-    },
-    "figures/en/prospective-design.png": {
-      "n_bytes": 265583,
-      "sha256": "3afd7a5aff0e24d450de12d65d77ab30aa6922ff93fa4ddf0fc308c4df26400d"
-    },
     "figures/fact-heterogeneity.pdf": {
       "n_bytes": 35822,
       "sha256": "8354cbf6132ab7d62615c292b050d17c8f121c8af08f11fe3c965715de1bf2e6"
@@ -174,24 +117,12 @@
       "sha256": "455e00477c10a2696123d4d1c89dbe25ca577dccc62130338094bfbf9f31bb44"
     },
     "make_figures.py": {
-      "n_bytes": 26336,
-      "sha256": "23ce5ee4797a923fa108bc1be01515346b39f15e62c6697e57c56111f2d0d768"
-    },
-    "preview-en.png": {
-      "n_bytes": 185003,
-      "sha256": "7229c11d3d3057d7f1a7a881ade117d25915c506091262f69e41e6f01bbb381a"
+      "n_bytes": 19383,
+      "sha256": "2d11a62bcfee97a5cfbcc696cbef9664e92cbee37d66bb54d6f5998f99fc5906"
     },
     "preview.png": {
       "n_bytes": 195953,
       "sha256": "db37fa9477d99e47771ce0b26c4de30a3cb6e3263d1f3507bc9beddaef23145c"
-    },
-    "report-en.pdf": {
-      "n_bytes": 249334,
-      "sha256": "659284e4fb89c6c4f67cb5658bf0cb91bfe30b098ab921a15b44ac96cc42aea6"
-    },
-    "report-en.tex": {
-      "n_bytes": 28351,
-      "sha256": "f76d88f6e6fb32cd11a754134c6096bcf92894810959755715632d5fbd0b5f6c"
     },
     "report.pdf": {
       "n_bytes": 241028,
@@ -205,21 +136,13 @@
       "n_bytes": 32,
       "sha256": "0c5132bfc8bf7d76d17a49c8c5555b3c5945192bddec844f233fb7cff8ffc1cd"
     },
-    "validation-en.json": {
-      "n_bytes": 3514,
-      "sha256": "54ad095a3dc9686fedce656823d43119dcb79e5b96f83f8223d7d96ccb86afa5"
-    },
     "validation.json": {
       "n_bytes": 1732,
       "sha256": "f843ac89d61e307724e5452ee02c6b4109870d5244688c4037d45044ad841601"
     }
   },
-  "languages": [
-    "es",
-    "en"
-  ],
   "schema": "hytorch.technical-report-artifact-manifest.v1",
   "scientific_causal_result_claimed": false,
-  "scope": "bilingual technical report and portable reduced-data/design package",
+  "scope": "published technical report and portable reduced-data/design package",
   "self_hash_excluded": true
 }
