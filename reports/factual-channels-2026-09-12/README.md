@@ -2,6 +2,10 @@
 
 **Informe técnico V5/V6 · 12 de septiembre de 2026 · versión 1.0**
 
+**Idiomas / Languages:** Español · [English](README.en.md)
+
+Edición inglesa completa: [PDF](report-en.pdf) · [LaTeX](report-en.tex) · [Gráficas](figures/en) · [Protocolo V6](design/PROTOCOL.en.md).
+
 [Leer el PDF](report.pdf) · [Fuente LaTeX](report.tex) · [Datos y procedencia](data/README.md) · [Protocolo V6 completo](design/PROTOCOLO.md)
 
 [![Vista previa de la portada del informe técnico](preview.png)](report.pdf)
@@ -45,6 +49,10 @@ El PDF queda en `report.pdf`; los temporales y el log en `build/`. Las cinco fig
 La [validación de publicación](validation.json) registra la compilación en un checkout limpio: 11 páginas, todas las fuentes embebidas, sin advertencias de maquetación y 62 pruebas del calendario aprobadas. El PDF y las imágenes coincidieron byte por byte entre ambos directorios. [artifact-manifest.json](artifact-manifest.json) contiene los hashes de los archivos de esta entrega.
 
 `make preview` reconstruye además la imagen de portada del README y requiere `pdftoppm` (Poppler). La fecha técnica de compilación está fijada mediante `SOURCE_DATE_EPOCH`; no representa una nueva fecha de medición.
+
+Para la edición inglesa, usar `make pdf-en` o `make preview-en` con el mismo parámetro `PYTHON`. `make bilingual` reconstruye ambos PDFs, sus gráficas y portadas. La [validación inglesa](validation-en.json) distingue esta traducción de la publicación española original; sus cifras, datos y reglas científicas son los mismos. El manifiesto original se conserva en [artifact-manifest.es-v1.json](artifact-manifest.es-v1.json).
+
+Ese manifiesto archivado describe la primera publicación española, no los scripts y enlaces bilingües actuales. El PDF español, sus figuras y los datos científicos conservan sus bytes publicados.
 
 Las pruebas mecánicas originales del calendario se incluyen en `design/test_control_schedule.py`. Para ejecutarlas, instalar además `pytest` en el entorno y usar:
 
